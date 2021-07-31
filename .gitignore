@@ -46,3 +46,4 @@ packages/
 *.scss
 *.vue
 Icon[^M]
+*.zip
