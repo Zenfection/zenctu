@@ -26,6 +26,15 @@ packages/
 # Log files
 *.log
 
+#temp
+chuyennganh/
+cosonganh/
+doannganh/
+language/
+nhapmon/
+toanhoc/
+
+
 # Typescript build info
 *.tsbuildinfo
 .firebaserc
