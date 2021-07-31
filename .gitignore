@@ -15,6 +15,10 @@ coverage/
 # Node modules
 node_modules/
 
+# folder
+.vscode/
+.packages/
+
 # MacOS Desktop Services Store
 .DS_Store
 
@@ -30,3 +34,10 @@ node_modules/
 .commitlintrc.js
 .eslintignore
 .gitattributes
+*.lock
+*.js
+*.json
+*.html
+*.css
+*.scss
+*.vue
