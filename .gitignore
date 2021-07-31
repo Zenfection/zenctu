@@ -27,8 +27,6 @@ packages/
 *.log
 
 #temp
-chuyennganh/
-doannganh/
 
 
 # Typescript build info
