@@ -29,7 +29,6 @@ packages/
 #temp
 chuyennganh/
 doannganh/
-language/
 
 
 # Typescript build info
@@ -49,3 +48,4 @@ language/
 *.scss
 *.vue
 Icon[^M]
+*.zip
