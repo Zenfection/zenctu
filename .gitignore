@@ -23,3 +23,10 @@ node_modules/
 
 # Typescript build info
 *.tsbuildinfo
+.firebaserc
+.eslintrc.js
+.firebase/hosting.ZG9jcy8udnVlcHJlc3MvZGlzdA.cache
+.editorconfig
+.commitlintrc.js
+.eslintignore
+.gitattributes
