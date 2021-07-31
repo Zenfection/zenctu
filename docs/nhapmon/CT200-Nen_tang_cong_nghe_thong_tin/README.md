@@ -1,37 +1,108 @@
-# <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/03-21-54-36-27-16-16-14-Basic%20Knowledge.png" width="50"> Nền tảng Công Nghệ Thông Tin <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/16-14-56-59-08-15-27-06-cat_ready.gif" title="" alt="08-15-27-06-cat_ready.gif" width="50">
+# <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/03-21-54-36-27-16-16-14-Basic%20Knowledge.png" width="50"> Nền tảng Công Nghệ Thông Tin 
 
-| <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/03/20-14-36-27-logo%20cat.png" title="" alt="logo cat.png" width="40"> Tác giả | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/03/20-14-38-42-logo-ctu.png" title="" alt="logo-ctu.png" width="40"> Bổ trợ tài liệu | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/03/20-13-59-20-icons8-new_year's_eve.png" title="" alt="icons8-new_year's_eve.png" width="40"> Năm |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Zenfection](https://facebook.com/Zenfection)                                                                                                           | [Can Tho University](http://www.cit.ctu.edu.vn/)                                                                                                              | 2021                                                                                                                                                                        |
+| <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-12-38-Professor%20Male.png" title="" alt="Professor Male.png" width="35">Tác giả | <img title="" src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-08-42-Learning%20Tools.png" alt="Learning Tools.png" width="35">Tiên quyết | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-13-24-Degree.png" title="" alt="Degree.png" width="35">Tín chỉ | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-10-10-Rage%20Room%20Rules.png" title="" alt="Rage Room Rules.png" width="35">Lý thuyết | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-11-54-Student%20Desk.png" title="" alt="Student Desk.png" width="35">Thực hành |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Zenfection](http://facebook.com/zenfection)                                                                                                                       | 🚫 None.                                                                                                                                                              | 4                                                                                                                                                | 30 tiết                                                                                                                                                                       | 60 tiết                                                                                                                                                               |
 
----
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/16-15-21-11-tenor.gif" width="60"> 1. Kiến thức cần có
+### Cách sử dụng máy tính
 
-### Học phần tiên quyết
+::: details <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-26-39-icons8-windows8.png" width="25"> Dành cho <code>Window</code>
 
-### Kỹ năng căn bản
+Bạn có thể tham khảo những Video sau đây : 
+
+- <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-34-23-icons8-youtube_play_button.png" width="28"> [Cách sử dụng Window từ A-Z](https://www.youtube.com/watch?v=CxauIig7Fik)
+
+- <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/13-10-12-23-unnamed.png" width="25"> [Tin tức mới nhất về Window 10](https://quantrimang.com/windows-10-os)
+:::
+
+::: details <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-27-01-icons8-apple_logo.png" width="25">Dành cho <code>MacOS</code>
+
+- <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-34-23-icons8-youtube_play_button.png" width="28"> [Hướng dẫn sử dụng macOS cơ bản](https://www.youtube.com/watch?v=0GSBX4zTUwI&t=235s)
+
+- [Maclife](https://maclife.vn/mac-application) :  Trang Web hỗ trợ người dùng macOS mạnh nhất VN
+:::
+
+::: details <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-27-06-icons8-linux.png" width="25"> Dành cho <code>Linux</code>
+
+Tùy Distro bạn dùng là gì để chọn cho hợp lý, và Linux không dùng cho người dùng căn bản
+
+- <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-48-17-icons8-ubuntu.png" width="25"> [Ubuntu Turtorial](https://www.youtube.com/watch?v=D4WyNjt_hbQ)
+
+- <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-48-12-2048px-Manjaro-logo.svg.png" width="25"> [Manjaro Turtorial](https://www.youtube.com/watch?v=5Gv0cxAjkN0&list=PL426FzyFBwBo_kwxfAwyKCKsviq54SfA0)
+
+- <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-47-43-Pop_OS-Logo-nobg.svg" width="25"> [PopOS! Turtorial](https://www.youtube.com/watch?v=3Rcxjx3H9jo&list=PLT98CRl2KxKFfumnJiR8FxBsbJepGgMoN&index=3)
+:::
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/16-15-23-13-tenor.gif"  width="40"> 2. Tài liệu học tập
+### Khóa học (`Khuyết khích`)
 
-### Giáo trình Zen
+| <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-18-20-23-sololearn.webp" title="" alt="sololearn.webp" width="40">SoloLearn | <img title="" src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-18-21-19-49df4968e49a4e5ba2c4cb94393104fb.png" alt="49df4968e49a4e5ba2c4cb94393104fb.png" width="40"> Codelearn                                              | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-18-22-06-fy2SPeYLij4AC8WFaGSq0uxol14F22F3BGUU_Dq-UY9WjUiDc6Tz2FDCuxsgyQ4HPQ.webp" title="" alt="fy2SPeYLij4AC8WFaGSq0uxol14F22F3BGUU_Dq-UY9WjUiDc6Tz2FDCuxsgyQ4HPQ.webp" width="35">Programing Hub |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🚫None.                                                                                                                                                    | [1.Truyền thông và Mạng máy tính](https://codelearn.io/learning/truyen-thong-va-mang-may-tinh)<br>[2.Phần mềm máy tính](https://codelearn.io/learning/phan-mem-may-tinh)<br>[3.Phần cứng máy tính](https://codelearn.io/learning/phan-cung-may-tinh) | [1.IT Basic](https://programminghub.io/coursedetail/programming/learn/IT-Basics/)<br>[2.Fundamentals](https://programminghub.io/coursedetail/programming/learn/Fundamentals/)                                                                                                     |
 
-### Pdf & Slide
 
-| Tài liệu                                                                                                                                                                                      | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/03/20-16-12-37-icons8-google_drive.png" title="" alt="icons8-google_drive.png" width="40"> Khoá học                                                                                                         | Web tham khảo                                                                                                                                                                                                                                                                                |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/16-23-00-16-logo-272-90.png" title="" alt="" width="73"> [Lập trình không khó](https://nguyenvanhieu.vn/ctdl-gt/) | 1. [Cấu trúc dữ liệu và giải thuật kinh điển](https://drive.google.com/drive/folders/1YcUgdWSo9GjHm8j1644oPv5nUhj1tNKB?usp=sharing) (`khuyên dùng`)<br>2. [Cấu trúc dữ liệu và giải thuật-TDT](https://drive.google.com/drive/folders/1WHad8E9veuGBA4qItcOdZm1D5MG1ZiAr?usp=sharing) | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/16-23-01-32-University_of_San_Francisco_logo.png" title="" alt="University_of_San_Francisco_logo.png" width="40"> [Data Structure Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) |
+::: tip <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-01-08-Certificate.png" width="35"> NHẬN CHỨNG CHỈ
 
-### Khóa học
+Bạn có thể nhận chứng chỉ ở khóa [Codelearn](https://codelearn.io/learning) miễn phí sau khi học xong
 
+::: details <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-04-47-icons8-i.png" width="30"> Chứng chỉ của mình 
+
+<br>
+
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-22-58-28-Computer%20Communication%20%26%20Network.png" width="500">
+
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-22-58-30-Computer%20Handware.png" width="500">
+
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-22-58-32-Computer%20Software.png" width="500">
+
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-27-48-IT%20Basic.png" width="500">
+:::
+
+::: warning ⚠️  LƯU Ý
+
+Ở ứng dụng [Programing Hub](https://programminghub.io/) thì có phí !!!
+
+==> Tuy nhiên các bạn xài `Android` có thể tải bản "thuốc" [tại đây](https://apkmody.io/apps/programming-hub)
+:::
 ### Công cụ 
 
+::: details <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-05-31-icons8-office_365.png" width="30"> Microsoft Office
 
+Hãy sử dụng công cụ sau để cài `Office` tốt nhất 
+
+==> [Office Tool](https://otp.landian.vip/en-us/)
+
+::: tip 💡 MẸO
+
+- Chỉ cài Mircosoft Word, Excel, PowerPoint thôi !!!
+
+- Sử dụng tool để active office và window ➡ [AIO Tool 3.13](https://github.com/Zenfection/zenctu/raw/main/docs/tool/AIO%20Tools%20v3.1.3.zip)
+
+> Mình cam đoan không `virus` hay gì cả, nếu không bạn có thể bỏ tiền ra mua bản quyền FullBox
+:::
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/16-15-24-10-tenor.gif" title="" alt="tenor.gif" width="40"> 3. Quá trình học tập
 
 ### Lý thuyết
 
+Học về các thành phần của máy tính, thiết bị ngoại vi, mạng cơ bản, bảo mật cơ bản...
+
+Hoàn thành tốt các khóa học ở [trên](/nhapmon/CT200-Nen_tang_cong_nghe_thong_tin/#_2-tai-lieu-hoc-tap)
+
+::: tip 🤔 MẸO
+
+Không nhất thiết phải học khóa [Programing Hub](https://programminghub.io/)
+:::
+
 ### Thực hành
 
-## 4. Chứng chỉ học tập
+Học và thực hành về bộ 3 Office : `Word`, `Excel`, `PowerPoint` của nhà `Microsoft`
+
+::: tip <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-40-20-Online%20Courses.png" width="35"> Tham khảo khóa học : 
+
+| <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-36-29-word.png" title="" alt="word.png" width="35">Microsoft Word | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-36-38-excel.png" title="" alt="excel.png" width="35">Microsoft Excel | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-36-33-powerpoint.png" title="" alt="powerpoint.png" width="35">Microsoft PowerPoint |
+| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Microsoft căn bản và hiệu quả](https://drive.google.com/drive/folders/1Y995DiwpRNTJHAOmydEugbBFA6XFyQWS)                                           | [Luyện Excel cơ bản tới nâng cao](https://drive.google.com/drive/folders/1qkFOucYL0SlEHy1wvtHP_dfGSaUjEunj)                                            | [PowerPoint và những điều bạn chưa biết](https://drive.google.com/drive/folders/1Te2U7l8lxmsjRFcF21v1_0eFPgbZ7B1a)                                                    |
+:::
