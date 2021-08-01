@@ -51,13 +51,14 @@ Bạn có thể nhận chứng chỉ ở khóa [Codelearn](https://codelearn.io/
 
 <br>
 
-<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-22-58-28-Computer%20Communication%20%26%20Network.png" width="500">
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-22-58-28-Computer%20Communication%20%26%20Network.png" width="300" style="padding-right:8px">  
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-22-58-30-Computer%20Handware.png" width="300" style="padding-right:8px">  
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-22-58-32-Computer%20Software.png" width="300" style="padding-right:8px">
 
-<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-22-58-30-Computer%20Handware.png" width="500">
+<br>
 
-<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-22-58-32-Computer%20Software.png" width="500">
-
-<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-27-48-IT%20Basic.png" width="500">
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-27-48-IT%20Basic.png" width="300" style="padding-right:8px">
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/01-16-27-20-Fundamentals.png" width="300" style="padding-right:8px">
 :::
 
 ::: warning ⚠️  LƯU Ý
