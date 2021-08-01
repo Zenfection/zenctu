@@ -1,1 +1,0 @@
-# Các hàm phổ biến trong C
