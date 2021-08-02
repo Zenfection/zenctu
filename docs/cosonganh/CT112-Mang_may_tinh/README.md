@@ -9,3 +9,7 @@
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2.Tài liệu học tập
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-41-35-tenor.gif" width="40"> 3. Quá trình học tập
+
+## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-22-18-48-tenor.gif" width="40"> [Lý Thuyết](/cosonganh/CT112-Mang_may_tinh/Tailieu/Chapter1/1.md)
+
+## Thực Hành
