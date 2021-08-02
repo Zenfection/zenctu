@@ -5,7 +5,7 @@
 | [Zenfection](http://facebook.com/zenfection)                                                                                                                       | 🚫 None.                                                                                                                                                              | 4                                                                                                                                                | 30 tiết                                                                                                                                                                       | 60 tiết                                                                                                                                                               |
 
 
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/16-15-21-11-tenor.gif" width="60"> 1. Kiến thức cần có
+## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-26-29-tenor.gif" width="40"> 1. Kiến thức cần có
 ### Cách sử dụng máy tính
 
 ::: details <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-26-39-icons8-windows8.png" width="25"> Dành cho <code>Window</code>
@@ -35,7 +35,7 @@ Tùy Distro bạn dùng là gì để chọn cho hợp lý, và Linux không dù
 - <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-47-43-Pop_OS-Logo-nobg.svg" width="25"> [PopOS! Turtorial](https://www.youtube.com/watch?v=3Rcxjx3H9jo&list=PLT98CRl2KxKFfumnJiR8FxBsbJepGgMoN&index=3)
 :::
 
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/16-15-23-13-tenor.gif"  width="40"> 2. Tài liệu học tập
+## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2.Tài liệu học tập
 ### Khóa học (`Khuyết khích`)
 
 | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-18-20-23-sololearn.webp" title="" alt="sololearn.webp" width="40">SoloLearn | <img title="" src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-18-21-19-49df4968e49a4e5ba2c4cb94393104fb.png" alt="49df4968e49a4e5ba2c4cb94393104fb.png" width="40"> Codelearn                                              | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-18-22-06-fy2SPeYLij4AC8WFaGSq0uxol14F22F3BGUU_Dq-UY9WjUiDc6Tz2FDCuxsgyQ4HPQ.webp" title="" alt="fy2SPeYLij4AC8WFaGSq0uxol14F22F3BGUU_Dq-UY9WjUiDc6Tz2FDCuxsgyQ4HPQ.webp" width="35">Programing Hub |
@@ -84,7 +84,7 @@ Hãy sử dụng công cụ sau để cài `Office` tốt nhất
 > Mình cam đoan không `virus` hay gì cả, nếu không bạn có thể bỏ tiền ra mua bản quyền FullBox
 :::
 
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/16-15-24-10-tenor.gif" title="" alt="tenor.gif" width="40"> 3. Quá trình học tập
+## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-41-35-tenor.gif" width="40"> 3. Quá trình học tập
 
 ### Lý thuyết
 
