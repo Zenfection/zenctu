@@ -17,3 +17,7 @@
 11. [Hàm *isxdigit*](https://github.com/Zenfection/Source_Code_C/blob/master/Ctype/Ctype.h.md#11-hàm-isxdigit)
 12. [Hàm *tolower*](https://github.com/Zenfection/Source_Code_C/blob/master/Ctype/Ctype.h.md#12-hàm-tolower)
 13. [Hàm *toupper*](https://github.com/Zenfection/Source_Code_C/blob/master/Ctype/Ctype.h.md#13-hàm-toupper)
+
+ 
+ <comment/> 
+ 

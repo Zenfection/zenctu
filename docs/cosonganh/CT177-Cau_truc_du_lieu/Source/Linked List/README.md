@@ -36,3 +36,7 @@ struct LIST{
 };
 typedef struct LIST List; // định nghĩa cho khỏi khai báo struct sau này
 ```
+
+ 
+ <comment/> 
+ 

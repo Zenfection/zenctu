@@ -33,3 +33,6 @@
 27. [Mẫu hình thoi](https://github.com/Zenfection/Source_Code_C/blob/master/Pattern/Pattern.md#27mẫu-hình-thoi-rhombus-pattern)
 28. [Tam giác chỉ có đường viền](https://github.com/Zenfection/Source_Code_C/blob/master/Pattern/Pattern.md#28-tam-giác-chỉ-có-đường-viền-triangle-with-only-border)
 29. [Mẫu X](https://github.com/Zenfection/Source_Code_C/blob/master/Pattern/Pattern.md#29-mẫu-x-x-pattern)
+ 
+ <comment/> 
+ 

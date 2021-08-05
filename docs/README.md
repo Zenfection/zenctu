@@ -20,9 +20,11 @@ features:
     details: Hỗ trợ các giao diện tối giúp bạn có cái nhìn tuyệt vời và dịu mắt hơn khi đọc tài liệu
   - title: 💻 Cập nhật dài hạn
     details: Mình sẽ duy trì dự án này tới khi mình ra trường và sẽ hoàn thành nó sớm nhất có thể
-  - title: 🖋 Đóng góp dễ dàng
-    details: Bạn hoàn toàn có thể đóng gói mọi kiến thức của mình cho cộng đồng, đừng nghĩ mình tệ nhé
+  - title: 🖋 Bình luận mọi nơi
+    details: Bạn hoàn toàn đưa góp ý của mình ở mỗi bài viết theo định dạng Markdown để xây dựng nội dung tốt hơn
 
 footerHtml: true
 footer: Copyright © 2021-<a href="https://facebook.com/zenfection">Zenfection</a>
 ---
+
+<cat/>
