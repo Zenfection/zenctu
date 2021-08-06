@@ -8,7 +8,11 @@
 
 ## <img src="/images/docs/guide/github.png" width="40"> Cách sử dụng Github
 
-Đây là video hướng dẫn về [github của mình](https://youtu.be/ho0ych_2mgo)
+Đây là Video hướng dẫn sử dụng **Github** của mình : 
+
+<div class="videoZen">
+    <iframe width="740" height="416" src="https://www.youtube.com/embed/ho0ych_2mgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ::: tip 💡 MẸO 
 
@@ -23,13 +27,19 @@ Hãy vào [repo](https://github.com/zenfection/zenctu) của mình
 
 ## <img src="/images/docs/guide/markdown.png" width="40"> Cách viết Markdown
 
-Đây là video hướng dẫn về [Markdown mình](https://youtu.be/qdPoZN1rDSU)
+Đây là Video hướng dẫn sử dụng **Markdown** của mình
+
+<div class="videoZen">
+    <iframe width="740" height="505" src="https://www.youtube.com/embed/qdPoZN1rDSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Bạn cũng có thể đọc [bài viết này](https://viblo.asia/helps/cach-su-dung-markdown-bxjvZYnwkJZ) để có thể viết markdown một cách cơ bản 
 
 ::: tip 💡 MẸO 
 
-Sử dụng app [MarkText](https://marktext.app) để hỗ trợ viết Markdown tốt và trực quan hơn
+- Bạn cũng có thể đọc [bài viết này](https://viblo.asia/helps/cach-su-dung-markdown-bxjvZYnwkJZ) để có thể viết markdown một cách cơ bản 
+
+- Sử dụng app [MarkText](https://marktext.app) để hỗ trợ viết Markdown tốt và trực quan hơn
 
 :::
 
