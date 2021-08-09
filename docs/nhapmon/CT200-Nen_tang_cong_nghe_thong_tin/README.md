@@ -35,7 +35,7 @@ Tùy Distro bạn dùng là gì để chọn cho hợp lý, và Linux không dù
 - <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-47-43-Pop_OS-Logo-nobg.svg" width="25"> [PopOS! Turtorial](https://www.youtube.com/watch?v=3Rcxjx3H9jo&list=PLT98CRl2KxKFfumnJiR8FxBsbJepGgMoN&index=3)
 :::
 
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2.Tài liệu học tập
+## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài liệu học tập
 ### Khóa học (`Khuyết khích`)
 
 | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-18-20-23-sololearn.webp" title="" alt="sololearn.webp" width="40">SoloLearn | <img title="" src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-18-21-19-49df4968e49a4e5ba2c4cb94393104fb.png" alt="49df4968e49a4e5ba2c4cb94393104fb.png" width="40"> Codelearn                                              | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-18-22-06-fy2SPeYLij4AC8WFaGSq0uxol14F22F3BGUU_Dq-UY9WjUiDc6Tz2FDCuxsgyQ4HPQ.webp" title="" alt="fy2SPeYLij4AC8WFaGSq0uxol14F22F3BGUU_Dq-UY9WjUiDc6Tz2FDCuxsgyQ4HPQ.webp" width="35">Programing Hub |
