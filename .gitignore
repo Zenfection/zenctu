@@ -17,7 +17,7 @@ node_modules/
 
 # folder
 .vscode/
-packages/
+#packages/
 .vuepress/
 
 # MacOS Desktop Services Store
