@@ -11,7 +11,7 @@
 Đây là Video hướng dẫn sử dụng **Github** của mình : 
 
 <div class="videoZen">
-    <iframe width="740" height="416" src="https://www.youtube.com/embed/ho0ych_2mgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="740" height="417" src="https://www.youtube.com/embed/ho0ych_2mgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ::: tip 💡 MẸO 

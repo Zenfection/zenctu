@@ -24,7 +24,7 @@ features:
     details: Bạn hoàn toàn đưa góp ý của mình ở mỗi bài viết theo định dạng Markdown để xây dựng nội dung tốt hơn
 
 footerHtml: true
-footer: Copyright © 2021-<a href="https://facebook.com/zenfection">Zenfection</a>
+footer: Copyright © 2021-<a href="https://facebook.com">Zenfection</a>
 ---
 
 <cat/>
