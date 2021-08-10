@@ -10,5 +10,9 @@
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-41-35-tenor.gif" width="40"> 3. Quá trình học tập
  
+### [Lý thuyết](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md)
+
+### Thực hành
+
  <comment/> 
  
