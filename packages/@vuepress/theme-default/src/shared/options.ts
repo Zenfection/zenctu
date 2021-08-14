@@ -73,6 +73,13 @@ export interface DefaultThemeLocaleData extends LocaleData {
   logo?: null | string
 
   /**
+   * Navbar logo config for dark mode
+   *
+   * Logo to display in navbar in dark mode
+   */
+  logoDark?: null | string
+
+  /**
    * Navbar dark mode button config
    *
    * Enable dark mode switching and display a button in navbar or not
@@ -257,4 +264,9 @@ export interface DefaultThemeLocaleData extends LocaleData {
    * A11y text for dark mode toggle button
    */
   toggleDarkMode?: string
+
+  /**
+   * A11y text for sidebar toggle button
+   */
+  toggleSidebar?: string
 }
