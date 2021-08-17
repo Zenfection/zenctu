@@ -47,3 +47,6 @@ node_modules/
 *.vue
 Icon[^M]
 *.zip
+*.DS_Store
+docs/toanhoc/TN002-Vi_tich_phan_a2/._Icon
+._Icon[^M]
