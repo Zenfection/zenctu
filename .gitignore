@@ -48,6 +48,5 @@ node_modules/
 Icon[^M]
 *.zip
 *.DS_Store
-._Icon[^M]
 .*
 !/.gitignore
