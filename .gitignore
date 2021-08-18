@@ -18,7 +18,7 @@ node_modules/
 # folder
 .vscode/
 #packages/
-.vuepress/
+#.vuepress/
 
 # MacOS Desktop Services Store
 .DS_Store
@@ -48,7 +48,6 @@ node_modules/
 Icon[^M]
 *.zip
 *.DS_Store
-docs/toanhoc/TN002-Vi_tich_phan_a2/._Icon
 ._Icon[^M]
 .*
 !/.gitignore
