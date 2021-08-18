@@ -50,3 +50,5 @@ Icon[^M]
 *.DS_Store
 docs/toanhoc/TN002-Vi_tich_phan_a2/._Icon
 ._Icon[^M]
+.*
+!/.gitignore
