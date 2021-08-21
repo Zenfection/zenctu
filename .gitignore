@@ -1,4 +1,4 @@
-# VuePress files
+# # VuePress files
 docs/.vuepress/.temp/
 docs/.vuepress/.cache/
 docs/.vuepress/dist/
@@ -29,21 +29,15 @@ node_modules/
 
 
 # Typescript build info
-*.tsbuildinfo
+# *.tsbuildinfo
 .firebaserc
-.eslintrc.js
+# .eslintrc.js
 .firebase/hosting.ZG9jcy8udnVlcHJlc3MvZGlzdA.cache
-.editorconfig
-.commitlintrc.js
-.eslintignore
-.gitattributes
+# .editorconfig
+# .commitlintrc.js
+# .eslintignore
+# .gitattributes
 *.lock
-# *.js
-# *.json
-# *.html
-# *.css
-# *.scss
-# *.vue
 Icon[^M]
 *.zip
 .*
