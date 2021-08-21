@@ -1,0 +1,374 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+// responsive breakpoints
+$MQNarrow: 959px !default;
+$MQMobile: 719px !default;
+$MQMobileNarrow: 419px !default;
+
+.home .hero .action-button.primary {
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  transition: transform 150ms ease-in;
+  -webkit-transition: transform 150ms ease-in;
+  -moz-transition: transform 150ms ease-in;
+  -ms-transition: transform 150ms ease-in;
+  -o-transition: transform 150ms ease-in;
+  cursor: pointer;
+}
+
+.gt-container .gt-comment-admin .gt-comment-content {
+  /* background-color: #f6f9fe; */
+  background-color: #1b1f23;
+}
+
+
+html.dark {
+  // brand colors
+  --c-brand: #06bdf8;
+  --c-brand-light: #38a2df;
+
+  // background colors
+  --c-bg: #22272e;
+  --c-bg-light: #2b313a;
+  --c-bg-lighter: #262c34;
+
+  // text colors
+  --c-text: #adbac7;
+  --c-text-light: #96a7b7;
+  --c-text-lighter: #8b9eb0;
+  --c-text-lightest: #8094a8;
+
+  // border colors
+  --c-border: #3e4c5a;
+  --c-border-dark: #34404c;
+
+  // custom container colors
+  --c-tip: #318a62;
+  --c-warning: #ceab00;
+  --c-warning-bg: #7e755b;
+  --c-warning-title: #ceac03;
+  --c-warning-text: #362e00;
+  --c-danger: #940000;
+  --c-danger-bg: #806161;
+  --c-danger-title: #610000;
+  --c-danger-text: #3a0000;
+  --c-details-bg: #323843;
+
+  // code blocks vars
+  --code-hl-bg-color: #363b46;
+  //!Gitall
+  //*--Box gõ bình luận 
+  .gt-container .gt-header-textarea{
+  color: #d1d5da;
+  border: 1px solid rgba(54, 74, 94, 0.5);
+  background-color: rgba(32, 36, 38, 0.4);
+  }
+  .gt-container .gt-header-textarea:focus{
+    background: rgba($color: #464848, $alpha: 0.5);
+  }
+  //*-- Box preview bình luận
+  .gt-container .gt-header-preview {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color:rgba(70, 72, 72, 0.4);
+    color: #d1d5da;
+}
+  //*--Box bình luận của admin
+  .gt-container .gt-comment-admin .gt-comment-content {
+    background-color: rgba($color: #364485, $alpha: 0.4);
+  }
+  //* Chữ gõ text trong đã bình luận
+  .gt-container .gt-comment-body {
+    /* color: #333 !important; */
+    color: #d1d5da !important;
+  }
+  //* Di chuyện vào box bình luận
+  .gt-container .gt-comment-content:hover {
+    -webkit-box-shadow: 0 0.625em 3.75em 0 rgba(223,223,233,0.5);
+    box-shadow: 0 0.625em 3.75em 0 rgba(223,223,233,0.6);
+  }
+  //* Box bình luận của user
+  .gt-container .gt-comment-content {
+    background-color: rgba($color: #464848,$alpha: 0.4);  
+  }
+  .gt-container .gt-popup {
+    background: rgba(26, 35, 40, 0.8) !important;
+    border: 1px solid #787e85 !important;
+  }
+  // .gt-container .gt-btn-preview{
+  //   background-color: rgba($color: #1c232d, $alpha: 0.5) !important;
+  //   color: rgba($color: #fff, $alpha: 0.7) !important;
+  // }
+  // .gt-container .gt-btn-preview:hover{
+  //   background: rgba($color: #6190e8, $alpha: 0.6) !important;
+  // }
+  
+  .gt-container .gt-meta{
+    border-bottom: 1px solid rgba($color: #5e5b5b, $alpha: 0.5) !important;
+  }
+  
+  //! Markdown code 
+  .markdown-body .highlight pre, .markdown-body pre{
+    background: rgba($color: #161b22, $alpha: 0.8) !important;
+  }
+  .markdown-body .pl-k{
+    color: #b63c33;
+  }
+  .markdown-body .pl-v{
+    color: #d57e32;
+  }
+  .markdown-body .pl-smi{
+    color: #c9d1d9;
+  }
+  .markdown-body .pl-en{
+    color: #d2a8ff;
+  }
+  .markdown-body .pl-s{
+    color: #a5d6ff;
+  }
+  .markdown-body .pl-pds{
+    color: #956C5B;
+  }
+  .markdown-body h1 {
+    border-bottom: 1px solid #334b6c;
+  }
+  .markdown-body h2{
+    border-bottom: 1px solid #334b6c;
+  }
+  .markdown-body blockquote{
+    border-left: 0.25em solid rgba($color: #2A67A6, $alpha: 0.8);
+  }
+  .markdown-body code{
+    background-color: rgba(140, 158, 176, 0.3);
+  }
+  //custom
+  .videoZen iframe:hover{
+    box-shadow: 0 .625em 3.75em 0 rgba(223,223,233,0.3);
+  }
+}
+
+// plugin-docsearch
+html.dark .DocSearch {
+  --docsearch-logo-color: var(--c-text);
+  --docsearch-modal-shadow: inset 1px 1px 0 0 #2c2e40, 0 3px 8px 0 #000309;
+  --docsearch-key-shadow: inset 0 -2px 0 0 #282d55, inset 0 0 1px 1px #51577d,
+    0 2px 2px 0 rgba(3, 4, 9, 0.3);
+  --docsearch-key-gradient: linear-gradient(-225deg, #444950, #1c1e21);
+  --docsearch-footer-shadow: inset 0 1px 0 0 rgba(73, 76, 106, 0.5),
+    0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+//Custom
+.videoZen {
+  position: relative;
+  padding-bottom: 56.25%;
+  /*16:;
+  9*/height: 0;
+}
+.videoZen iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  //thêm
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: auto;
+  transition: all ease 0.25;
+  -webkit-transition: all ease 0.25;
+  -moz-transition: all ease 0.25;
+  -ms-transition: all ease 0.25;
+  -o-transition: all ease 0.25;
+}
+.videoZen iframe:hover{
+  box-shadow: 0 0.625em 3.75em 0 rgba(68,71,71,0.7);
+}
+
+//hiệu ứng cho logo
+.hero img{
+  animation: heart 1.2s ease-in-out 0s infinite alternate;
+  -webkit-animation: heart 1.2s ease-in-out 0s infinite alternate;
+}
+.hero img:hero{
+  animation-play-state: running;
+}
+@keyframes heart{
+  from{
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+  }
+  to{
+    transform: translate(0, 15px);
+    -webkit-transform: translate(0, 15px);
+    -moz-transform: translate(0, 15px);
+    -ms-transform: translate(0, 15px);
+    -o-transform: translate(0, 15px);
+  }
+}
+//social_media
+.body {
+  font-family: 'Roboto';
+  background-color: #e5eef3;
+  text-align: center;
+  color: #f1ce64;
+  font-size: 28px;
+}
+.a_share a {
+  color: #f1ce64;
+}
+.share {
+  position: relative;
+  width: 400px;
+  left: 50%;
+  margin-left: -200px;
+  top: 50%;
+  margin-top: -40px;
+  border-radius: 80px;
+}
+.share span {
+  width: 200px;
+  line-height: 80px;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+.share nav {
+  font-size: 0;
+}
+.share a {
+  line-height: 80px;
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+  background-color: #fff;
+  color: #fff;
+  overflow: hidden;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  margin: 0 -20px;
+  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+}
+.share a:nth-child(1) {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-left: 0;
+}
+.share a:nth-child(1):hover {
+  background-color: #61c5ec;
+}
+.share a:nth-child(2):hover {
+  background-color: #3b5998;
+}
+.share a:nth-child(3):hover {
+  background-color: #ea4335;
+}
+.share a:nth-child(4) {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-right: 0;
+}
+.share a:nth-child(4):hover {
+  background-color: #000;
+}
+.share:hover span, .share.hover span {
+  opacity: 0;
+}
+.share:hover a, .share.hover a {
+  border-radius: 50%;
+  margin: 0 10px;
+  color: #f1ce64;
+  font-size: 28px;
+}
+.share:hover a:hover, .share.hover a:hover {
+  color: #fff;
+}
+//hiệu ứng cho nút bấm
+.action-button:hover{
+  box-shadow: 0 3px 10px -5px rgba(19,11,14,0.7);
+  transform: translate(0px, -3px);
+  -webkit-transform: translate(0px, -3px);
+  -moz-transform: translate(0px, -3px);
+  -ms-transform: translate(0px, -3px);
+  -o-transform: translate(0px, -3px);
+  color: rgba($color: #fff, $alpha: 1.0);
+}
+
+.gt-container .gt-btn{
+  transition: transform 150ms ease-in;
+  -webkit-transition: transform 150ms ease-in;
+  -moz-transition: transform 150ms ease-in;
+  -ms-transition: transform 150ms ease-in;
+  -o-transition: transform 150ms ease-in;
+  cursor: pointer;
+}
+.gt-container .gt-btn:hover{
+  box-shadow: 0 3px 10px -5px rgba(19,11,14,0.7);
+  transform: translate(0px, -3px);
+  -webkit-transform: translate(0px, -3px);
+  -moz-transform: translate(0px, -3px);
+  -ms-transform: translate(0px, -3px);
+  -o-transform: translate(0px, -3px);
+}
+//custom next & prev
+// .next{
+//   padding: 0.8rem;
+//   //margin: 0.6rem;
+//   cursor: pointer;
+//   background: rgba($color: #373752, $alpha: 0.8);
+//   color: #9b9baa;
+//   border-radius: 10px;
+//   -webkit-border-radius: 10px;
+//   -moz-border-radius: 10px;
+//   -ms-border-radius: 10px;
+//   -o-border-radius: 10px;
+//   transition: transform 150ms ease-in;
+//   -webkit-transition: transform 150ms ease-in;
+//   -moz-transition: transform 150ms ease-in;
+//   -ms-transition: transform 150ms ease-in;
+//   -o-transition: transform 150ms ease-in;
+// }
+// .prev{
+//   padding: 0.8rem;
+//   //margin: 0.6rem;
+//   cursor: pointer;
+//   background: rgba($color: #373752, $alpha: 0.8);
+//   color: #9b9baa;
+//   border-radius: 10px;
+//   -webkit-border-radius: 10px;
+//   -moz-border-radius: 10px;
+//   -ms-border-radius: 10px;
+//   -o-border-radius: 10px;
+//   transition: transform 150ms ease-in;
+//   -webkit-transition: transform 150ms ease-in;
+//   -moz-transition: transform 150ms ease-in;
+//   -ms-transition: transform 150ms ease-in;
+//   -o-transition: transform 150ms ease-in;
+// }
+// .next:hover,.prev:hover{
+//   box-shadow: 0 3px 10px -5px rgba(19,11,14,0.7);
+//   transform: translate(0px, -3px);
+//   -webkit-transform: translate(0px, -3px);
+//   -moz-transform: translate(0px, -3px);
+//   -ms-transform: translate(0px, -3px);
+//   -o-transform: translate(0px, -3px);
+// }
