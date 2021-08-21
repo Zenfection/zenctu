@@ -1,0 +1,42 @@
+{
+  "name": "@vuepress/plugin-pwa",
+  "version": "2.0.0-beta.24",
+  "description": "VuePress plugin - progressive web application",
+  "keywords": [
+    "vuepress-plugin",
+    "vuepress",
+    "plugin",
+    "pwa"
+  ],
+  "homepage": "https://github.com/vuepress",
+  "bugs": {
+    "url": "https://github.com/vuepress/vuepress-next/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuepress/vuepress-next.git"
+  },
+  "license": "MIT",
+  "author": "meteorlxy",
+  "main": "lib/node/index.js",
+  "types": "lib/node/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "clean": "rimraf lib *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@vuepress/client": "2.0.0-beta.24",
+    "@vuepress/core": "2.0.0-beta.24",
+    "@vuepress/utils": "2.0.0-beta.24",
+    "mitt": "^3.0.0",
+    "register-service-worker": "^1.7.2",
+    "vue": "^3.2.3",
+    "workbox-build": "^6.2.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

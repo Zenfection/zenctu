@@ -1,0 +1,43 @@
+{
+  "name": "@vuepress/cli",
+  "version": "2.0.0-beta.24",
+  "description": "CLI package of VuePress",
+  "keywords": [
+    "vuepress",
+    "cli"
+  ],
+  "homepage": "https://github.com/vuepress",
+  "bugs": {
+    "url": "https://github.com/vuepress/vuepress-next/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuepress/vuepress-next.git"
+  },
+  "license": "MIT",
+  "author": "Evan You",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "vuepress": "bin/vuepress.js"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "clean": "rimraf lib *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@vuepress/core": "2.0.0-beta.24",
+    "@vuepress/utils": "2.0.0-beta.24",
+    "cac": "^6.7.3",
+    "chokidar": "^3.5.2",
+    "envinfo": "^7.8.1",
+    "esbuild": "^0.12.20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
