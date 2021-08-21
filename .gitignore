@@ -17,11 +17,10 @@ node_modules/
 
 # folder
 .vscode/
-#packages/
-#.vuepress/
 
 # MacOS Desktop Services Store
 .DS_Store
+*.DS_Store
 
 # Log files
 *.log
@@ -39,14 +38,13 @@ node_modules/
 .eslintignore
 .gitattributes
 *.lock
-*.js
-*.json
-*.html
-*.css
-*.scss
-*.vue
+# *.js
+# *.json
+# *.html
+# *.css
+# *.scss
+# *.vue
 Icon[^M]
 *.zip
-*.DS_Store
 .*
 !/.gitignore
