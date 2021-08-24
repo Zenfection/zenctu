@@ -41,3 +41,5 @@ node_modules/
 Icon[^M]
 *.zip
 !/.gitignore
+.env
+config.json
