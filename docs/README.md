@@ -6,8 +6,8 @@ actions:
   - text: Bắt đầu nào →
     link: /guide/intro.md
     type: primary
-  # - text: Giới thiệu
-  #   link: /guide/
+  # - text: Hướng dẫn
+  #   link: /guide/tutorial.md
   #   type: secondary
 features:
   - title: 🎁 Hỗ trợ các học phần IT
@@ -26,3 +26,5 @@ features:
 footerHtml: true
 footer: Copyright © 2021-<a href="https://facebook.com">Zenfection</a>
 ---
+
+<ImageShadow src="https://github.com/image-component/gallery/blob/main/girl/4.jpg?raw=true"/>

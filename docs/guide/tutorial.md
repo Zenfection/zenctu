@@ -18,7 +18,7 @@
 
 Hãy vào [repo](https://github.com/zenfection/zenctu) của mình
 
-<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/06-16-17-30-Screen%20Shot%202021-08-06%20at%2016.14.43.png">
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/06-16-17-30-Screen%20Shot%202021-08-06%20at%2016.14.43.png" class="imageZen">
 
 - Nhấn vào **`watch`** để theo dõi web
 
@@ -47,13 +47,13 @@ Bạn cũng có thể đọc [bài viết này](https://viblo.asia/helps/cach-su
 
 Bạn hãy đăng nhập bằng **Github** và có thể bình luận ở cuối bài viết như sau : 
 
-<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/06-20-39-44-Screen%20Shot%202021-08-06%20at%2020.39.34.png">
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/06-20-39-44-Screen%20Shot%202021-08-06%20at%2020.39.34.png" class="imageZen">
 
 ::: tip 💡 MẸO
 
 Để bật thông báo khi có ai đó bình luận trong bài viết, làm như sau : 
 
-<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/06-20-43-06-2021-08-06%2020.42.37.gif">
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/06-20-43-06-2021-08-06%2020.42.37.gif" class="imageZen">
 
 ⇨ Hãy chắc rằng bạn đã bật `issue` nhé (*bật thêm cũng được*)
 :::

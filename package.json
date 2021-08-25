@@ -58,9 +58,11 @@
     "@algolia/client-search": "^4.10.4",
     "@vue/component-compiler-utils": "^3.2.2",
     "@vuepress/shared-utils": "^1.8.2",
+    "@vueuse/motion": "^1.6.0",
     "autoprefixer": "^10.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "vue-animejs": "^2.1.1",
     "webpack": "^5.51.1"
   }
 }
