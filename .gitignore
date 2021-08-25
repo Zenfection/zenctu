@@ -32,13 +32,11 @@ node_modules/
 .firebaserc
 .firebase/hosting.ZG9jcy8udnVlcHJlc3MvZGlzdA.cache
 firebase.json
-# .editorconfig
-# .commitlintrc.js
-# .eslintignore
-# .gitattributes
+.gitattributes
 *.lock
 Icon[^M]
 *.zip
 !/.gitignore
 .env
 config.json
+
