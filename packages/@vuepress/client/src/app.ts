@@ -1,4 +1,10 @@
-import { createApp, createSSRApp, computed, h } from 'vue'
+import { clientAppEnhances } from '@internal/clientAppEnhances'
+import { clientAppRootComponents } from '@internal/clientAppRootComponents'
+import { clientAppSetups } from '@internal/clientAppSetups'
+import { pagesComponents } from '@internal/pagesComponents'
+import { pagesRoutes } from '@internal/pagesRoutes'
+import { removeEndingSlash } from '@vuepress/shared'
+import { createApp, createSSRApp, h } from 'vue'
 import type { App } from 'vue'
 import {
   createRouter,
@@ -8,44 +14,26 @@ import {
   START_LOCATION,
 } from 'vue-router'
 import type { Router } from 'vue-router'
-import { removeEndingSlash } from '@vuepress/shared'
-import { clientAppEnhances } from '@internal/clientAppEnhances'
-import { clientAppRootComponents } from '@internal/clientAppRootComponents'
-import { clientAppSetups } from '@internal/clientAppSetups'
-import { pagesComponents } from '@internal/pagesComponents'
-import { pagesRoutes } from '@internal/pagesRoutes'
 import {
   siteData,
   pageData,
   resolvePageData,
-  pageFrontmatterSymbol,
-  resolvePageFrontmatter,
-  pageHeadSymbol,
-  resolvePageHead,
-  pageHeadTitleSymbol,
-  resolvePageHeadTitle,
-  pageLangSymbol,
-  resolvePageLang,
-  routeLocaleSymbol,
-  resolveRouteLocale,
-  siteLocaleDataSymbol,
-  resolveSiteLocaleData,
-  useUpdateHead,
-} from './injections'
-import { ClientOnly, Content, OutboundLink } from './components'
-import { withBase } from './utils'
+  setupUpdateHead,
+} from './composables'
+import { provideGlobalComputed } from './provideGlobalComputed'
+import { registerGlobalComponents } from './registerGlobalComponents'
 
 /**
  * - use `createApp` in dev mode
  * - use `createSSRApp` in build mode
  */
-const appCreator = __DEV__ ? createApp : createSSRApp
+const appCreator = __VUEPRESS_DEV__ ? createApp : createSSRApp
 
 /**
  * - use `createWebHistory` in dev mode and build mode client bundle
  * - use `createMemoryHistory` in build mode server bundle
  */
-const historyCreator = __SSR__ ? createMemoryHistory : createWebHistory
+const historyCreator = __VUEPRESS_SSR__ ? createMemoryHistory : createWebHistory
 
 export type CreateVueAppFunction = () => Promise<{
   app: App
@@ -59,7 +47,7 @@ export const createVueApp: CreateVueAppFunction = async () => {
 
     setup() {
       // auto update head
-      useUpdateHead()
+      setupUpdateHead()
 
       // invoke all clientAppSetups
       for (const clientAppSetup of clientAppSetups) {
@@ -95,52 +83,9 @@ export const createVueApp: CreateVueAppFunction = async () => {
     }
   })
 
-  // create global computed
-  const routeLocale = computed(() =>
-    resolveRouteLocale(siteData.value.locales, router.currentRoute.value.path)
-  )
-  const siteLocaleData = computed(() =>
-    resolveSiteLocaleData(siteData.value, routeLocale.value)
-  )
-  const pageFrontmatter = computed(() => resolvePageFrontmatter(pageData.value))
-  const pageHeadTitle = computed(() =>
-    resolvePageHeadTitle(pageData.value, siteLocaleData.value)
-  )
-  const pageHead = computed(() =>
-    resolvePageHead(
-      pageHeadTitle.value,
-      pageFrontmatter.value,
-      siteLocaleData.value
-    )
-  )
-  const pageLang = computed(() => resolvePageLang(pageData.value))
-
-  // provide global computed
-  app.provide(routeLocaleSymbol, routeLocale)
-  app.provide(siteLocaleDataSymbol, siteLocaleData)
-  app.provide(pageFrontmatterSymbol, pageFrontmatter)
-  app.provide(pageHeadTitleSymbol, pageHeadTitle)
-  app.provide(pageHeadSymbol, pageHead)
-  app.provide(pageLangSymbol, pageLang)
-
-  // provide global data & helpers
-  Object.defineProperties(app.config.globalProperties, {
-    $routeLocale: { get: () => routeLocale.value },
-    $site: { get: () => siteData.value },
-    $siteLocale: { get: () => siteLocaleData.value },
-    $page: { get: () => pageData.value },
-    $frontmatter: { get: () => pageFrontmatter.value },
-    $lang: { get: () => pageLang.value },
-    $headTitle: { get: () => pageHeadTitle.value },
-    $withBase: { get: () => withBase },
-  })
-
-  // register built-in components
-  /* eslint-disable vue/match-component-file-name */
-  app.component('ClientOnly', ClientOnly)
-  app.component('Content', Content)
-  app.component('OutboundLink', OutboundLink)
-  /* eslint-enable vue/match-component-file-name */
+  // global computed and global components
+  provideGlobalComputed(app, router)
+  registerGlobalComponents(app)
 
   // invoke all clientAppEnhances
   for (const clientAppEnhance of clientAppEnhances) {
@@ -161,7 +106,7 @@ export const createVueApp: CreateVueAppFunction = async () => {
 }
 
 // mount app in client bundle
-if (!__SSR__) {
+if (!__VUEPRESS_SSR__) {
   createVueApp().then(({ app, router }) => {
     router.isReady().then(() => {
       app.mount('#app')

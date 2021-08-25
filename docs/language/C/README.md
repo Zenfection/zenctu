@@ -1,4 +1,0 @@
-# Ngôn ngữ C
- 
- <comment/> 
- 

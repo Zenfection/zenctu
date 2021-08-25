@@ -26,5 +26,3 @@ features:
 footerHtml: true
 footer: Copyright © 2021-<a href="https://facebook.com">Zenfection</a>
 ---
-
-<ImageShadow src="https://github.com/image-component/gallery/blob/main/girl/4.jpg?raw=true"/>
