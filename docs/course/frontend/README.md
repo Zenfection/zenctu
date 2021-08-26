@@ -2,6 +2,24 @@
 
 ## 1.Web Basic
 
+<main class="zencourse">
+  <div class="zencard" style='background-image: url(/images/docs/course/frontend/1.png);'>
+  <div class="content">
+    <h2 class="title">HTML5 cho người mới bắt đầu</h2>
+    <p class="copy">Dành cho người mới bắt đầu muốn tìm hiểu về HTML5</p>
+    <a href="https://drive.google.com/drive/folders/1sxD_QQjc0eeJW9boacVnFPDtjeE5SJRM?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+      </div>
+    </div>
+    <div class="zencard" style="background-image: url(/images/docs/course/frontend/2.png);">
+      <div class="content">
+        <h2 class="title">Javascript căn bản</h2>
+        <p class="copy">Khi đã học căn bản về HTML5 và CCS3</p>
+        <button class="zenbtn">Xem Khóa Học</button>
+      </div>
+    </div>
+</main>
+
+
 ### 1. [HTML5 cho người mới bắt đầu](https://drive.google.com/drive/folders/1sxD_QQjc0eeJW9boacVnFPDtjeE5SJRM?usp=sharing)
 
 ### 2. [Javascript cơ bản](https://drive.google.com/drive/folders/1z_Y3ulS12LvYnnRbQTtkNu3c7-AU9FJy?usp=sharing)
