@@ -69,30 +69,35 @@ pageClass: custom-page-class
 ## 2.Kỹ năng Web
 
 <main class="zencourse">
-  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/1/4.png);'>
+  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/2/1.png);'>
     <div class="content">
       <h2 class="zentitle">7 công thức làm Web nhanh</h2>
-      <p class="copy">Năm tất cả kiến thức về Web, PHP, mySQL</p>
+      <p class="copy">Làm chủ các kỹ năng và mẹ hay ho về thiết kế web</p>
       <a href="https://drive.google.com/drive/folders/1HtlXNVFqtFC9LNgAYG60-gh4x9YE3MqO?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
-  <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/5.png);">
+  <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/2/2.png);">
       <div class="content">
         <h2 class="zentitle">Chatbox trên Messenger</h2>
         <p class="copy">Học kỹ càng về các khái niệm định nghĩa của Javascript</p>
         <a href="https://drive.google.com/drive/folders/1yIQ8eg3uEly-XYZ67vZlCJn2gN-9xpar?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
-  <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/6.png);">
+  <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/2/3.png);">
       <div class="content">
         <h2 class="zentitle">Git&Github cho lập trình Web</h2>
         <p class="copy">Tổng hộp đầy đủ lộ trình Web trong 25 tuần</p>
         <a href="https://drive.google.com/drive/folders/1Qm6j5MJ1XcZ9fTnUzAW_qRooDganwpRh?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
+  <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/2/4.png);">
+      <div class="content">
+        <h2 class="zentitle">Quản lí Source bằng Git</h2>
+        <p class="copy">Tổng hộp đầy đủ lộ trình Web trong 25 tuần</p>
+        <a href="https://drive.google.com/drive/folders/1hzWE3twA3UCcV4fEG2R5cBLhxLzR7VwX?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+      </div>
+    </div>
 </main>
-
-4. [Quản Lý Source Code Trong Dự Án Với Git](https://drive.google.com/drive/folders/1hzWE3twA3UCcV4fEG2R5cBLhxLzR7VwX?usp=sharing)
 
 ## 3.Web nâng cao
 
