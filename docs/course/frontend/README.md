@@ -12,18 +12,18 @@ pageClass: custom-page-class
       <a href="https://drive.google.com/drive/folders/1sxD_QQjc0eeJW9boacVnFPDtjeE5SJRM?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
-  <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/2.png);">
+    <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/8.png);">
       <div class="content">
-        <h2 class="zentitle">Javascript<br>căn bản</h2>
-        <p class="copy">Khi đã học căn bản về HTML5 và CCS3</p>
-        <a href="https://drive.google.com/drive/folders/1z_Y3ulS12LvYnnRbQTtkNu3c7-AU9FJy?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+        <h2 class="zentitle">CSS3 cơ bản tới nâng cao</h2>
+        <p class="copy">Các khái niệm và định nghĩa về CSS3 hỗ trợ HTML5</p>
+        <a href="https://drive.google.com/drive/folders/15N9gdGxX6PH3h0MrgirsoPBEu5dE9VkV?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
   <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/3.png);">
       <div class="content">
-        <h2 class="zentitle">Javascript<br>nâng cao</h2>
-        <p class="copy">Luyện thêm Javascript nâng cao khi đã học xong cơ bản</p>
-        <a href="https://drive.google.com/drive/folders/1umRl9cE1eemU9OieDkcMbeBlQc46i9LB?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+        <h2 class="zentitle">Tất tận tật về Javascript</h2>
+        <p class="copy">Học kỹ càng về các khái niệm định nghĩa của Javascript</p>
+        <a href="https://drive.google.com/drive/folders/1X1dR27Yj2aiVmYhZhGSLOlGPMQ8XN3CS?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
   <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/1/4.png);'>
@@ -36,34 +36,13 @@ pageClass: custom-page-class
 </main>
 
 <main class="zencourse">
-  <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/5.png);">
-      <div class="content">
-        <h2 class="zentitle">Tất tận tật về Javascript</h2>
-        <p class="copy">Học kỹ càng về các khái niệm định nghĩa của Javascript</p>
-        <a href="https://drive.google.com/drive/folders/1X1dR27Yj2aiVmYhZhGSLOlGPMQ8XN3CS?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
-      </div>
-    </div>
-  <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/6.png);">
-      <div class="content">
-        <h2 class="zentitle">Lập trình Web trong 25 tuần</h2>
-        <p class="copy">Tổng hộp đầy đủ lộ trình Web trong 25 tuần</p>
-        <a href="https://drive.google.com/drive/folders/1Rik4jDLutg5XHYtkmRQ8o8co1drCVLv0?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
-      </div>
-    </div>
   <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/1/7.png);'>
     <div class="content">
-      <h2 class="zentitle">Xây dựng Website Responsive</h2>
+      <h2 class="zentitle">Làm Website Responsive</h2>
       <p class="copy">Xây dựng HTML5 và CSS3 phù hợp cho từng màn hình thiết bị</p>
       <a href="https://drive.google.com/drive/folders/1clELhsh4DYD-byiAHEJSzBkvW8d54P7w?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
-  <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/8.png);">
-      <div class="content">
-        <h2 class="zentitle">CSS3 cơ bản tới nâng cao</h2>
-        <p class="copy">Các khái niệm và định nghĩa về CSS3 hỗ trợ HTML5</p>
-        <a href="https://drive.google.com/drive/folders/15N9gdGxX6PH3h0MrgirsoPBEu5dE9VkV?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
-      </div>
-    </div>
 </main>
 
 ## 2.Kỹ năng Web
@@ -79,21 +58,21 @@ pageClass: custom-page-class
   <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/2/2.png);">
       <div class="content">
         <h2 class="zentitle">Chatbox trên Messenger</h2>
-        <p class="copy">Học kỹ càng về các khái niệm định nghĩa của Javascript</p>
+        <p class="copy">Sử dụng Chatfuel để làm ChatBox cho Messenger</p>
         <a href="https://drive.google.com/drive/folders/1yIQ8eg3uEly-XYZ67vZlCJn2gN-9xpar?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
   <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/2/3.png);">
       <div class="content">
         <h2 class="zentitle">Git&Github cho lập trình Web</h2>
-        <p class="copy">Tổng hộp đầy đủ lộ trình Web trong 25 tuần</p>
+        <p class="copy">Quản lý các dự án bằng Git và Github</p>
         <a href="https://drive.google.com/drive/folders/1Qm6j5MJ1XcZ9fTnUzAW_qRooDganwpRh?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
   <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/2/4.png);">
       <div class="content">
         <h2 class="zentitle">Quản lí Source bằng Git</h2>
-        <p class="copy">Tổng hộp đầy đủ lộ trình Web trong 25 tuần</p>
+        <p class="copy">Quản lí các dự án bằng Git và Github </p>
         <a href="https://drive.google.com/drive/folders/1hzWE3twA3UCcV4fEG2R5cBLhxLzR7VwX?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
