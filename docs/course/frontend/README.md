@@ -1,3 +1,6 @@
+---
+pageClass: custom-page-class
+---
 # Front-end
 ## 1.Web cơ bản
 
@@ -23,10 +26,6 @@
         <a href="https://drive.google.com/drive/folders/1umRl9cE1eemU9OieDkcMbeBlQc46i9LB?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
-
-</main>
-
-<main class="zencourse">
   <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/1/4.png);'>
     <div class="content">
       <h2 class="zentitle">Lập trình Web trong 6 tuần</h2>
@@ -34,6 +33,9 @@
       <a href="https://drive.google.com/drive/folders/1J8bghjJP1TRWRgD9xgiIgm8kAVm5RdK-?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
+</main>
+
+<main class="zencourse">
   <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/5.png);">
       <div class="content">
         <h2 class="zentitle">Tất tận tật về Javascript</h2>
@@ -48,17 +50,14 @@
         <a href="https://drive.google.com/drive/folders/1Rik4jDLutg5XHYtkmRQ8o8co1drCVLv0?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
-</main>
-
-<main class="zencourse">
-  <div class="zencard animate__animated animate__slideInLeft" style='background-image: url(/images/docs/course/frontend/1/7.png);'>
+  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/1/7.png);'>
     <div class="content">
       <h2 class="zentitle">Xây dựng Website Responsive</h2>
       <p class="copy">Xây dựng HTML5 và CSS3 phù hợp cho từng màn hình thiết bị</p>
       <a href="https://drive.google.com/drive/folders/1clELhsh4DYD-byiAHEJSzBkvW8d54P7w?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
-  <div class="zencard animate__animated animate__slideInLeft" style="background-image: url(/images/docs/course/frontend/1/8.png);">
+  <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/8.png);">
       <div class="content">
         <h2 class="zentitle">CSS3 cơ bản tới nâng cao</h2>
         <p class="copy">Các khái niệm và định nghĩa về CSS3 hỗ trợ HTML5</p>
