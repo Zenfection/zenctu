@@ -43,7 +43,7 @@
     "eslint-config-vuepress": "^3.3.0",
     "eslint-config-vuepress-typescript": "^2.3.0",
     "husky": "^7.0.2",
-    "jest": "^27.0.6",
+    "jest": "^27.1.0",
     "jest-serializer-vue": "^2.0.2",
     "lerna": "^4.0.0",
     "lint-staged": "^11.1.2",
@@ -52,15 +52,16 @@
     "rimraf": "^3.0.2",
     "sort-package-json": "^1.50.0",
     "ts-jest": "^27.0.5",
-    "typescript": "^4.3.5"
+    "typescript": "^4.4.2"
   },
   "dependencies": {
-    "@algolia/client-search": "^4.10.4",
+    "@algolia/client-search": "^4.10.5",
     "@vue/component-compiler-utils": "^3.2.2",
     "@vuepress/shared-utils": "^1.8.2",
-    "autoprefixer": "^10.3.2",
+    "autoprefixer": "^10.3.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "typerscript": "^0.2.3",
     "webpack": "^5.51.1"
   }
 }
