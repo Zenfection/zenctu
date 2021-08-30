@@ -1,6 +1,6 @@
-const fs = require("fs");
-const findMarkdown = require("./findMarkdown");
-const rootDir = "./docs";
+const fs              = require("fs");
+const findMarkdown    = require("./findMarkdown");
+const rootDir         = "./docs";
 
 findMarkdown(rootDir, writeComponents);
 
