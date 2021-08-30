@@ -1,0 +1,51 @@
+.pwa-popup{
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.pwa-popup button {
+	appearance: none;
+	background: radial-gradient(100% 100% at 100% 0%, #5adaff 0%, #5468ff 100%);
+	border-width: 0px;
+	box-shadow: rgba(45, 35, 66, 0.4) 0px 2px 4px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, rgba(58, 65, 111, 0.5) 0px -3px 0px inset;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
+	transition: box-shadow 0.15s ease 0s, transform 0.15s ease 0s;
+	white-space: nowrap;
+	will-change: box-shadow, transform;
+	-webkit-transition: box-shadow 0.15s ease 0s, transform 0.15s ease 0s;
+	-moz-transition: box-shadow 0.15s ease 0s, transform 0.15s ease 0s;
+	-ms-transition: box-shadow 0.15s ease 0s, transform 0.15s ease 0s;
+	-o-transition: box-shadow 0.15s ease 0s, transform 0.15s ease 0s;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.pwa-popup button:focus {
+	box-shadow: #3c4fe0 0px 0px 0px 1.5px inset, rgba(45, 35, 66, 0.4) 0px 2px 4px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, #3c4fe0 0px -3px 0px inset;
+	text-decoration: none;
+}
+.pwa-popup button:hover {
+	box-shadow: rgba(45, 35, 66, 0.4) 0px 4px 8px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, #3c4fe0 0px -3px 0px inset;
+	text-decoration: none;
+	transform: translateY(-2px);
+}
+.pwa-popup button:active {
+	box-shadow: #3c4fe0 0px 3px 7px inset;
+	transform: translateY(2px);
+}
+.pwa-popup button::before {
+	background: rgba(0, 0, 0, 0) radial-gradient(100% 100% at 100% 0%, #5adaff 0%, #5468ff 100%) repeat scroll 0% 0% / auto padding-box border-box;
+	content: "";
+	position: absolute;
+	transform: matrix(1, 0, 0, 1, 0, -0.224934);
+	transition: height 0.2s ease 0s;
+	will-change: width, height, transform;
+	z-index: 1;
+}

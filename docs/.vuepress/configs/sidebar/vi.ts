@@ -1,4 +1,5 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
+import { Children } from 'react'
 
 export const vi: SidebarConfig = {
 
@@ -186,8 +187,28 @@ export const vi: SidebarConfig = {
         '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/4.md',
         '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/5.md',
         '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/6.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/7.md',
+      ],
+    },
+    {
+      text: 'Chương 2.Đồ thị dạng cây',
+      children: [
+
+      ]
+    },
+    {
+      text: 'Chương 3.Bài toán đường đi',
+      children: [
+
+      ]
+    },
+    {
+      text: 'Chương 4.Đồ thị phẳng và số màu',
+      children: [
+
       ]
     }
+
   ],
   //* CT176-Lập trình hướng đối tượng
   '/cosonganh/CT176-Lap_trinh_huong_doi_tuong/':[
@@ -204,12 +225,12 @@ export const vi: SidebarConfig = {
     }
   ],
   //* CT178-Nguyên lý hệ điều hành
-  '/cosonganh/CT178-Nguyen_ly_he_dieu_hanh/':[
-    {
-      text: 'CT178-Nguyên Lý Hệ Điều Hành',
-      link: '/cosonganh/CT178-Nguyen_ly_he_dieu_hanh/'
-    }
-  ],
+  // '/cosonganh/CT178-Nguyen_ly_he_dieu_hanh/':[
+  //   {
+  //     text: 'CT178-Nguyên Lý Hệ Điều Hành',
+  //     link: '/cosonganh/CT178-Nguyen_ly_he_dieu_hanh/'
+  //   }
+  // ],
   //* CT180-Cơ sở dữ liệu
   '/cosonganh/CT180-Co_so_du_lieu/':[
     {
