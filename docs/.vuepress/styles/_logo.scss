@@ -1,0 +1,28 @@
+//* Aniamtion for Main Logo
+
+.hero img {
+  animation: heart 1.2s ease-in-out 0s infinite alternate;
+  -webkit-animation: heart 1.2s ease-in-out 0s infinite alternate;
+}
+
+.hero img:hero {
+  animation-play-state: running;
+}
+
+@keyframes heart {
+  from {
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(0, 15px);
+    -webkit-transform: translate(0, 15px);
+    -moz-transform: translate(0, 15px);
+    -ms-transform: translate(0, 15px);
+    -o-transform: translate(0, 15px);
+  }
+}
