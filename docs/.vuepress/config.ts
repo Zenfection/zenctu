@@ -39,7 +39,6 @@ export default defineUserConfig<DefaultThemeOptions>({
   themeConfig: {
     logo: '/images/hero.png',
     lang: 'vi',
-    // darkMode: true,
     docsRepo: 'zenfection/zenctu',
     editLink: false,
     docsDir: 'docs',
