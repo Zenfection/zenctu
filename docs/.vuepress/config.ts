@@ -39,7 +39,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   themeConfig: {
     logo: '/images/hero.png',
     lang: 'vi',
-    darkMode: true,
+    // darkMode: true,
     docsRepo: 'zenfection/zenctu',
     editLink: false,
     docsDir: 'docs',
@@ -69,4 +69,5 @@ export default defineUserConfig<DefaultThemeOptions>({
     ['@vuepress/plugin-register-components',{componentsDir: path.resolve(__dirname, './components'),},],
   ],
   clientAppRootComponentFiles: path.resolve(__dirname, './components/Cat.vue'),
+  //clientAppRootComponentFiles: path.resolve(__dirname, './components/Comment.vue'),
 })

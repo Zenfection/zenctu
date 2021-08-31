@@ -108,9 +108,7 @@ Học và thực hành về bộ 3 Office : `Word`, `Excel`, `PowerPoint` của 
 | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-36-29-word.png" title="" alt="word.png" width="35">Microsoft Word | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-36-38-excel.png" title="" alt="excel.png" width="35">Microsoft Excel | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-36-33-powerpoint.png" title="" alt="powerpoint.png" width="35">Microsoft PowerPoint |
 | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Microsoft căn bản và hiệu quả](https://drive.google.com/drive/folders/1Y995DiwpRNTJHAOmydEugbBFA6XFyQWS)                                           | [Luyện Excel cơ bản tới nâng cao](https://drive.google.com/drive/folders/1qkFOucYL0SlEHy1wvtHP_dfGSaUjEunj)                                            | [PowerPoint và những điều bạn chưa biết](https://drive.google.com/drive/folders/1Te2U7l8lxmsjRFcF21v1_0eFPgbZ7B1a)                                                    |
-:::
-
- <comment/> 
+::: 
  
  
  <comment/> 

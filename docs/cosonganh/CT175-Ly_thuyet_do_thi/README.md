@@ -17,6 +17,7 @@
 ### <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-22-18-48-tenor.gif" width="40"> [Lý thuyết](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md)
 
 ### Thực hành
-
+ 
+ 
  <comment/> 
  
