@@ -14,7 +14,7 @@
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-22-18-48-tenor.gif" width="40"> [Lý Thuyết](/cosonganh/CT112-Mang_may_tinh/Tailieu/Chapter1/1.md)
 
-## Thực Hành
+## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-22-18-48-tenor.gif" width="40"> [Thực Hành](/cosonganh/CT112-Mang_may_tinh/Thuchanh/1.md)
  
  <comment/> 
  

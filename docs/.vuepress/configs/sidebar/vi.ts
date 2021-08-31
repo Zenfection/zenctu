@@ -162,6 +162,13 @@ export const vi: SidebarConfig = {
       ],
     },
   ],
+  '/cosonganh/CT112-Mang_may_tinh/Thuchanh/':[
+    '/cosonganh/CT112-Mang_may_tinh/Thuchanh/1.md',
+    '/cosonganh/CT112-Mang_may_tinh/Thuchanh/2.md',
+    '/cosonganh/CT112-Mang_may_tinh/Thuchanh/3.md',
+    '/cosonganh/CT112-Mang_may_tinh/Thuchanh/4.md',
+    '/cosonganh/CT112-Mang_may_tinh/Thuchanh/5.md',
+  ],
 
   //* CT174-Phân tích thiết kế thuật toán
   '/cosonganh/CT174-Phan_tich_va_thiet_ke_thuat_toan/':[
@@ -208,7 +215,6 @@ export const vi: SidebarConfig = {
 
       ]
     }
-
   ],
   //* CT176-Lập trình hướng đối tượng
   '/cosonganh/CT176-Lap_trinh_huong_doi_tuong/':[
