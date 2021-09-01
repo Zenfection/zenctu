@@ -41,7 +41,14 @@ export const vi: SidebarConfig = {
     {
       text: 'CT179-Quản Trị Hệ Thống',
       link: '/nhapmon/CT179-Quan_tri_he_thong/'
-    }
+    },
+  ],
+  '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/':[
+    '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/1.md',
+    '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/2.md',
+    '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/3.md',
+    '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/4.md',
+    '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/5.md',
   ],
   //*CT188 Nhập môn lập trình web
   '/nhapmon/CT188-Nhap_mon_lap_trinh_web/':[
