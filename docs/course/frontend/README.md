@@ -1,5 +1,5 @@
 ---
-pageClass: custom-page-class
+pageClass: course-page-class
 ---
 # Front-end
 ## 1.Web cơ bản

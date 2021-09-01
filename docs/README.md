@@ -26,7 +26,3 @@ features:
 footerHtml: true
 footer: Copyright © 2021-<a href="https://facebook.com">Zenfection</a>
 ---
-
- 
- <comment/> 
- 

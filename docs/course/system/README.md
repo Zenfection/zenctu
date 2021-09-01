@@ -1,5 +1,5 @@
 ---
-pageClass: custom-page-class
+pageClass: course-page-class
 ---
 # System
 

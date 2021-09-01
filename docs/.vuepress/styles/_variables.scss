@@ -1,0 +1,85 @@
+$darkmode-color: #06bdf8;
+$lightmode-color: #3EAF7C;
+
+$lightbutton-color: #3EAF7C;
+$darkbutton-color: #3c4fe0;
+
+@mixin dark_button{
+  @include button;
+  &{
+    background: radial-gradient(100% 100% at 100% 0%, #a8d4e1 0%, #6d8aeb 100%);
+  }
+  &:focus{
+    box-shadow: $darkbutton-color 0px 0px 0px 1.5px inset, rgba(136, 123, 162, 0.4) 0px 2px 4px, rgba(144, 133, 168, 0.3) 0px 7px 13px -3px, $darkbutton-color 0px -3px 0px inset;
+  }
+  &:hover{
+    box-shadow: rgba(144, 133, 168, 0.4) 0px 4px 8px, rgba(144, 133, 168, 0.3) 0px 7px 13px -3px, $darkbutton-color 0px -3px 0px inset;
+  }
+  &:active{
+    box-shadow: $darkbutton-color 0px 3px 7px inset;
+  }
+  &::before {
+	  background: rgba(160, 160, 160, 0) radial-gradient(100% 100% at 100% 0%, #5adaff 0%, #5468ff 100%) repeat scroll 0% 0% / auto padding-box border-box;
+  }
+}
+@mixin button {
+  & {
+	--shinecolor: rgba(255, 255, 255, 0.2);
+	--size: 250px;
+	--x: 271px;
+	--y: 40.6px;
+	align-items: center;
+	appearance: none;
+  background: radial-gradient(100% 100% at 100% 0%, #85dc8a 0%, #22a522 100%);
+	border-width: 0px;
+	bottom: 0px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+	text-shadow: rgba(0, 0, 0, 0.4) 0px 1px 0px;
+	transition: box-shadow 0.15s ease,transform 0.15s ease;
+	-webkit-transition: box-shadow 0.15s ease,transform 0.15s ease;
+	-moz-transition: box-shadow 0.15s ease,transform 0.15s ease;
+	-ms-transition: box-shadow 0.15s ease,transform 0.15s ease;
+	-o-transition: box-shadow 0.15s ease,transform 0.15s ease;
+	will-change: box-shadow, transform;
+  box-shadow: rgba(45, 35, 66, 0.4) 0px 2px 4px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, rgba(58, 65, 111, 0.5) 0px -3px 0px inset;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+  &:focus {
+	  box-shadow: $lightbutton-color 0px 0px 0px 1.5px inset, rgba(45, 35, 66, 0.4) 0px 2px 4px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, $lightbutton-color 0px -3px 0px inset;
+	  text-decoration: none;
+  }
+  &:hover {
+	  box-shadow: rgba(45, 35, 66, 0.4) 0px 4px 8px, rgba(45, 35, 66, 0.3) 0px 7px 13px -3px, $lightbutton-color 0px -3px 0px inset;
+	  text-decoration: none;
+	  transform: translateY(-3px);
+	  -webkit-transform: translateY(-3px);
+	  -moz-transform: translateY(-3px);
+	  -ms-transform: translateY(-3px);
+	  -o-transform: translateY(-3px);
+	  color: rgba(0, 0, 0, 0.3);
+}
+  &:active {
+	  box-shadow: $lightbutton-color 0px 3px 7px inset;
+	  transform: translateY(3px);
+	  -webkit-transform: translateY(3px);
+	  -moz-transform: translateY(3px);
+	  -ms-transform: translateY(3px);
+	  -o-transform: translateY(3px);
+}
+  &::before {
+	  background: rgba(0, 0, 0, 0) radial-gradient(100% 100% at 100% 0%, #9cffa1 0%, #22d022 100%) repeat scroll 0% 0% / auto padding-box border-box;
+	  content: "";
+	  left: 0px;
+	  top: 0px;
+	  transform: matrix(1, 0, 0, 1, 0, -1.50407e-12);
+	  transition: height 0.2s ease 0s;
+	  will-change: width, height, transform;
+	  z-index: 1;
+  }
+}

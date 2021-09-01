@@ -5,91 +5,21 @@
 @import 'gird';
 @import 'animate';
 @import 'popup';
+@import 'variables';
+@import 'reponsive';
 
 :root {
   scroll-behavior: smooth;
 }
-// @media (min-width: 1000px) {
-//   .page{
-//     padding-left: 15rem;
-//   }
-//   .sidebar{
-//     max-width: 250px;
-//   }
-//   .page .theme-default-content:not(.custom){
-//     max-width: 800px;
-//     padding-left: 5rem;
-//     margin-left: 2rem;
-//     margin-right: 2rem;
-//   }
-  // .page-meta{
-  //   max-width: 800px;
-  // }
-// }
-.theme-container.custom-page-class {
-  @media (min-width: 1000px) {
-    .page{
-      padding-left: 13rem;
-    }
-    .sidebar{
-      max-width: 250px;
-    }
-    .page .theme-default-content:not(.custom){
-      max-width: 1100px;
-      padding-left: 2rem;
-      margin-left: 3rem;
-      margin-right: 2rem;
-    }
-    .page-meta{
-      margin-left: 2rem;
-    }
-  }
-  * {
-    box-sizing: border-box;
-  }
-  html, body {
-    height: 100%;
-  }
 
-  body {
-    display: grid;
-    place-items: center;
-  }
-  .page-meta{
-    max-width: 1000px;
-  }
-}
-
-// responsive breakpoints
-$MQNarrow: 959px !default;
-$MQMobile: 719px !default;
-$MQMobileNarrow: 419px !default;
-
-@media (max-width: $MQMobile){
-  .cat-container{
-    display: none;
-  }
-}
-@media (max-width: 1370px){
-  .cat-container{
-    display: none;
-  }
-}
 .home .hero .action-button.primary {
+  @include button;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  background: radial-gradient(100% 100% at 100% 0%, #9cffa1 0%, #22d022 100%);
-  transition: box-shadow 0.15s ease,transform 0.15s ease;
-  -webkit-transition: box-shadow 0.15s ease,transform 0.15s ease;
-  -moz-transition: box-shadow 0.15s ease,transform 0.15s ease;
-  -ms-transition: box-shadow 0.15s ease,transform 0.15s ease;
-  -o-transition: box-shadow 0.15s ease,transform 0.15s ease;
-  will-change: box-shadow,transform;
-  box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4),0px 7px 13px -3px rgba(45, 35, 66, 0.3),inset 0px -3px 0px rgba(58, 65, 111, 0.5);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  // background: radial-gradient(100% 100% at 100% 0%, #9cffa1 0%, #22d022 100%);
   cursor: pointer;
 }
 
@@ -124,15 +54,13 @@ html.dark {
   --c-danger-title: #610000;
   --c-danger-text: #3a0000;
   --c-details-bg: #323843;
-
-  //* primary button hero
-  .home .hero .action-button.primary{
-    background: radial-gradient(100% 100% at 100% 0%, #acebff 0%, #7A8AFF 100%);
-    box-shadow: 0px 2px 4px #a797cb66,0px 7px 13px -3px rgba(115, 105, 135, 0.3),inset 0px -3px 0px rgba(85, 89, 116, 0.5);
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-  }
   // code blocks vars
   --code-hl-bg-color: #363b46;
+
+  //custom buttom primary
+  .home .hero .action-button.primary{
+    @include dark_button;
+  }
 }
 
 // plugin-docsearch
@@ -146,21 +74,3 @@ html.dark .DocSearch {
     0 -4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-//hiệu ứng cho nút bấm
-.home .hero .action-button:hover{
-  box-shadow: 0 3px 10px -5px rgba(19,11,14,0.7);
-  transform: translate(0px, -3px);
-  -webkit-transform: translate(0px, -3px);
-  -moz-transform: translate(0px, -3px);
-  -ms-transform: translate(0px, -3px);
-  -o-transform: translate(0px, -3px);
-  color: rgba(0, 0, 0, 0.3);
-}
-.home .hero .action-button.primary:active{
-  box-shadow: inset 0px 3px 7px rgba(82,93,179,0.5);
-  transform: translate(0px,3px);
-  -webkit-transform: translate(0px,3px);
-  -moz-transform: translate(0px,3px);
-  -ms-transform: translate(0px,3px);
-  -o-transform: translate(0px,3px);
-}
