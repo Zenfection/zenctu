@@ -168,5 +168,3 @@ pageClass: course-page-class
 3. [Xây dựng Single-Page Web App với AngularJS Routing](https://drive.google.com/drive/folders/1kz94BxhMtahXPCbzpy-vBSqrQmKvjoo-?usp=sharing)
 
 6. [Lập trình FULLSTACK với ANGULAR - PHP - MYSQL](https://drive.google.com/drive/folders/1gnku9TfmO5_h4gj-YAEG4W82RAerynQm?usp=sharing)
-
-<comment/> 
