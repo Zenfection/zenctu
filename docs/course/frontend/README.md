@@ -12,7 +12,7 @@ pageClass: course-page-class
       <a href="https://drive.google.com/drive/folders/1sxD_QQjc0eeJW9boacVnFPDtjeE5SJRM?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
-    <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/8.png);">
+    <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/2.png);">
       <div class="content">
         <h2 class="zentitle">CSS3 cơ bản tới nâng cao</h2>
         <p class="copy">Các khái niệm và định nghĩa về CSS3 hỗ trợ HTML5</p>
@@ -36,15 +36,36 @@ pageClass: course-page-class
 </main>
 
 <main class="zencourse">
-  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/1/7.png);'>
+  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/1/5.png);'>
     <div class="content">
       <h2 class="zentitle">Làm Website Responsive</h2>
       <p class="copy">Xây dựng HTML5 và CSS3 phù hợp cho từng màn hình thiết bị</p>
       <a href="https://drive.google.com/drive/folders/1clELhsh4DYD-byiAHEJSzBkvW8d54P7w?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
+   <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/6.jpg);">
+      <div class="content">
+        <h2 class="zentitle">Làm giao diện Bootstrap</h2>
+        <p class="copy">Thư viện của CSS dành cho trang trí Website</p>
+        <a href="https://drive.google.com/drive/folders/1Rs9WHEe-IG1n7udFkpBIiy0EZ5SH1Uei?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+      </div>
+    </div>
+      <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/7.jpg);">
+      <div class="content">
+        <h2 class="zentitle">Jquery cơ bản tới nâng cao</h2>
+        <p class="copy">Thư viện của Javascript để bắt các sự kiện dễ dàng hơn</p>
+        <a href="https://drive.google.com/drive/folders/1Zj3V3n4VpUbuHsZNjv4uy7bE1xrjW2JP?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+      </div>
+    </div>
+      <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/8.jpg);">
+      <div class="content">
+        <h2 class="zentitle">Typerscript từ con số 0</h2>
+        <p class="copy">Phiên bản nâng cao của Javascript giúp mọi thứ dễ dàng hơn</p>
+        <a href="https://drive.google.com/drive/folders/1hzWE3twA3UCcV4fEG2R5cBLhxLzR7VwX?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+      </div>
+    </div>
 </main>
-
+  
 ## 2.Kỹ năng Web
 
 <main class="zencourse">
@@ -80,50 +101,72 @@ pageClass: course-page-class
 
 ## 3.Web nâng cao
 
-1. [ES6 và TypeScript cơ bản](https://drive.google.com/drive/folders/1oXuHakKGeDlbtFZpcS781d2qw7X0XUta?usp=sharing)
-
-2. [NodeJS Cơ bản](https://drive.google.com/drive/folders/1eaZu5iH2n-i_qH95ZdoUFAoqFpR9FQHM?usp=sharing)
-
-3. [Lập trình WordPresss Theme cho doanh nghiệp cùng Boostrap](https://drive.google.com/drive/folders/1HXtALRQDcbxSvgdyS-hLH-XnSMhv2z0q?usp=sharing)
-
-4. [Thiết kế giao diện bằng Bootstrap](https://drive.google.com/drive/folders/1rZzjlbAYP5-7H2vnXB2t7_PFf7d_rd0A?usp=sharing)
-
-5. [Học Lập Trình Ra Website Hoàn Chỉnh A-Z Với WordPress](https://drive.google.com/drive/folders/1iu-AaQM-aKOvjzaPClJLOkhdGIVUumEB?usp=sharing)
-
-6. [Lập Trình Web Tốc Độ Cao Thời Gian Thực Với NodeJS](https://drive.google.com/drive/folders/1n5oAmmRp_DodY4GJ0h8ZAhiIAhRM3wAE?usp=sharing)
-
-7. [51 Tạo Website miễn phí bằng Blogspot và SEO hiệu quả](https://drive.google.com/drive/folders/1S7JRn2G5s0LivwkKaV2tEJ4TB2didbqw?usp=sharing)
-
-8. [Bootstrap CSS Framework - CSS Component](https://drive.google.com/drive/folders/1Rs9WHEe-IG1n7udFkpBIiy0EZ5SH1Uei?usp=sharing)
-
-9. [Lập trình Frontend nâng cao qua project thực tế](https://drive.google.com/drive/folders/1NE7Q3_D2Sg8JJYnaA8I4tLgUJM-Ng2Yp?usp=sharing) 
-
-10. [Khoá học thiết kế web chuẩn Seo bằng WordPress cho người mới bắt đầu](https://drive.google.com/drive/folders/1zIPmBXpMpVRFRlZJPtXTfBuC8Ql7XcjK?usp=sharing)
-
-11. [Làm 5 dự án website để trở thành lập trình viên chuyên nghiệp](https://drive.google.com/drive/folders/1LNAHAQ2FCLTpu7r-hw5su9TkM9B4cqBR?usp=sharing)
-
-12. [Lập trình JavaScript và TyperScript từ con số 0](https://drive.google.com/drive/folders/1Cse2emPX5Z3QJgp7VdynwYn-IMu68XvJ?usp=sharing)
-
-13. [Thiết kế Web bằng Wordpress](https://drive.google.com/drive/folders/1TOVzcIkrs-zRVoZNfy0D5DHZqLw3vwV9?usp=sharing)
+<main class="zencourse">
+  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/3/1.jpg);'>
+    <div class="content">
+      <h2 class="zentitle">Trọn bộ NodeJS cơ bản</h2>
+      <p class="copy">Học kiến thức cốt lõi về NodeJS để điều hành Web</p>
+      <a href="https://drive.google.com/drive/folders/19bgXz8YREty29qL_fNopMDqdddeKajz6?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+    </div>
+  </div>
+   <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/3/2.jpg);'>
+    <div class="content">
+      <h2 class="zentitle">Thiết kế Web WordPress</h2>
+      <p class="copy">Sử dụng App Wordpress để thiết kế web nhanh gọn lẹ</p>
+      <a href="https://drive.google.com/drive/folders/1iu-AaQM-aKOvjzaPClJLOkhdGIVUumEB?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+    </div>
+  </div>
+  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/3/3.png);'>
+    <div class="content">
+      <h2 class="zentitle">Web với dự án thực tế</h2>
+      <p class="copy">Lập trình Frontend nâng cao với những dự án thực tế</p>
+      <a href="https://drive.google.com/drive/folders/1NE7Q3_D2Sg8JJYnaA8I4tLgUJM-Ng2Yp?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+    </div>
+  </div>
+  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/3/4.png);'>
+    <div class="content">
+      <h2 class="zentitle">5 dự án Web chuyên nghiệp</h2>
+      <p class="copy">Làm 5 dự án về front-end để trở thành lập trình viên chuyên nghiệp</p>
+      <a href="https://drive.google.com/drive/folders/1LNAHAQ2FCLTpu7r-hw5su9TkM9B4cqBR?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+    </div>
+  </div>
+</main>
 
 ## 4.Web Framework 
 
-1. [Lập trình React Native với Khoa Phạm](https://drive.google.com/drive/folders/1NgzxWnAU8EA7N5Nar0AUIF8G0XqhI3dH?usp=sharing)
-
-2. [Trọn Bộ Kiến Thức Về AngularJs Trong 6 Giờ](https://drive.google.com/drive/folders/10o1C5hrR_kuSZU3cxMnxAYiB5wB0nEjx?usp=sharing)
+<main class="zencourse">
+  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/4/1.jpg);'>
+    <div class="content">
+      <h2 class="zentitle">React-Native cơ bản</h2>
+      <p class="copy">Học lập trình React-Native cơ bản và đầy đủ</p>
+      <a href="https://drive.google.com/drive/folders/1NgzxWnAU8EA7N5Nar0AUIF8G0XqhI3dH?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+    </div>
+  </div>
+  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/4/2.png);'>
+    <div class="content">
+      <h2 class="zentitle">ReactJS và Redux cơ bản</h2>
+      <p class="copy">Tạo ứng dụng FullStack bằng ReactJS + Redux + NodeJS</p>
+      <a href="https://drive.google.com/drive/folders/1g0Gkr99-V-19dYffo8NvPeR1JXgkFtBI?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+    </div>
+  </div>
+   <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/4/3.jpg);'>
+    <div class="content">
+      <h2 class="zentitle">Xây dựng Web bằng Laverel</h2>
+      <p class="copy">Xây dụng Website hoàn chỉnh bằng PHP Laravel Framework</p>
+      <a href="https://drive.google.com/drive/folders/1iVPRS-lUky79YDHy48FYuhqWRIdZok2d?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+    </div>
+  </div>
+  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/4/4.png);'>
+    <div class="content">
+      <h2 class="zentitle">Trọn bộ AngularJS</h2>
+      <p class="copy">Học AngularJS Framework cơ bản trong 6 giờ</p>
+      <a href="https://drive.google.com/drive/folders/10o1C5hrR_kuSZU3cxMnxAYiB5wB0nEjx?usp=sharin" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+    </div>
+  </div>
+</main>
 
 3. [Xây dựng Single-Page Web App với AngularJS Routing](https://drive.google.com/drive/folders/1kz94BxhMtahXPCbzpy-vBSqrQmKvjoo-?usp=sharing)
 
-4. [Xây dựng website hoàn chỉnh với Laravel PHP Framework](https://drive.google.com/drive/folders/1iVPRS-lUky79YDHy48FYuhqWRIdZok2d?usp=sharing)
-
-5. [Học lập trình React js và Redux từ đầu, tạo ứng dụng fullstack với Node JS + React JS](https://drive.google.com/drive/folders/1g0Gkr99-V-19dYffo8NvPeR1JXgkFtBI?usp=sharing)
-
 6. [Lập trình FULLSTACK với ANGULAR - PHP - MYSQL](https://drive.google.com/drive/folders/1gnku9TfmO5_h4gj-YAEG4W82RAerynQm?usp=sharing)
 
-7. [Jquery từ cơ bản đến nâng cao](https://drive.google.com/drive/folders/1Zj3V3n4VpUbuHsZNjv4uy7bE1xrjW2JP?usp=sharing)
-
-8. [Trọn bộ NodeJS](https://drive.google.com/drive/folders/19bgXz8YREty29qL_fNopMDqdddeKajz6?usp=sharing)
-
- 
- <comment/> 
- 
+<comment/> 

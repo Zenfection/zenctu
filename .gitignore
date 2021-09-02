@@ -30,7 +30,7 @@ node_modules/
 
 # Typescript build info
 .firebaserc
-.firebase/hosting.ZG9jcy8udnVlcHJlc3MvZGlzdA.cache
+.firebase/
 firebase.json
 .gitattributes
 *.lock
