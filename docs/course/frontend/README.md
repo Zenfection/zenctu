@@ -152,7 +152,7 @@ pageClass: course-page-class
    <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/4/3.png);'>
     <div class="content">
       <h2 class="zentitle">Xây dựng Web bằng Laverel</h2>
-      <p class="copy">Xây dụng Website hoàn chỉnh bằng PHP Laravel Framework</p>
+      <p class="copy">Xây dựng Web bằng PHP Laravel Framework</p>
       <a href="https://drive.google.com/drive/folders/1iVPRS-lUky79YDHy48FYuhqWRIdZok2d?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
