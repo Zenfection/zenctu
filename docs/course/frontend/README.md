@@ -43,21 +43,21 @@ pageClass: course-page-class
       <a href="https://drive.google.com/drive/folders/1clELhsh4DYD-byiAHEJSzBkvW8d54P7w?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
-   <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/6.jpg);">
+   <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/6.png);">
       <div class="content">
         <h2 class="zentitle">Làm giao diện Bootstrap</h2>
         <p class="copy">Thư viện của CSS dành cho trang trí Website</p>
         <a href="https://drive.google.com/drive/folders/1Rs9WHEe-IG1n7udFkpBIiy0EZ5SH1Uei?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
-      <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/7.jpg);">
+      <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/7.png);">
       <div class="content">
         <h2 class="zentitle">Jquery cơ bản tới nâng cao</h2>
         <p class="copy">Thư viện của Javascript để bắt các sự kiện dễ dàng hơn</p>
         <a href="https://drive.google.com/drive/folders/1Zj3V3n4VpUbuHsZNjv4uy7bE1xrjW2JP?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
-      <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/8.jpg);">
+      <div class="zencard animate__animated" style="background-image: url(/images/docs/course/frontend/1/8.png);">
       <div class="content">
         <h2 class="zentitle">Typerscript từ con số 0</h2>
         <p class="copy">Phiên bản nâng cao của Javascript giúp mọi thứ dễ dàng hơn</p>
@@ -102,14 +102,14 @@ pageClass: course-page-class
 ## 3.Web nâng cao
 
 <main class="zencourse">
-  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/3/1.jpg);'>
+  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/3/1.png);'>
     <div class="content">
       <h2 class="zentitle">Trọn bộ NodeJS cơ bản</h2>
       <p class="copy">Học kiến thức cốt lõi về NodeJS để điều hành Web</p>
       <a href="https://drive.google.com/drive/folders/19bgXz8YREty29qL_fNopMDqdddeKajz6?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
-   <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/3/2.jpg);'>
+   <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/3/2.png);'>
     <div class="content">
       <h2 class="zentitle">Thiết kế Web WordPress</h2>
       <p class="copy">Sử dụng App Wordpress để thiết kế web nhanh gọn lẹ</p>
@@ -135,7 +135,7 @@ pageClass: course-page-class
 ## 4.Web Framework 
 
 <main class="zencourse">
-  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/4/1.jpg);'>
+  <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/4/1.png);'>
     <div class="content">
       <h2 class="zentitle">React-Native cơ bản</h2>
       <p class="copy">Học lập trình React-Native cơ bản và đầy đủ</p>
@@ -149,7 +149,7 @@ pageClass: course-page-class
       <a href="https://drive.google.com/drive/folders/1g0Gkr99-V-19dYffo8NvPeR1JXgkFtBI?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
-   <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/4/3.jpg);'>
+   <div class="zencard animate__animated" style='background-image: url(/images/docs/course/frontend/4/3.png);'>
     <div class="content">
       <h2 class="zentitle">Xây dựng Web bằng Laverel</h2>
       <p class="copy">Xây dụng Website hoàn chỉnh bằng PHP Laravel Framework</p>
