@@ -37,31 +37,14 @@ Tùy Distro bạn dùng là gì để chọn cho hợp lý, và Linux không dù
 - <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-17-47-43-Pop_OS-Logo-nobg.svg" width="25"> [PopOS! Turtorial](https://www.youtube.com/watch?v=3Rcxjx3H9jo&list=PLT98CRl2KxKFfumnJiR8FxBsbJepGgMoN&index=3)
 :::
 
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài liệu học tập
+## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài nguyên học tập
 ### Khóa học (`Khuyết khích`)
 
 | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-18-20-23-sololearn.webp" title="" alt="sololearn.webp" width="40">SoloLearn | <img title="" src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-18-21-19-49df4968e49a4e5ba2c4cb94393104fb.png" alt="49df4968e49a4e5ba2c4cb94393104fb.png" width="40"> Codelearn                                              | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-18-22-06-fy2SPeYLij4AC8WFaGSq0uxol14F22F3BGUU_Dq-UY9WjUiDc6Tz2FDCuxsgyQ4HPQ.webp" title="" alt="fy2SPeYLij4AC8WFaGSq0uxol14F22F3BGUU_Dq-UY9WjUiDc6Tz2FDCuxsgyQ4HPQ.webp" width="35">Programing Hub |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 🚫None.                                                                                                                                                    | [1.Truyền thông và Mạng máy tính](https://codelearn.io/learning/truyen-thong-va-mang-may-tinh)<br>[2.Phần mềm máy tính](https://codelearn.io/learning/phan-mem-may-tinh)<br>[3.Phần cứng máy tính](https://codelearn.io/learning/phan-cung-may-tinh) | [1.IT Basic](https://programminghub.io/coursedetail/programming/learn/IT-Basics/)<br>[2.Fundamentals](https://programminghub.io/coursedetail/programming/learn/Fundamentals/)                                                                                                     |
 
-
-::: tip <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-01-08-Certificate.png" width="35"> NHẬN CHỨNG CHỈ
-
 Bạn có thể nhận chứng chỉ ở khóa [Codelearn](https://codelearn.io/learning) miễn phí sau khi học xong
-
-::: details <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-04-47-icons8-i.png" width="30"> Chứng chỉ của mình 
-
-<br>
-
-<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-22-58-28-Computer%20Communication%20%26%20Network.png" width="300" style="padding-right:8px">  
-<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-22-58-30-Computer%20Handware.png" width="300" style="padding-right:8px">  
-<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-22-58-32-Computer%20Software.png" width="300" style="padding-right:8px">
-
-<br>
-
-<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-27-48-IT%20Basic.png" width="300" style="padding-right:8px">
-<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/01-16-27-20-Fundamentals.png" width="300" style="padding-right:8px">
-:::
 
 ::: warning ⚠️  LƯU Ý
 
@@ -101,15 +84,13 @@ Không nhất thiết phải học khóa [Programing Hub](https://programminghub
 
 ### Thực hành
 
-Học và thực hành về bộ 3 Office : `Word`, `Excel`, `PowerPoint` của nhà `Microsoft`
-
 ::: tip <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-40-20-Online%20Courses.png" width="35"> Tham khảo khóa học : 
 
-| <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-36-29-word.png" title="" alt="word.png" width="35">Microsoft Word | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-36-38-excel.png" title="" alt="excel.png" width="35">Microsoft Excel | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/07/31-23-36-33-powerpoint.png" title="" alt="powerpoint.png" width="35">Microsoft PowerPoint |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Microsoft căn bản và hiệu quả](https://drive.google.com/drive/folders/1Y995DiwpRNTJHAOmydEugbBFA6XFyQWS)                                           | [Luyện Excel cơ bản tới nâng cao](https://drive.google.com/drive/folders/1qkFOucYL0SlEHy1wvtHP_dfGSaUjEunj)                                            | [PowerPoint và những điều bạn chưa biết](https://drive.google.com/drive/folders/1Te2U7l8lxmsjRFcF21v1_0eFPgbZ7B1a)                                                    |
+Học và thực hành về bộ 3 Office : `Word`, `Excel`, `PowerPoint` của nhà `Microsoft` [tại đây](/course/office/)
+
+
 ::: 
  
  
- <comment/> 
+<comment/> 
  

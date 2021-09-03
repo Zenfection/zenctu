@@ -8,9 +8,22 @@
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-26-29-tenor.gif" width="40"> 1. Kiến thức cần có
 
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài liệu học tập
+- Hoàn thành học phần [Vi tích phân A1](/toanhoc/TN001-Vi_tich_phan_a1/)
+
+- Kỹ năng xài `máy tính` cơ bản <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/09/03-14-33-56-fx-580VN.png" width="45"> ⇒  Tham khảo cách sử dụng [tại đây](https://bitex.com.vn/vn/kho-ung-dung/huong-dan-su-dung-3.html)
+
+## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài nguyên học tập
+
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/09/03-16-03-49-wolframe.png" width="40"> [WolframAlpha](https://www.wolframalpha.com/) : Công cụ tính toán bậc nhất về mọi thứ trong toán học
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-41-35-tenor.gif" width="40"> 3. Quá trình học tập
- 
- <comment/> 
- 
+
+| [Chương 1.Hàm nhiều biến](/toanhoc/TN002-Vi_tich_phan_a2/Tailieu/1.md) | [Chương 2.Tích phân bội](/toanhoc/TN002-Vi_tich_phan_a2/Tailieu/2.md) | [Chương 3.Tích phân đường, mặt](/toanhoc/TN002-Vi_tich_phan_a2/Tailieu/3.md) | [Chương 4.Phương trình vi phân](/toanhoc/TN002-Vi_tich_phan_a2/Tailieu/4.md) |
+| ----------------------- | ---------------------- | ----------------------------- | ----------------------------- |
+| Hàm nhiều biến          | Tích phân kép          | Tích phân đường loại 1        | Phương trình vi phân cấp 1    |
+| Đạo hàm 2 biến          | Tích phân bội          | Tích phân đường loại 2        | Phương trình vi phân cấp 2    |
+| Cực trị hàm 2 biến      |                        | Tích phân mặt loại 1          |                               |
+| Min,max hàm 2 biến      |                        | Tích phân mặt loại 2          |                               |
+
+
+<comment/> 

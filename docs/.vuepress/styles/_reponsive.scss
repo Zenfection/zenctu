@@ -53,20 +53,4 @@ $MQMobileNarrow: 419px !default;
     display: none;
   }
 }
-@media (max-width: 1380px){
-  .page{
-    padding-left: 13rem;
-  }
-  .sidebar{
-    max-width: 250px;
-  }
-  .page .theme-default-content:not(.custom){
-    // padding-left: 2rem;
-    // margin-left: 3rem;
-    // margin-right: 2rem;
-  }
-  .page-meta{
-    margin-left: 2rem;
-  }
-}
 

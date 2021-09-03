@@ -12,7 +12,7 @@ Hãy xem video sau để biết mô tả của nhóm :
     <iframe width="1520" height="525" src="https://www.youtube.com/embed/jmiWcR0rMxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-Mình hiện là sinh viên ngành CNTT khóa `45` của [trường đại học Cần Thơ](https://www.ctu.edu.vn/) và mình làm Project này vì muốn đưa cho cộng đồng sinh viên một tài liệu học tập cho mọi thứ dễ dàng hơn trong học lập trình
+Mình hiện là sinh viên ngành CNTT khóa `45` của [trường đại học Cần Thơ](https://www.ctu.edu.vn/) và mình làm Project này vì muốn đưa cho cộng đồng sinh viên một Tài nguyên học tập cho mọi thứ dễ dàng hơn trong học lập trình
 
 ::: tip Liên hệ
 - [<img src="/images/docs/guide/github.png" width="40">](https://github.com/zenfection1412) : Nơi mình lưu trữ các dự án lập trình của mình

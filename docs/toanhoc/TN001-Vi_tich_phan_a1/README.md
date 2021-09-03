@@ -8,9 +8,19 @@
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-26-29-tenor.gif" width="40"> 1. Kiến thức cần có
 
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài liệu học tập
+- Biết các kỹ năng toán học như : `Đạo hàm`, `Tích phân`, `Nguyên hàm`
+
+- Kỹ năng xài `máy tính` cơ bản <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/09/03-14-33-56-fx-580VN.png" width="45"> ⇒  Tham khảo cách sử dụng [tại đây](https://bitex.com.vn/vn/kho-ung-dung/huong-dan-su-dung-3.html)
+
+## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài nguyên học tập
+
+<img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/09/03-16-03-49-wolframe.png" width="40"> [WolframAlpha](https://www.wolframalpha.com/) : Công cụ tính toán bậc nhất về mọi thứ trong toán học
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-41-35-tenor.gif" width="40"> 3. Quá trình học tập
  
- <comment/> 
+| [Chương 1.Giới hạn và tính liên tục](https://www.youtube.com/playlist?list=PLsEmKKF4H46kBlbciM8bhOzOcMczmyGmS) | [Chương 2.Đạo hàm & Vi phân](https://www.youtube.com/playlist?list=PLsEmKKF4H46mZgRTR2wpLcwgfacJo7r6-) | [Chương 3.Hàm nhiều biến](https://www.youtube.com/playlist?list=PLsEmKKF4H46nA_OqTRYv2AUwxYfuTsDAT) | [Chương 4.Các ứng dụng trong Kinh tế](https://www.youtube.com/playlist?list=PLsEmKKF4H46lDEzhLYQIHt1bu2eeUv2Io) | [Chương 5.Tích phân](https://www.youtube.com/playlist?list=PLsEmKKF4H46lb3B6t5ShqzhHx0PfUV9j-) | Chương 6.Phương trình vi phân |
+| ---------------------------------- | -------------------------- | ----------------------- | ----------------------------------- | ------------------ | ----------------------------- |
+
+
+<comment/> 
  

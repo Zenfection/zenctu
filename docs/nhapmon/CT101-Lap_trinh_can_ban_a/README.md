@@ -12,7 +12,7 @@
 
 Tham khảo học phần [nền tảng CNTT](/nhapmon/CT200-Nen_tang_cong_nghe_thong_tin/)
 
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài liệu học tập
+## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài nguyên học tập
 
 ### Ngôn ngữ lập trình 
 
