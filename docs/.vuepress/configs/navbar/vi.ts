@@ -1,17 +1,18 @@
 import type { NavbarConfig } from '@vuepress/theme-default'
 
 //! Các môn chưa hỗ trợ
-  //'/nhapmon/CT190-Nhap_mon_tri_tue_nhan_tao/',
-  //'/nhapmon/CT173-Kien_truc_may_tinh/',
-  //'/cosonganh/CT178-Nguyen_ly_he_dieu_hanh/',
-  //'/chuyennganh/CT273-Giao_dien_nguoi_may/',
-  //'/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/',
-  //'/doannganh/CT271-Nien_luan_co_so_CNTT/',
-  //'/doannganh/CT446-Nien_luan_CNTT/',
+// '/nhapmon/CT190-Nhap_mon_tri_tue_nhan_tao/',
+// '/nhapmon/CT173-Kien_truc_may_tinh/',
+// '/cosonganh/CT178-Nguyen_ly_he_dieu_hanh/',
+// '/chuyennganh/CT273-Giao_dien_nguoi_may/',
+// '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/',
+// '/doannganh/CT271-Nien_luan_co_so_CNTT/',
+// '/doannganh/CT446-Nien_luan_CNTT/',
+
 export const vi: NavbarConfig = [
   {
     text: 'Trang Chủ',
-    link: '/guide/intro.md'
+    link: '/guide/intro.md',
   },
   {
     text: 'Đại Cương',
@@ -23,15 +24,13 @@ export const vi: NavbarConfig = [
           '/toanhoc/TN002-Vi_tich_phan_a2/',
           '/toanhoc/TN010-Xac_suat_thong_ke/',
           '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/',
-        ]
+        ],
       },
       {
         text: 'Tin Học',
-        children: [
-          '/nhapmon/CT200-Nen_tang_cong_nghe_thong_tin/',
-        ]
-      }
-    ]
+        link: '/nhapmon/CT200-Nen_tang_cong_nghe_thong_tin/',
+      },
+    ],
   },
   {
     text: 'Nền Tảng',
@@ -71,7 +70,7 @@ export const vi: NavbarConfig = [
           '/chuyennganh/CT275-Cong_nghe_web/',
           '/chuyennganh/CT294-May_hoc_ung_dung/',
           '/chuyennganh/CT467-Quan_tri_du_lieu/',
-        ]
+        ],
       },
       {
         text: 'Đồ Án Ngành',
@@ -81,32 +80,30 @@ export const vi: NavbarConfig = [
           '/doannganh/CT484-Phat_trien_ung_dung_tren_thiet_bi_di_dong/',
           '/doannganh/CT550-Luan_van_tot_nghiep/',
         ],
-      }
+      },
     ],
   },
 
   {
     text: 'Tài Nguyên',
     children: [
-
       {
         text: 'Khóa Học',
-        children:[
-          { text: 'Front-end', link: '/course/frontend/'},
-          { text: 'Back-end', link: '/course/backend/'},
-          { text: 'Server', link: '/course/server/'},
-          { text: 'System', link: '/course/system/'},
-          { text: 'Mobile', link: '/course/mobile/'},
-          { text: 'Office', link: '/course/office/'},
-        ]
+        children: [
+          { text: 'Website', link: '/course/web/' },
+          { text: 'Server', link: '/course/server/' },
+          { text: 'System', link: '/course/system/' },
+          { text: 'Mobile', link: '/course/mobile/' },
+          { text: 'Office', link: '/course/office/' },
+        ],
       },
       {
         text: 'Khác',
-        children:[
-          {text: 'Tips', link: '/tips/'},
-          {text: 'DevBook', link: '/devbook/'},
-        ]
+        children: [
+          { text: 'Tips', link: '/tips/' },
+          { text: 'DevBook', link: '/devbook/' },
+        ],
       },
-    ]
+    ],
   },
 ]
