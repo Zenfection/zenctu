@@ -552,4 +552,17 @@ export const vi: SidebarConfig = {
       ],
     },
   ],
+  //* tip
+  '/tips/': [
+    {
+      text: 'Tips & Track',
+      link: '/tips/',
+    }
+  ],
+  '/tips/browser/': [
+    '/tips/browser/extension.md',
+  ],
+  '/tips/system/': [
+    'tips/system/mathpix.md',
+  ],
 }

@@ -64,7 +64,7 @@ Hãy sử dụng công cụ sau để cài `Office` tốt nhất
 
 - Chỉ cài Mircosoft Word, Excel, PowerPoint thôi !!!
 
-- Sử dụng tool để active office và window ➡ [AIO Tool 3.13](https://github.com/Zenfection/zenctu/raw/main/docs/tool/AIO%20Tools%20v3.1.3.zip)
+- Sử dụng tool để active office và window ➡ [AIO Tool 3.13](https://github.com/Zenfection/zenctu/raw/main/docs/tool/AIO_Tools_v3.1.3.zip)
 
 > Mình cam đoan không `virus` hay gì cả, nếu không bạn có thể bỏ tiền ra mua bản quyền FullBox
 :::
