@@ -35,6 +35,37 @@ $MQMobileNarrow: 419px !default;
     max-width: 1000px;
   }
 }
+.theme-container.devbook-page-class {
+  code{
+    font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+    font-weight: 700;
+  }
+  @media (min-width: 1000px) {
+    .page{
+      padding-left: 13rem;
+    }
+    .sidebar{
+      max-width: 250px;
+    }
+    .page .theme-default-content:not(.custom){
+      max-width: 1000px;
+      padding-left: 2rem;
+      margin-left: 3rem;
+      margin-right: 2rem;
+    }
+    .page-meta{
+      margin-left: 2rem;
+    }
+
+  }
+  .page-meta{
+    max-width: 1000px;
+  }
+  .page-nav, .page-meta{
+    max-width: 1000px;
+  }
+}
+
 @media (max-width: 1050px){
   .site-name{
     display: none;

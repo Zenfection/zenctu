@@ -1,4 +1,5 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
+import { isJsxAttribute } from 'typescript'
 
 export const vi: SidebarConfig = {
   //! -----Begin: Guide
@@ -565,4 +566,22 @@ export const vi: SidebarConfig = {
   '/tips/system/': [
     'tips/system/mathpix.md',
   ],
+  //* devbook
+  '/devbook/': [
+    {
+      text: 'DevBook for Zen',
+      link: '/devbook/',
+    }
+  ],
+  '/devbook/html/refer/': [
+    {
+      text: 'DevBook HTML',
+      children: [
+        '/devbook/html/refer/tag.md',
+        '/devbook/html/refer/globalAttributes.md',
+        '/devbook/html/refer/eventAttributes.md',
+        '/devbook/html/refer/attribute.md',
+      ]
+    }
+  ]
 }

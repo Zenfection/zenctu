@@ -1,5 +1,9 @@
 # <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/21-15-51-28-06-00-18-00-html5.gif" title="" alt="06-00-18-00-html5.gif" width="50"> Guide HTML by Zen <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/21-15-51-48-13-14-13-12-08-15-27-06-cat_ready.gif" title="" alt="13-14-13-12-08-15-27-06-cat_ready.gif" width="50">
 
+  [Tag](/devbook/html/refer/tag.md)
+
+  [Global Attribute](/devbook/html/refer/globalattributes.md)
+  
 <div>
 	<a href="https://github.com/Zenfection/HTML/blob/main/Reference/Tag.md"><img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/21-17-35-13-tag.png" width="160"></a>
 	<a href="https://github.com/Zenfection/HTML/blob/main/Reference/GlobalAttributes.md"><img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/21-17-39-11-globalAttribute.png" width="160"></a>
