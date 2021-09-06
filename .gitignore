@@ -35,7 +35,6 @@ firebase.json
 .gitattributes
 *.lock
 Icon[^M]
-*.zip
 !/.gitignore
 .env
 config.json
