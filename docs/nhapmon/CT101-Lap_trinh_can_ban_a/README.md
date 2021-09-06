@@ -16,8 +16,12 @@ Dùng <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/1
   <iframe width="885" height="498" src="https://www.youtube.com/embed/8SLV5UUhMNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-- Font Cascadia
+::: tip 💡 TÀI NGUYÊN
 
+- Font [Cascadia Code 2106.17](https://github.com/Zenfection/zenctu/raw/main/docs/tool/CascadiaCode.zip)
+
+- Font [MesloLGS NF](https://github.com/Zenfection/zenctu/raw/main/docs/tool/MesloLGS_NF.zip)
+:::
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài nguyên học tập
 
 ### Ngôn ngữ lập trình 
