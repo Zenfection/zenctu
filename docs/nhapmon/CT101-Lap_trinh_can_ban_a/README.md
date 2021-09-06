@@ -8,9 +8,15 @@
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-26-29-tenor.gif" width="40"> 1. Kiến thức cần có
 
-### Kiến thức căn bản về máy tính
+Dùng <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/09-09-40-03-1200px-Visual_Studio_Code_1.35_icon.svg.png" width="30"> Vscode để thiết lập code `C/C++`
 
-Tham khảo học phần [nền tảng CNTT](/nhapmon/CT200-Nen_tang_cong_nghe_thong_tin/)
+> Download [tại đây](https://code.visualstudio.com/)
+
+<div class="videoZen">
+  <iframe width="885" height="498" src="https://www.youtube.com/embed/8SLV5UUhMNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+- Font Cascadia
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài nguyên học tập
 

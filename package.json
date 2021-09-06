@@ -56,9 +56,9 @@
   },
   "dependencies": {
     "@vue/component-compiler-utils": "^3.2.2",
-    "autoprefixer": "^10.3.3",
+    "autoprefixer": "^10.3.4",
     "tinycolor2": "^1.4.2",
     "vuepress-plugin-zenlive2d-cat": "^1.1.1",
-    "webpack": "^5.51.1"
+    "webpack": "^5.52.0"
   }
 }

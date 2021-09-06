@@ -28,7 +28,9 @@ export const vi: NavbarConfig = [
       },
       {
         text: 'Tin Học',
-        link: '/nhapmon/CT200-Nen_tang_cong_nghe_thong_tin/',
+        children: [
+          '/nhapmon/CT200-Nen_tang_cong_nghe_thong_tin/'
+        ]
       },
     ],
   },
