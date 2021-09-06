@@ -24,38 +24,27 @@ Dùng <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/1
 :::
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài nguyên học tập
 
-### Ngôn ngữ lập trình 
-
 Môn này các bạn học về lập trình `C` hoặc `C++`
 
 - <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/03-15-37-31-QuanTriMang200.png" width="30">[QuantriMang](https://quantrimang.com/ngon-ngu-lap-trinh-c-la-gi-156137) (*Ngôn ngữ lập trỉnh `C`*)
 
 - <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/06/03-15-36-51-W3Schools_logo.svg.png" width="30"> [W3school](https://www.w3schools.com/cpp/default.asp) (*`C++` Tutorial*)
 
-::: tip 💡
+::: tip 💡 MẸO
 
 - Nên học kỹ một ngôn ngữ, các ngôn ngữ sau sẽ rất dễ nếu bạn nắm được bản chất đầu
 
 - Nên chọn nguồn tiếng anh để học (*khuyết nghị `W3school`*)
 :::
 
-### Công cụ lập trình
-
-::: tip 💡 MẸO
-
-Để thiết lập cho `Vscode` để phục vụ code `C/C++`, hạn hãy 
-tham khảo [tại đây](https://zenfection.github.io/Source/Vscode/)
-:::
-
-
-## Khóa học
-
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-41-35-tenor.gif" width="40"> 3. Quá trình học tập
  
 ### Lý thuyết
 
+Tham khảo khoá học lập trình C++ căn bản [tại đây](/course/system/#c-c)
 ### Thực hành
 
- 
- <comment/> 
+Tự chế các dạng bài toán ra và tự học cách Debug chúng là tốt nhất
+
+<comment/> 
  

@@ -8,9 +8,25 @@
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-26-29-tenor.gif" width="40"> 1. Kiến thức cần có
 
+Kiến thức học phần [Lập trình căn bản](/nhapmon/CT101-Lap_trinh_can_ban_a/)
+
+::: warning ⚠️ LƯU Ý
+
+Bạn cần phải nắm rõ cách sử dụng <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/09-09-40-03-1200px-Visual_Studio_Code_1.35_icon.svg.png" width="30"> Vscode
+
+Cũng như các kỹ năng `Debug`,`Compiler` và thiết lập `Vscode` tại [Lập trình căn bản](/nhapmon/CT101-Lap_trinh_can_ban_a/)
+:::
+
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-24-49-tenor.gif" width="40"> 2. Tài nguyên học tập
 
+| Tài liệu | Khoá học | Web tham khảo |
+| -------- | -------- | ------------- |
+| 🔥 [Lập trình không khó](https://nguyenvanhieu.vn/ctdl-gt/)        | [Cấu trúc dữ liệu](/course/system/c/2/1.md)        | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/16-23-01-32-University_of_San_Francisco_logo.png" width="30"> [Data Strucsutre Visualization](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)             |
+
+
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-41-35-tenor.gif" width="40"> 3. Quá trình học tập
- 
- <comment/> 
+
+
+
+<comment/> 
  

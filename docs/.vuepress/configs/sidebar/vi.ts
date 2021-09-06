@@ -223,6 +223,30 @@ export const vi: SidebarConfig = {
       link: '/cosonganh/CT177-Cau_truc_du_lieu/',
     },
   ],
+  '/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/': [
+    {
+      text: 'Chương 1. Các kiểu dữ liệu cơ bản',
+      children: [
+        { text: 'Bài 1. Danh sách đặc', link: '/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/1.md'},
+        { text: 'Bài 2. Danh sách liên kết', link: '/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/2.md'},
+        { text: 'Bài 3. Ngăn Xếp', link: '/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/3.md'},
+        { text: 'Bài 4. Hàng đợi', link: '/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/4.md'},
+      ]
+    },
+    {
+      text: 'Chương 2. Cấu trúc cây',
+      children: [
+        {text: 'Bài 5. Cây nhị phân', link: '/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/5.md'},
+        {text: 'Bài 6. Cây nhị phân AVL', link: '/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/6.md'},
+      ],
+    },
+    {
+      text: 'Chương 3. Cấu trúc tập hợp',
+      children: [
+        {text: 'Bài 7. Bảng băm', link: '/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/7.md'}
+      ],
+    }
+  ],
   //* CT180-Cơ sở dữ liệu
   '/cosonganh/CT180-Co_so_du_lieu/': [
     {
