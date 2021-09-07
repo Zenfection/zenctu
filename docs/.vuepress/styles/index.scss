@@ -12,7 +12,9 @@
 :root {
   scroll-behavior: smooth;
 }
-
+div[class*="language-"].line-numbers-mode pre {
+  font-family: SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace !important;
+}
 .home .hero .action-button.primary {
   @include button;
   border-radius: 30px;

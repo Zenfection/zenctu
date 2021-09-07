@@ -258,7 +258,6 @@ void changeList(List L1,List *L){
         i++;
         temp = temp->Next;
     }
-
 }
 void mergeList(List L1,List L2,List *L){
     changeList(L1,L);
