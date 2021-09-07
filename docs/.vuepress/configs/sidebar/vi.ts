@@ -1,5 +1,4 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
-import { isJsxAttribute } from 'typescript'
 
 export const vi: SidebarConfig = {
   //! -----Begin: Guide

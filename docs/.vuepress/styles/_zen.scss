@@ -1,5 +1,35 @@
 //* CSS for anything of Zen
 
+//! Snippet Color
+.token.comment{
+  color: #676B79;
+  font-style: italic;
+}
+.token.property{
+
+}
+.token.directive-hash{
+  color: #e6e904;
+}
+.token.keyword{
+  color: #EF6FAB;
+}
+.token.function{
+  color: #6AB5EE;
+}
+.token.punctuation{
+  color: #7bbab4;
+}
+.token.operator{
+  color: #c21854;
+}
+.token.number{
+  color: #AE9510;
+}
+.token.string{
+  color: #1577df;
+}
+
 //! For video iframe
 
 .videoZen {
