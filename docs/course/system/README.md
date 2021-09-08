@@ -42,7 +42,7 @@ pageClass: course-page-class
     <div class="zencard" style="background-image: url(/images/docs/course/system/2/2.png);">
       <div class="content">
         <h2 class="zentitle">Học nền tảng Java</h2>
-        <p class="copy">Lý thuyết trực quan về Java, nền tảng cho hướng đối tượng</p>
+        <p class="copy">Lý thuyết về Java, nền tảng cho hướng đối tượng</p>
         <a href="https://drive.google.com/drive/folders/1P31u3QFvXLGkrgb-Z-cN-AAAMVv5YMBT?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
@@ -75,7 +75,7 @@ pageClass: course-page-class
     <div class="zencard" style="background-image: url(/images/docs/course/system/3/3.png);">
       <div class="content">
         <h2 class="zentitle">Lập trình C# OOP</h2>
-        <p class="copy">Lập trình hướng đối tượng bằng ngôn ngữ C# của HowkTeam</p>
+        <p class="copy">Lập trình OOP bằng ngôn ngữ C# của HowkTeam</p>
         <a href="https://www.howkteam.vn/course/lap-trinh-oop-voi-c-32" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
       </div>
     </div>
@@ -139,3 +139,5 @@ pageClass: course-page-class
     </div>
   </div>
 </main>
+
+<comment/>

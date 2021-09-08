@@ -208,6 +208,9 @@ export const vi: SidebarConfig = {
       children: [],
     },
   ],
+  '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh': [
+    '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/1.md',
+  ],
   //* CT176-Lập trình hướng đối tượng
   '/cosonganh/CT176-Lap_trinh_huong_doi_tuong/': [
     {
