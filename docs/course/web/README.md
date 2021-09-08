@@ -11,7 +11,7 @@ pageClass: course-page-class
   <div class="content">
     <h2 class="zentitle">Nhập môn lập trình Web</h2>
     <p class="copy">Nắm các mô hình khái niệm cơ bản trong lập trình Web</p>
-    <a href="https://fullstack.edu.vn/learning/lessons-for-newbie" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+    <a href="https://fullstack.edu.vn/courses/lessons-for-newbie" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
 
@@ -19,7 +19,7 @@ pageClass: course-page-class
     <div class="content">
       <h2 class="zentitle">HTML5 vs CSS3 cơ bản</h2>
       <p class="copy">Lộ trình HTML5 và CSS3 tử Zero tới Hero của F8</p>
-      <a href="https://fullstack.edu.vn/learning/html-css" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+      <a href="https://fullstack.edu.vn/courses/html-css" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
 
@@ -27,7 +27,7 @@ pageClass: course-page-class
     <div class="content">
       <h2 class="zentitle">Javascript cơ bản</h2>
       <p class="copy">Lộ trình Javascript cơ bản với hơn 100 bài học của F8</p>
-      <a href="https://fullstack.edu.vn/learning/javascript-co-ban" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+      <a href="https://fullstack.edu.vn/courses/javascript-co-ban" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
 
