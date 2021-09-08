@@ -1,88 +1,49 @@
-# <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/16-23-17-18-icons8-pancake.png" width="40"> Bài 3. Ngăn xếp 
-
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/05/08-10-31-59-icons8_handle_with_care_35px.png"> Mô hình 
-
-::: tip GỒM 2 LOẠI
-
-- [Stack-ArrayList](https://www.cs.usfca.edu/~galles/visualization/StackArray.html) - *Ngăn xếp cài đặt theo danh sách đặc*
-
-- [Stack-LinkedList](https://www.cs.usfca.edu/~galles/visualization/StackLL.html) - *Ngăn xếp cài đạt theo danh sách liên kết*
-:::
-
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/05/08-10-30-52-icons8_concept_30px.png">[Lý thuyết](https://nguyenvanhieu.vn/ngan-xep-stack/)
-
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/05/08-10-24-29-icons8_google_code_30px.png"> Source Code
-
-### [stach.h](https://github.com/Zenfection/zenctu/blob/main/docs/cosonganh/CT177-Cau_truc_du_lieu/Source/Stack/stack.h)
-
-::: tip CẤU TRÚC
-
-```c
+#include <stdio.h>
 #define Max_length 50
 typedef struct{
     int Data[Max_length];
     int Top;
 }Stack;
-```
-:::
 
-::: tip KHỞI TẠO NGĂN XẾP RỖNG
+void makeNullStack(Stack *S);               //* tạo ngăn xếp rỗng
+void displayStack(Stack S);                 //* hiển thị ngăn xếp
+void inputStack(int n,Stack *S);            //* thêm n phần tử vào ngăn xếp
+void insertStack(int x,int p,Stack *L);     //* thêm x tại vị trí p vào ngăn xếp
+void deleleStack_byPos(int p,Stack *S);     //* xoá tại vị trí p trong ngăn xếp
+void deleteStack_byValue(int x,Stack *S);   //* xoá phần tử x trong ngăn xếp
+int locateStack(int x,Stack S);             //* trả về vị trí đầu tiên của x trong ngăn xếp
+int memberStack(int x,Stack S);             //* kiểm tra x có trong ngăn xếp
+void optimizeStack(Stack *S);               //* tối ưu ngăn xếp (1 2 1 -> 1 2)
+void changeStack(Stack S1,Stack *S);        //* chuyển ngăn xếp qua ngăn xếp mới
+void mergeList(Stack S1,Stack S2,Stack *S); //* gộp 2 ngăn xếp thành 1 ngăn xếp
+void filter_evenNumber(Stack S1,Stack *S);  //* lọc phần tử chẳn qua ngăn xếp mới
+void filter_oddNumber(Stack S1,Stack *S);   //* lọc phần tử lẻ qua ngăn xếp mới
+double averageStack(Stack S);               //* tính trung bình cộng phần tử trong ngăn xếp
 
-```c
 void makeNullStack(Stack *S){
     S->Top = Max_length;
 }
-```
-:::
-
-::: tip HIỂN THỊ NGĂN XẾP
-
-```c
 void displayStack(Stack S){
     for(int i = S.Top ; i < Max_length ; i++){
         printf("%d ",S.Data[i]);
     }
 }
-```
-:::
-
-::: tip THÊM N PHẦN TỬ VÀO NGĂN XẾP
-
-```c
 void inputStack(int n,Stack *S){
     for(int i = 0; i < n; i++){
         scanf("%d",&S->Data[S->Top-1]);
         S->Top--;
     }
 }
-```
-:::
-
-::: tip THÊM X TẠI VỊ TRÍ P VÀO NGĂN XẾP
-
-```c
 void insertStack(int x,int p,Stack *L){
     L->Data[p] = x;
     L->Top--;
 }
-```
-:::
-
-::: tip XOÁ X TẠI VỊ TRÍ P TRONG NGĂN XẾP
-
-```c
 void deleleStack_byPos(int p,Stack *S){
     for(int i = p; i > S->Top; i--){
         S->Data[i] = S->Data[i-1];
     }
     S->Top++;
 }
-```
-:::
-
-::: tip XOÁ PHẦN TỬ X TRONG NGĂN XẾP
-
-```c
 void deleteStack_byValue(int x,Stack *S){
     for(int i = S->Top ; i < Max_length ; i++){
         if(S->Data[i] == x){
@@ -90,12 +51,6 @@ void deleteStack_byValue(int x,Stack *S){
         }
     }
 }
-```
-:::
-
-::: tip TRẢ VỀ VỊ TRÍ ĐẦU TIÊN CỦA X TRONG NGĂN XẾP
-
-```c
 int locateStack(int x,Stack S){
     for(int i = S.Top ; i < Max_length ; i++){
         if(S.Data[i] == x){
@@ -104,24 +59,12 @@ int locateStack(int x,Stack S){
     }
     return -1;
 }
-```
-:::
-
-::: tip KIỂM TRA X CÓ TRONG NGĂN XẾP
-
-```c
 int memberStack(int x,Stack S){
     if(locateStack(x,S) != -1){
         return 1;
     }
     return 0;
 }
-```
-:::
-
-::: tip TỐI ƯU NGĂN XẾP (`1 2 1` -> `1 2`)
-
-```c
 void optimizeStack(Stack *S){
     int i = Max_length - 1;
     int j;
@@ -138,12 +81,6 @@ void optimizeStack(Stack *S){
         i--;
     }
 }
-```
-:::
-
-::: tip CHUYỂN NGĂN XẾP QUA NGĂN XẾP MỚI
-
-```c
 void changeStack(Stack S1,Stack *S){
     int size = Max_length;
     int i = Max_length - S1.Top;
@@ -153,22 +90,10 @@ void changeStack(Stack S1,Stack *S){
         i--;
     }
 }
-```
-:::
-
-::: tip GỘP 2 NGĂN XẾP THÀNH MỘT
-
-```c
 void mergeList(Stack S1,Stack S2,Stack *S){
     changeStack(S1,S);
     changeStack(S2,S);
 }
-```
-:::
-
-::: tip LỌC PHẨN TỬ CHẲN HOẶC LẺ QUA NGĂN XẾP MỚI
-
-```c
 void filter_evenNumber(Stack S1,Stack *S){
     int j = S->Top - 1;
     int size = Max_length - S1.Top;
@@ -179,7 +104,6 @@ void filter_evenNumber(Stack S1,Stack *S){
         j--;
     }
 }
-
 void filter_oddNumber(Stack S1,Stack *S){
     int j = S->Top - 1;
     int size = Max_length - S1.Top;
@@ -190,12 +114,6 @@ void filter_oddNumber(Stack S1,Stack *S){
         j--;
     }
 }
-```
-:::
-
-::: tip TÍNH TRUNG BÌNH CỘNG PHẦN TỬ TRONG NGĂN XẾP
-
-```c
 double averageStack(Stack S){
     int size = Max_length - S.Top;
     double sum = 0;
@@ -208,7 +126,3 @@ double averageStack(Stack S){
     result = sum / size;
     return result;
 }
-```
-:::
-
-<comment/>

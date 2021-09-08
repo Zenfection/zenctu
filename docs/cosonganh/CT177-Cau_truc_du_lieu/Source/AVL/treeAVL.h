@@ -1,20 +1,6 @@
-# <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/16-23-18-13-icons8-tree_structure.png" width="40"> Bài 6. Cây nhị phân AVL
+#include <stdio.h>
+#include <stdlib.h>
 
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/05/08-10-31-59-icons8_handle_with_care_35px.png"> Mô hình 
-
-::: tip DATA VISUALIZATION
-
-Mô hình [tại đây](https://www.cs.usfca.edu/~galles/visualization/AVLtree.html)
-:::
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/05/08-10-30-52-icons8_concept_30px.png">[Lý thuyết](https://vietjack.com/cau-truc-du-lieu-va-giai-thuat/giai-thuat-cay-avl.jsp)
-
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/05/08-10-24-29-icons8_google_code_30px.png"> Source Code
-
-### [treeAVL.h](https://github.com/Zenfection/zenctu/blob/main/docs/cosonganh/CT177-Cau_truc_du_lieu/Source/AVL/treeAVL.h)
-
-::: tip CẤU TRÚC 
-
-```c
 #define LH -1   //? Cây con trái cao hơn
 #define EH 0    //? Hai cây con bằng nhau
 #define RH 1    //? Cây con phải cao hơn
@@ -25,21 +11,24 @@ struct AVLNode{
     struct AVLNode *Right;
 };
 typedef struct AVLNode *AVLTree;
-```
-:::
 
-::: tip TẠO RỘNG TREE AVL
+void makeNullAVLTree(AVLTree *root);              //* tạo rỗng AVLTree
+int insertAVLNode(int x,AVLTree *root);           //* chèn AVLNode vào AVLTree
+AVLTree createAVLTree();                          //* tạo AVLTree
+void NLR(AVLTree root);                           //* duyệt tiền tự
+void LNR(AVLTree root);                           //* duyệt trung tự
+void LRN(AVLTree root);                           //* duyệt hậu tự
 
-```c
+void rorateLL(AVLTree *root);                     //* cân bằng Left-Left
+void rorateLR(AVLTree *root);                     //* cân bằng Left-Right
+void rorateRR(AVLTree *root);                     //* cân bằng Right-Right
+void rorateRL(AVLTree *root);                     //* cân bằng Right-Left
+int balanceLeft(AVLTree *root);                   //* cân bằng tự động trái
+int balanceRight(AVLTree *root);                  //* cân bằng tự động phải
+
 void makeNullAVLTree(AVLTree *root){
     (*root) = NULL;
 }
-```
-:::
-
-::: tip CHÈN AVLNODE VÀO AVLTREE
-
-```c
 int insertAVLNode(int x,AVLTree *root){
     AVLTree T = (*root);
     int res;
@@ -78,12 +67,6 @@ int insertAVLNode(int x,AVLTree *root){
         return 2;
     }
 }
-```
-:::
-
-::: tip TẠO TREE AVL
-
-```c
 AVLTree createAVLTree(){
     AVLTree root;
     int n;
@@ -96,13 +79,6 @@ AVLTree createAVLTree(){
     }
     return root;
 }
-```
-:::
-
-::: tip 3 KIỂU DUYỆT TREE AVL
-
-```c
-// duyệt tiền tự
 void NLR(AVLTree root){
     if(root != NULL){
         printf("%d ",root->data);
@@ -110,7 +86,6 @@ void NLR(AVLTree root){
         NLR(root->Right);
     }
 }
-// duyệt trung tự
 void LNR(AVLTree root){
     if(root != NULL){
         LNR(root->Left);
@@ -118,7 +93,6 @@ void LNR(AVLTree root){
         LNR(root->Right);
     }
 }
-// duyệt hậu tự
 void LRN(AVLTree root){
     if(root != NULL){
         LRN(root->Left);
@@ -126,13 +100,7 @@ void LRN(AVLTree root){
         printf("%d ",root->data);
     }
 }
-```
-:::
 
-::: tip 4 KIỂU CÂN BẰNG
-
-```c
-// căn bằng trái trái
 void rorateLL(AVLTree *root){
     //* Left-Left => quay phải
     AVLTree T = *root;
@@ -147,7 +115,6 @@ void rorateLL(AVLTree *root){
     }
     (*root) = T1;
 }
-// căn bằng trái phải
 void rorateLR(AVLTree *root){
     AVLTree T = *root;
     AVLTree T1 = T->Left;
@@ -166,7 +133,6 @@ void rorateLR(AVLTree *root){
     T2->balFactor = EH;
     (*root) = T2;
 }
-// căn bằng phải phải
 void rorateRR(AVLTree *root){
     //* Right-Right => quay trái
     AVLTree T = *root;
@@ -181,7 +147,6 @@ void rorateRR(AVLTree *root){
     }
     (*root) = T1;
 }
-// căn bằng phải trái
 void rorateRL(AVLTree *root){
     AVLTree T = *root;
     AVLTree T1 = T->Right;
@@ -200,13 +165,6 @@ void rorateRL(AVLTree *root){
     T2->balFactor = EH;
     (*root) = T2;
 }
-```
-:::
-
-::: tip 2 KIỂU CĂN BẰNG TỰ ĐỘNG
-
-```c
-// cân bằng tự động trái
 int balanceLeft(AVLTree *root){
     AVLTree T = *root;
     AVLTree T1 = T->Left;
@@ -218,7 +176,6 @@ int balanceLeft(AVLTree *root){
     }
     return 0;
 }
-// cân bằng tự động phải
 int balanceRight(AVLTree *root){
     AVLTree T = *root;
     AVLTree T1 = T->Right;
@@ -230,7 +187,3 @@ int balanceRight(AVLTree *root){
     }
     return 0;
 }
-```
-:::
-
-<comment/>

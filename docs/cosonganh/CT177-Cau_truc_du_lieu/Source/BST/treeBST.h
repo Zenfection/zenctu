@@ -1,42 +1,35 @@
-# <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/16-23-17-59-icons8-folder_tree.png" width="40"> Bài 5. Cây nhị phân
-
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/05/08-10-31-59-icons8_handle_with_care_35px.png"> Mô hình 
-
-::: tip DATA VISUALIZATION
-
-Mô hình [tại đây](https://www.cs.usfca.edu/~galles/visualization/BST.html)
-:::
-
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/05/08-10-30-52-icons8_concept_30px.png">[Lý thuyết](https://nguyenvanhieu.vn/cay-nhi-phan-binary-tree/)
-
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/05/08-10-24-29-icons8_google_code_30px.png"> Source Code
-
-### [treeBST.h](https://github.com/Zenfection/zenctu/blob/main/docs/cosonganh/CT177-Cau_truc_du_lieu/Source/BST/treeBST.h)
-
-::: tip CẤU TRÚC
-
-```c
+#include <stdio.h>
+#include <stdlib.h>
 struct Node{
     int data;
     struct Node *Left;
     struct Node *Right;
 };
 typedef struct Node *Tree;
-```
-:::
 
-::: tip KHỞI TẠO RỘNG TREE
+void makeNullTree(Tree *root);              //* tạo rỗng Tree
+void insertNode(int x,Tree *root);          //* chèn node vào Tree
+Tree createTree();                          //* tạo Tree
+void NLR(Tree root);                        //* duyệt tiền tự
+void LNR(Tree root);                        //* duyệt trung tự
+void LRN(Tree root);                        //* duyệt hậu tự
+void LNRtoArray(int *i,int M[],Tree root);  //* duyệt trung tự vào 1 mảng
+int getHeight(Tree root);                   //* chiều cao của 1 cây
+void printPath(int x,Tree root);            //* in đường đi của cây
+Tree rightSibling(int x,Tree root);         //* xác định nút anh em ruột
+Tree searchNode(int x,Tree root);           //* tìm 1 node trong cây
+Tree minNode(Tree root);                    //* node nhỏ nhất trong root
+Tree maxNode(Tree root);                    //* node lớn nhất trong root
+Tree getPrevious(int x,Tree root);          //* node phía trước khi duyệt trung tự
+Tree getNext(int x,Tree root);              //* node phía sau khi duyệt trung tự
+void searchStandFor(Tree *node1,Tree *node2);
+int deleteNode(int x,Tree *root);           //* xoá 1 node trong root
 
-```c
+
+
 void makeNullTree(Tree *root){
     (*root) = NULL;
 }
-```
-:::
-
-::: tip THÊM NODE VÀO TRONG TREE
-
-```c
 void insertNode(int x,Tree *root){
     Tree temp = *root;
     if(temp == NULL){
@@ -58,12 +51,6 @@ void insertNode(int x,Tree *root){
         }
     }
 }
-```
-:::
-
-::: tip TẠO TREE
-
-```c
 Tree createTree(){
     Tree root;
     int n;
@@ -76,13 +63,6 @@ Tree createTree(){
     }
     return root;
 }
-```
-:::
-
-::: tip 3 CÁCH DUYỆT TREE
-
-```c
-// duyệt tiền tự
 void NLR(Tree root){
     if(root != NULL){
         printf("%d ",root->data);
@@ -90,7 +70,6 @@ void NLR(Tree root){
         NLR(root->Right);
     }
 }
-// duyệt trung tự
 void LNR(Tree root){
     if(root != NULL){
         LNR(root->Left);
@@ -98,7 +77,6 @@ void LNR(Tree root){
         LNR(root->Right);
     }
 }
-// duyệt hậu tự
 void LRN(Tree root){
     if(root != NULL){
         LRN(root->Left);
@@ -106,12 +84,6 @@ void LRN(Tree root){
         printf("%d ",root->data);
     }
 }
-```
-:::
-
-::: tip TRẢ VỀ NODE LỚN HOẶC NHỎ NHẤT TRONG TREE
-
-```c
 Tree minNode(Tree root){
     while (root->Left != NULL){
         root = root->Left;
@@ -124,19 +96,6 @@ Tree maxNode(Tree root){
     }
     return root;
 }
-```
-:::
-
-::: tip
-
-```c
-
-```
-:::
-
-::: tip TRẢ VỀ NODE PHÍA TRƯỚC VÀ NODE PHÍA SAU NODE X
-
-```c
 Tree getPrevious(int x,Tree root){
     Tree prevNode = NULL;
     while (root != NULL){
@@ -156,7 +115,28 @@ Tree getPrevious(int x,Tree root){
     }
     return NULL;
 }
-
+void LNRtoArray(int *i,int M[],Tree root){
+    if(root != NULL){
+        LNRtoArray(&*i,M,root->Left);
+        M[*i] = root->data;
+        *i = *i + 1;
+        LNRtoArray(&*i,M,root->Right);
+    }
+}
+Tree searchNode(int x,Tree root){
+    if(root != NULL){
+        if(root->data == x){
+            return root;
+        }
+        else if(root->data > x)
+            return searchNode(x,root->Left);
+        else
+            return searchNode(x,root->Right);
+    }
+    else{
+        return NULL;
+    }
+}
 Tree getNext(int x,Tree root){
     int n = 0;
     int M[50];
@@ -171,12 +151,6 @@ Tree getNext(int x,Tree root){
     Tree result = searchNode(M[pos+1],root);
     return result;
 }
-```
-:::
-
-::: tip XOÁ MỘT NODE TRONG TREE
-
-```c
 void searchStandFor(Tree *node1,Tree *node2){
     if((*node2)->Left != NULL){
         searchStandFor(&(*node1),&(*node2)->Left);
@@ -216,12 +190,24 @@ int deleteNode(int x,Tree *root){
     }
     return 1;
 }
-```
-:::
-
-::: tip TRẢ VỀ CHIỀU CAO CỦA TREE
-
-```c
+Tree rightSibling(int x,Tree root){
+    Tree temp = NULL;
+    while (root != NULL){
+        if(root->data > x){
+            temp = root->Right;
+            root = root->Left;
+        }
+        else if(root->data < x){
+            temp = root->Left;
+            root = root->Right;
+        }
+        else{
+            // root->data == x
+            return temp;
+        }
+    }
+    return NULL;
+}
 int getHeight(Tree root){
     if(root == NULL){
         return -1;
@@ -235,12 +221,6 @@ int getHeight(Tree root){
             return heightRight+1;
     }
 }
-```
-:::
-
-::: tip HIỂN THỊ ĐƯỜNG ĐI CỦA TREE
-
-```c
 void printPath(int x,Tree root){
     while (root != NULL){
         if(root->data > x){
@@ -259,7 +239,3 @@ void printPath(int x,Tree root){
     }
     printf(" -> Khong thay");
 }
-```
-:::
-
-<comment/>

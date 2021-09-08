@@ -26,6 +26,12 @@ Cũng như các kỹ năng `Debug`,`Compiler` và thiết lập `Vscode` tại [
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-41-35-tenor.gif" width="40"> 3. Quá trình học tập
 
+| Chương <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/09/08-12-32-57-icons8-1_cute.png" width="25">.Cấu trúc cơ bản | Chương <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/09/08-12-33-00-icons8-2_cute.png" width="25">.Cấu trúc cây | Chương <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/09/08-12-33-05-icons8-3_cute.png" width="25">.Cấu trúc tập hợp |
+| ------------------------ | --------------------- | ------------------------- |
+| [Danh sách đặc](/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/1.md)            | [Cây nhị phân BST](/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/5.md)      | [Bảng Băm](/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/7.md)                  |
+| [Danh sách liên kết](/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/2.md)       | [Cây nhị phân AVL](/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/6.md)      |                           |
+| [Ngăn Xếp](/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/3.md)                |                       |                           |
+| [Hàng đợi](/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/4.md)                 |                       |                           |
 
 
 <comment/> 
