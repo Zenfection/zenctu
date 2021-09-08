@@ -7,38 +7,37 @@ pageClass: course-page-class
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/09/03-18-02-28-icons8-web.png" width="40"> Front-end
 
 <main class="zencourse">
-
   <div class="zencard" style='background-image: url(/images/docs/course/web/1/1.png);'>
-    <div class="content">
-      <h2 class="zentitle">HTML5 cho người mới</h2>
-      <p class="copy">Dành cho người mới bắt đầu muốn tìm hiểu về HTML5</p>
-      <a href="https://drive.google.com/drive/folders/1sxD_QQjc0eeJW9boacVnFPDtjeE5SJRM?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+  <div class="content">
+    <h2 class="zentitle">Nhập môn lập trình Web</h2>
+    <p class="copy">Nắm các mô hình khái niệm cơ bản trong lập trình Web</p>
+    <a href="https://fullstack.edu.vn/learning/lessons-for-newbie" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
 
-  <div class="zencard" style="background-image: url(/images/docs/course/web/1/2.png);">
+  <div class="zencard" style='background-image: url(/images/docs/course/web/1/2.png);'>
     <div class="content">
-      <h2 class="zentitle">CSS3 cơ bản tới nâng cao</h2>
-      <p class="copy">Các khái niệm và định nghĩa về CSS3 hỗ trợ HTML5</p>
-      <a href="https://drive.google.com/drive/folders/15N9gdGxX6PH3h0MrgirsoPBEu5dE9VkV?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+      <h2 class="zentitle">HTML5 vs CSS3 cơ bản</h2>
+      <p class="copy">Lộ trình HTML5 và CSS3 tử Zero tới Hero của F8</p>
+      <a href="https://fullstack.edu.vn/learning/html-css" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
+
   <div class="zencard" style="background-image: url(/images/docs/course/web/1/3.png);">
     <div class="content">
-        <h2 class="zentitle">Tất tận tật về Javascript</h2>
-        <p class="copy">Học kỹ càng về các khái niệm định nghĩa của Javascript</p>
-        <a href="https://drive.google.com/drive/folders/1X1dR27Yj2aiVmYhZhGSLOlGPMQ8XN3CS?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+      <h2 class="zentitle">Javascript cơ bản</h2>
+      <p class="copy">Lộ trình Javascript cơ bản với hơn 100 bài học của F8</p>
+      <a href="https://fullstack.edu.vn/learning/javascript-co-ban" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
 
-  <div class="zencard" style='background-image: url(/images/docs/course/web/1/4.png);'>
+  <div class="zencard" style="background-image: url(/images/docs/course/web/1/4.png);">
     <div class="content">
-      <h2 class="zentitle">Lập trình Web trong 6 tuần</h2>
-      <p class="copy">Năm tất cả kiến thức về Web, PHP, mySQL</p>
-      <a href="https://drive.google.com/drive/folders/1J8bghjJP1TRWRgD9xgiIgm8kAVm5RdK-?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+        <h2 class="zentitle">Javascript nâng cao</h2>
+        <p class="copy">Tìm hiểu sâu hơn về Javascript bind, call, apply, prototype, ...</p>
+        <a href="https://fullstack.edu.vn/courses/javascript-nang-cao" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
-  ∂
 </main>
 
 <main class="zencourse">
@@ -46,8 +45,8 @@ pageClass: course-page-class
   <div class="zencard" style='background-image: url(/images/docs/course/web/1/5.png);'>
     <div class="content">
       <h2 class="zentitle">Làm Website Responsive</h2>
-      <p class="copy">Xây dựng HTML5 và CSS3 phù hợp cho từng màn hình thiết bị</p>
-      <a href="https://drive.google.com/drive/folders/1clELhsh4DYD-byiAHEJSzBkvW8d54P7w?usp=sharing" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
+      <p class="copy">Xây dựng Website cho từng màn hình thiết bị của F8</p>
+      <a href="https://fullstack.edu.vn/courses/responsive-web-design" target=”_blank”><button class="zenbtn">Xem Khóa Học</button></a>
     </div>
   </div>
 
