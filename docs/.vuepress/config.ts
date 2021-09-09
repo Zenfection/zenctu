@@ -66,6 +66,6 @@ export default defineUserConfig<DefaultThemeOptions>({
     ['@vuepress/plugin-pwa'],
     ['@vuepress/plugin-pwa-popup',{locales: {'/': {message: 'Phiên bản mới đã lên',buttonText: 'Update!!!',},}}],
     ['@vuepress/plugin-register-components',{componentsDir: path.resolve(__dirname, './components'),},],
-    ['vuepress-plugin-zenlive2d-cat']
+    ['vuepress-plugin-zenlive2d-cat'],
   ],
 })

@@ -120,3 +120,5 @@ Hiện tại web sẽ có dự định hỗ trợ `32` học phần bao gồm ch
 | <img src="/images/docs/HP/CT550.png" title="" alt="icons8-mba.png" width="40"> [Luận văn tốt nghiệp](/doannganh/CT550-Luan_van_tot_nghiep/)                                                           | [CT550](https://elcit.ctu.edu.vn/course/search.php?search=CT550) | ❓                                                                                                                                                                                                                                                                                                                    | [Click](http://www.cit.ctu.edu.vn/decuong/CT550.pdf) | ❓                             |
 
 :::
+
+<comment/>
