@@ -41,5 +41,5 @@
     { "path": "./packages/vuepress/tsconfig.build.json" },
     { "path": "./packages/vuepress-vite/tsconfig.build.json" }
   ],
-  "files": [],
+  "files": []
 }

@@ -233,7 +233,7 @@ export const vi: SidebarConfig = {
         '/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/2.md',
         '/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/3.md',
         '/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/4.md',
-      ]
+      ],
     },
     {
       text: 'Chương 2. Cấu trúc cây',
@@ -244,10 +244,8 @@ export const vi: SidebarConfig = {
     },
     {
       text: 'Chương 3. Cấu trúc tập hợp',
-      children: [
-        '/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/7.md',
-      ],
-    }
+      children: ['/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/7.md'],
+    },
   ],
   //* CT180-Cơ sở dữ liệu
   '/cosonganh/CT180-Co_so_du_lieu/': [
@@ -584,20 +582,16 @@ export const vi: SidebarConfig = {
     {
       text: 'Tips & Track',
       link: '/tips/',
-    }
+    },
   ],
-  '/tips/browser/': [
-    '/tips/browser/extension.md',
-  ],
-  '/tips/system/': [
-    'tips/system/mathpix.md',
-  ],
+  '/tips/browser/': ['/tips/browser/extension.md'],
+  '/tips/system/': ['tips/system/mathpix.md'],
   //* devbook
   '/devbook/': [
     {
       text: 'DevBook for Zen',
       link: '/devbook/',
-    }
+    },
   ],
   '/devbook/html/refer/': [
     {
@@ -607,7 +601,7 @@ export const vi: SidebarConfig = {
         '/devbook/html/refer/globalAttributes.md',
         '/devbook/html/refer/eventAttributes.md',
         '/devbook/html/refer/attribute.md',
-      ]
-    }
-  ]
+      ],
+    },
+  ],
 }

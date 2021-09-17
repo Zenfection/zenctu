@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,kBADgB,CAChB,MAAM,CAAC;EACL,cAAc,EAAE,MAAM;CACvB",
+    "sources": [
+        "toc.scss"
+    ],
+    "names": [],
+    "file": "toc.css"
+}
