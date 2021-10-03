@@ -7,6 +7,7 @@
 @import 'popup';
 @import 'variables';
 @import 'reponsive';
+@import 'tab';
 
 :root {
   scroll-behavior: smooth;
@@ -14,6 +15,15 @@
 div[class*="language-"].line-numbers-mode pre {
   font-family: SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace !important;
 }
+
+img{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
 .home .hero .action-button.primary {
   @include button;
   border-radius: 30px;
