@@ -26,7 +26,6 @@ node_modules/
 *.log
 *._
 #temp
-*.pdf
 
 # Typescript build info
 .firebaserc
@@ -39,3 +38,4 @@ Icon[^M]
 .env
 config.json
 debug/
+*.pdf
