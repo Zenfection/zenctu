@@ -16,8 +16,12 @@
  
 ### <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-22-18-48-tenor.gif" width="40"> [Lý thuyết](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md)
 
-### Thực hành
+### <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-22-18-48-tenor.gif" width="40"> Thực hành
  
+| Buổi <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-05-icons8-1_cute.png" width="25">         | Buổi <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-09-icons8-2_cute.png" width="25">                             | Buổi <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-15-icons8-3_cute.png" width="25">               | Buổi <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-19-icons8-4_cute.png" width="25"> | Buổi <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-25-icons8-5_cute.png" width="25"> |
+| -------------- | ----------------------------------- | ---------------------- | ------ | ------ |
+| [Đồ thị căn bản](/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/1.md) | [Duyệt đồ thị, Chu trình, Liên thông](/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/2.md) | [Tìm đường đi ngắn nhất](/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/3.md) | !!!    | !!!    |
+
  
- <comment/> 
+<comment/> 
  
