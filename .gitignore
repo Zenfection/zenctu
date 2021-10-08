@@ -26,7 +26,7 @@ node_modules/
 *.log
 *._
 #temp
-
+*.pdf
 
 # Typescript build info
 .firebaserc
