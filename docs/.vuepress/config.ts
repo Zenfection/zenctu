@@ -102,14 +102,14 @@ export default defineUserConfig<DefaultThemeOptions>({
     ],
     ['@vuepress/plugin-google-analytics', { id: 'G-1GE3D8ZGM4' }],
     ['@vuepress/plugin-pwa'],
-    [
-      '@vuepress/plugin-pwa-popup',
-      {
-        locales: {
-          '/': { message: 'Phiên bản mới đã lên', buttonText: 'Update!!!' },
-        },
-      },
-    ],
+    // [
+    //   '@vuepress/plugin-pwa-popup',
+    //   {
+    //     locales: {
+    //       '/': { message: 'Phiên bản mới đã lên', buttonText: 'Update!!!' },
+    //     },
+    //   },
+    // ],
     [
       '@vuepress/plugin-register-components',
       { componentsDir: path.resolve(__dirname, './components') },
