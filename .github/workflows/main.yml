@@ -11,7 +11,6 @@ jobs:
     - name: Algolia Docsearch Action
       id: algolia
       uses: darrenjennings/algolia-docsearch-action@master
-      with:
       algolia_application_id: '3CJDV2AFXL'
       algolia_api_key: 'ff7ab8030ae3f5983ef3e120c8a60b07'
       file: 'zenfection1412/ctuvn/config.json'
