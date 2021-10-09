@@ -15,5 +15,5 @@ jobs:
       - uses: opstrace/algolia-docs-sync@v1.0.2
         with:
           algoliaId: '3CJDV2AFXL'
-          algoliaKey: ${{ ff7ab8030ae3f5983ef3e120c8a60b07 }}
+          algoliaKey: 'f7ab8030ae3f5983ef3e120c8a60b07'
           algoliaIndex: 'ctuvn'
