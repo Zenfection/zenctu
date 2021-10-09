@@ -1,6 +1,18 @@
-- uses: actions/checkout@v2
-- uses: darrenjennings/algolia-docsearch-action@master
-  with:
-    algolia_application_id: '3CJDV2AFXL'
-    algolia_api_key: 'ff7ab8030ae3f5983ef3e120c8a60b07'
-    file: 'zenfection1412/zenctu/config.json'
+name: Algolia Indexer
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  algolia_indexer:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Algolia Docsearch Action
+      id: algolia
+      uses:  actions/checkout@v2
+      uses: darrenjennings/algolia-docsearch-action@master
+      with:
+      algolia_application_id: '3CJDV2AFXL'
+      algolia_api_key: 'ff7ab8030ae3f5983ef3e120c8a60b07'
+      file: 'zenfection1412/ctuvn/config.json'
