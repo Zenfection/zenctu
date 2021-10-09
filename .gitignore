@@ -36,6 +36,5 @@ firebase.json
 Icon[^M]
 !/.gitignore
 .env
-config.json
 debug/
 *.pdf
