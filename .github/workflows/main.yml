@@ -6,7 +6,6 @@ on:
       - 'main'
 
 jobs:
-  - name: Push indices to Algolia
     uses: signcl/docsearch-scraper-action@master
     env:
       APPLICATION_ID: '3CJDV2AFXL'
