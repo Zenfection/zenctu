@@ -15,10 +15,10 @@ jobs:
     - uses: tilburgsciencehub/algolia-uploader@master
       with:
         # Algolia app id
-        app_id: 3CJDV2AFXL
+        app_id: '3CJDV2AFXL'
         # Secret token in the organization's 'Setting > Secrets'
-        admin_key: ff7ab8030ae3f5983ef3e120c8a60b07
+        admin_key: 'ff7ab8030ae3f5983ef3e120c8a60b07'
         # The index name
-        index_name: ctuvn
+        index_name: 'ctuvn'
         # The index file path relative to repo root.
-        index_file_path: config.json
+        index_file_path: 'config.json'
