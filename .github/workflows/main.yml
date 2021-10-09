@@ -1,16 +1,19 @@
-name: Algolia Indexer
+name: Sync Algolia
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - 'main'
 
 jobs:
-  algolia_indexer:
+  algolia:
     runs-on: ubuntu-latest
+    name: Algolia Sync
     steps:
-    - name: Algolia Docsearch Action
-      id: algolia
-      uses: darrenjennings/algolia-docsearch-action@master
-      algolia_application_id: '3CJDV2AFXL'
-      algolia_api_key: 'ff7ab8030ae3f5983ef3e120c8a60b07'
-      file: 'zenfection1412/ctuvn/config.json'
+      - uses: actions/checkout@v2
+
+      - uses: opstrace/algolia-docs-sync@v1.0.2
+        with:
+          algoliaId: '3CJDV2AFXL'
+          algoliaKey: ${{ ff7ab8030ae3f5983ef3e120c8a60b07 }}
+          algoliaIndex: 'ctuvn'
