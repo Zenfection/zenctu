@@ -10,7 +10,6 @@ jobs:
     steps:
     - name: Algolia Docsearch Action
       id: algolia
-      uses:  actions/checkout@v2
       uses: darrenjennings/algolia-docsearch-action@master
       with:
       algolia_application_id: '3CJDV2AFXL'
