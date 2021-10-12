@@ -16,7 +16,13 @@
  
 ### <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-22-18-48-tenor.gif" width="40"> [Lý thuyết](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md)
 
-### <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-22-18-48-tenor.gif" width="40"> Thực hành
+| Chương <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-05-icons8-1_cute.png" width="25">              | Chương <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-09-icons8-2_cute.png" width="25">      | Chương <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-15-icons8-3_cute.png" width="25">      | Chương <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-19-icons8-4_cute.png" width="25">             |
+| --------------------- | --------------- | ----------------- | ---------------------- |
+| [Nền tảng Graph Theory](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md) | [Đồ thì dạng cây](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/8.md) | [Bài toán đường đi]() | [Đồ thị phẳng và số màu]() |
+
+
+
+### <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/12-16-35-26-blukittie-blu.gif" width="40"> Thực hành
  
 | Buổi <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-05-icons8-1_cute.png" width="25">         | Buổi <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-09-icons8-2_cute.png" width="25">                             | Buổi <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-15-icons8-3_cute.png" width="25">               | Buổi <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-19-icons8-4_cute.png" width="25"> | Buổi <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-25-icons8-5_cute.png" width="25"> |
 | -------------- | ----------------------------------- | ---------------------- | ------ | ------ |

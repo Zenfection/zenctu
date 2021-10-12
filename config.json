@@ -1,15 +1,9 @@
 {
   "index_name": "ctuvn",
-  "start_urls": [
-    "https://zenctu.web.app"
-  ],
+  "start_urls": ["https://zenctu.web.app"],
   "stop_urls": [],
   "selectors": {
-    "lvl0": {
-      "selector": ".sidebar-heading.active",
-      "global": true,
-      "default_value": "Documentation"
-    },
+    "lvl0": ".sidebar-heading.active",
     "lvl1": ".theme-default-content h1",
     "lvl2": ".theme-default-content h2",
     "lvl3": ".theme-default-content h3",
@@ -23,10 +17,6 @@
     }
   },
   "custom_settings": {
-    "custom_settings": {
-      "attributesForFaceting": [
-        "lang"
-      ]
-    }
+    "attributesForFaceting": ["lang"]
   }
 }
