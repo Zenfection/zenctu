@@ -197,7 +197,10 @@ export const vi: SidebarConfig = {
     },
     {
       text: 'Chương 2.Đồ thị dạng cây',
-      children: ['/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/8.md'],
+      children: [
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/8.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/9.md',
+      ],
     },
     {
       text: 'Chương 3.Bài toán đường đi',
