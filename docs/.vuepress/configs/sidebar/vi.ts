@@ -204,7 +204,9 @@ export const vi: SidebarConfig = {
     },
     {
       text: 'Chương 3.Bài toán đường đi',
-      children: [],
+      children: [
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/10.md',
+      ],
     },
     {
       text: 'Chương 4.Đồ thị phẳng và số màu',
