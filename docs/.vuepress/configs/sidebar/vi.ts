@@ -206,6 +206,7 @@ export const vi: SidebarConfig = {
       text: 'Chương 3.Bài toán đường đi',
       children: [
         '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/10.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/11.md',
       ],
     },
     {
