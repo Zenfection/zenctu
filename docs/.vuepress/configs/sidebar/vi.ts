@@ -207,11 +207,9 @@ export const vi: SidebarConfig = {
       children: [
         '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/10.md',
         '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/11.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/12.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/13.md',
       ],
-    },
-    {
-      text: 'Chương 4.Đồ thị phẳng và số màu',
-      children: [],
     },
   ],
   '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh': [
