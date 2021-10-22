@@ -209,8 +209,15 @@ export const vi: SidebarConfig = {
         '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/11.md',
         '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/12.md',
         '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/13.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/14.md',
       ],
     },
+    {
+      text: 'Chương 4.Đồ thị phẳng và tô màu đồ thị',
+      children: [
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/15.md'
+      ]
+    }
   ],
   '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh': [
     '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/1.md',

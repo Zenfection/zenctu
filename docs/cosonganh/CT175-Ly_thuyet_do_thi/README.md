@@ -18,7 +18,7 @@
 
 | Chương <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-05-icons8-1_cute.png" width="25">              | Chương <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-09-icons8-2_cute.png" width="25">      | Chương <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-15-icons8-3_cute.png" width="25">      | Chương <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-19-icons8-4_cute.png" width="25">             |
 | --------------------- | --------------- | ----------------- | ---------------------- |
-| [Nền tảng Graph Theory](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md) | [Đồ thì dạng cây](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/8.md) | [Bài toán đường đi](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/10.md) | Đồ thị phẳng và số màu |
+| [Nền tảng Graph Theory](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md) | [Đồ thì dạng cây](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/8.md) | [Bài toán đường đi](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/10.md) | [Đồ thị phẳng và số màu](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/15.md) |
 
 
 
