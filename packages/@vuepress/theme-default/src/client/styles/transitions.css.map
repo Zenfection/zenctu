@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,0BAA0B,CAAC;EACzB,UAAU,EAAE,aAAa;CAC1B;;AAED,AAAA,0BAA0B,CAAC;EACzB,UAAU,EAAE,GAAG,CAAC,IAAI,CAAC,4BAA4B;CAClD;;AAED,AAAA,wBAAwB;AACxB,sBAAsB,CAAC;EACrB,SAAS,EAAE,gBAAgB;EAC3B,OAAO,EAAE,CAAC;CACX",
-    "sources": [
-        "transitions.scss"
-    ],
-    "names": [],
-    "file": "transitions.css"
-}
