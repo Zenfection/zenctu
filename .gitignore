@@ -21,6 +21,8 @@ node_modules/
 # MacOS Desktop Services Store
 .DS_Store
 *.DS_Store
+Icon^M
+._*
 
 # Log files
 *.log
