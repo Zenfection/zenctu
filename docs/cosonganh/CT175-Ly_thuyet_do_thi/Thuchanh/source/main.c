@@ -128,11 +128,26 @@ int outDegree(Graph G, int x); //tính bậc ngoài của đồ thị
 bool multiEdge(Graph G); //kiểm tra có chứa đa cung không
 List neighbors(Graph G, int x); //trả về danh sách các đỉnh kề
 List arrayGraph(Graph G); // trả về danh sách các đỉnh trong đồ thị
+void DFS_Re(Graph G, int v, bool visited[]); //duyệt đệ quy đồ thị
+bool connectedGraph(Graph G,int x); //kiểm tra đồ thị liên thông
+bool connectedStrongGraph(Graph G); //kiểm tra đồ thị liên thông mạnh
+int countSubConnectedGraph(Graph G); //đếm số bộ phận liên thông mạnh
+bool isCycle(Graph G, bool visited[], int v, int parrent); //bổ trỡ hàm cycle
+bool cycle(Graph G); //kiểm tra chu trình
 
 //! Hàm main
 int main(int argc, char const *argv[]){
     Graph G;
     makeNullGraph(&G);
+    freopen("dt2.txt","r",stdin);
+    scanf("%d%d",&G.n,&G.m);
+    init_Graph(&G, G.n);
+    for(int i = 1; i <= G.m; i++){ // thay đổi theo bài toán
+        int x,y;
+        scanf("%d%d",&x,&y);
+        add_edge(&G,x,y);
+    }
+    cycle(G) ? printf("YES") : printf("NO");
     return 0;
 }
 
@@ -209,4 +224,68 @@ List arrayGraph(Graph G){
         insertList(i,&L);
     }
     return L;
+}
+void DFS_Re(Graph G, int v, bool visited[]){
+    visited[v] = true;
+    //printf("%d ",v);
+    List temp = neighbors(G, v);
+    for (int i = 0; i < temp.Size; i++){
+        int u = temp.Data[i];
+        if(!visited[u]){
+            DFS_Re(G, u, visited);
+        }
+    }
+}
+bool connectedGraph(Graph G,int x){
+    bool visited[G.n + 1]; // bắt đầu từ đỉnh 1 thay vì 0
+    for (int i = 1; i <= G.n; i++){ // khởi tạo ban đầu là false
+        visited[i] = false;
+    }
+    DFS_Re(G,x,visited);
+    for(int i = 1; i <= G.n; i++){
+        if(!visited[i])
+            return false;
+    }
+    return true;
+}
+bool connectedStrongGraph(Graph G){
+    for (int i = 1; i <= G.n; i++){
+        if(!connectedGraph(G,i))
+            return false;
+    }
+    return true;
+}
+int countSubConnectedGraph(Graph G){
+    int count = 0;
+    for(int i = 1; i <= G.n; i++){
+        if (connectedGraph(G,i))
+            count++;
+    }
+    return count;
+}
+bool isCycle(Graph G,bool visited[], int v, int parrent){
+    visited[v] = true;
+    List L = neighbors(G,v);
+    for(int i = 0; i < L.Size; i++){
+        int u = L.Data[i];
+        if(!visited[u]){
+            if(isCycle(G, visited, u, v))
+                return true;
+        }
+        else if(u != parrent)
+            return true;
+    }
+    return false;
+}
+bool cycle(Graph G){
+    bool visited[G.n + 1];
+    for(int i = 1; i <= G.n; i++)
+        visited[i] = false;
+
+    for(int i = 1; i <= G.n; i++){
+        if(!visited[i])
+            if(isCycle(G,visited,i,-1))
+                return true;
+    }
+    return false;
 }
