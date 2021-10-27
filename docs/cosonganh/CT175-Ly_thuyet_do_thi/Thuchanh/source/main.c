@@ -135,19 +135,20 @@ int countSubConnectedGraph(Graph G); //đếm số bộ phận liên thông mạ
 bool isCycle(Graph G, bool visited[], int v, int parrent); //bổ trỡ hàm cycle
 bool cycle(Graph G); //kiểm tra chu trình
 
+
 //! Hàm main
 int main(int argc, char const *argv[]){
     Graph G;
     makeNullGraph(&G);
-    freopen("dt2.txt","r",stdin);
+    freopen("dt.txt","r",stdin);
     scanf("%d%d",&G.n,&G.m);
     init_Graph(&G, G.n);
     for(int i = 1; i <= G.m; i++){ // thay đổi theo bài toán
         int x,y;
         scanf("%d%d",&x,&y);
-        add_edge(&G,x,y);
+        add_edgeDirection(&G,x,y);
     }
-    cycle(G) ? printf("YES") : printf("NO");
+    printf("%d",countSubConnectedGraph(G));
     return 0;
 }
 
@@ -256,9 +257,12 @@ bool connectedStrongGraph(Graph G){
     return true;
 }
 int countSubConnectedGraph(Graph G){
+    if(connectedStrongGraph(G)){
+        return 1;
+    }
     int count = 0;
     for(int i = 1; i <= G.n; i++){
-        if (connectedGraph(G,i))
+        if (!connectedGraph(G,i))
             count++;
     }
     return count;
