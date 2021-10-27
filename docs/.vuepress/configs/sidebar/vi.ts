@@ -220,6 +220,7 @@ export const vi: SidebarConfig = {
     }
   ],
   '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh': [
+    '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/0.md',
     '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/1.md',
     '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/2.md',
     '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/3.md',
