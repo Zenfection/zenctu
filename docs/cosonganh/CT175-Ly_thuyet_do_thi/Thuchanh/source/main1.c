@@ -1,3 +1,4 @@
+//!-- Dành cho danh sách đỉnh đỉnh
 #include <stdio.h>   // thư viện cơ bản của C
 #include <stdbool.h> // hỗ trợ true/false cho C
 #define MAX 50       // có thể thay thế
@@ -118,6 +119,7 @@ typedef struct{
     int m; //số cung
 }Graph;
 
+//* Hàm căn bản---------
 void makeNullGraph(Graph *G);  //khởi tạo đồ thị rỗng
 void init_Graph(Graph *G, int n); //khởi tạo đồ thị với n đỉnh
 void add_edge(Graph *G, int x, int y); //thêm 1 cung vào đồ thị vô hướng
@@ -128,12 +130,15 @@ int outDegree(Graph G, int x); //tính bậc ngoài của đồ thị
 bool multiEdge(Graph G); //kiểm tra có chứa đa cung không
 List neighbors(Graph G, int x); //trả về danh sách các đỉnh kề
 List arrayGraph(Graph G); // trả về danh sách các đỉnh trong đồ thị
+//* Duyệt đồ thị-Liên thông-Chu trình
 void DFS_Re(Graph G, int v, bool visited[]); //duyệt đệ quy đồ thị
 bool connectedGraph(Graph G,int x); //kiểm tra đồ thị liên thông
 bool connectedStrongGraph(Graph G); //kiểm tra đồ thị liên thông mạnh
 int countSubConnectedGraph(Graph G); //đếm số bộ phận liên thông mạnh
 bool isCycle(Graph G, bool visited[], int v, int parrent); //bổ trỡ hàm cycle
 bool cycle(Graph G); //kiểm tra chu trình
+//* Xếp hạng đồ thị
+void dijkstra(Graph G, int s, List *parrent, List *cost); //đường đi ngắn nhất dijkstra
 
 
 //! Hàm main
@@ -148,7 +153,7 @@ int main(int argc, char const *argv[]){
         scanf("%d%d",&x,&y);
         add_edgeDirection(&G,x,y);
     }
-    printf("%d",countSubConnectedGraph(G));
+
     return 0;
 }
 
@@ -256,6 +261,7 @@ bool connectedStrongGraph(Graph G){
     }
     return true;
 }
+
 int countSubConnectedGraph(Graph G){
     if(connectedStrongGraph(G)){
         return 1;
@@ -292,4 +298,37 @@ bool cycle(Graph G){
                 return true;
     }
     return false;
+}
+void dijkstra(Graph G, int s, List *parrent, List *cost){
+    bool mark[50];
+    for (int i = 1; i <= G.n; i++){ //* khởi tạo mảng
+        cost->Data[i] = 999;
+        mark[i] = false;
+        parrent->Data[i] = 0;
+    }
+    parrent->Size = cost->Size = G.n;
+    cost->Data[s] = 0; // có thể thay đổi
+    parrent->Data[s] = -1; // có thể thay đổi
+
+    int u,v;
+    for (int i = 1; i <= G.n; i++){
+        int min_pi = 999;
+        for (int j = 1; j <= G.n; j++){
+            //* Tìm đỉnh chưa duyệt có giá trị min_pi
+            if(!mark[j] && cost->Data[j] < min_pi){
+                min_pi = cost->Data[j];
+                u = j;
+            }
+        }
+        mark[u] = 1; //* đánh dấu đã duyệt xong đỉnh đó
+        for (v = 1; v <= G.n; v++){
+            if(G.A[u][v] != 0 && !mark[v]){
+                int x = cost->Data[u] + G.A[u][v];
+                if(x < cost->Data[v]){
+                    cost->Data[v] = x;
+                    parrent->Data[v] = u;
+                }
+            }
+        }
+    }
 }
