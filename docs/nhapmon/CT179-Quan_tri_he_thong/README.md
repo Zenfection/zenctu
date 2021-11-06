@@ -14,7 +14,10 @@
  
 ### Lý thuyết
 
-### [Thực hành](/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/1.md)
+### <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/12-16-35-26-blukittie-blu.gif" width="40"> Thực Hành
+
+| <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-05-icons8-1_cute.png" width="30">                  | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-09-icons8-2_cute.png" width="30">                                    | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-15-icons8-3_cute.png" width="30">                                                     | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-19-icons8-4_cute.png" width="30">                                           | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-25-icons8-5_cute.png" width="30">                     | Nhóm     |
+| ----------------- | ------------------------------------ | ----------------------------------------------------- | ------------------------------------------- | --------------------- | -------- |
+| [Quản trị hệ thống](/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/1.md) | [Quản lí tài khoản, ổ cứng và tập tin](/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/2.md) | [Shell Scripting, quản lí tiến trình, nhật ký hệ thống](/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/3.md) | [Cấu hình mạng và cài đặt SSH,FTP,Web Server](/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/4.md) | [SAMBA,DNS và Firewall](/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/5.md) | Tổng hợp |
 
 <comment/> 
- 

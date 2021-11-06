@@ -2,7 +2,7 @@
 
 ::: tip 📁 TÀI NGUYÊN
 
-[Download file bài tập nhóm](https://drive.google.com/file/d/1Pm1kDWDgYIIfnlJ00CvcWhVXEc_CWUsq/view)
+[Download file bài tập nhóm](https://drive.google.com/file/d/1aGSc0d8r1UFqoMZxYi4jQqA_3J8lzUUO/preview)
 :::
 
 Công ty `Tam Quốc` chuyên kinh doanh Lẩu cay `Tứ Xuyên` có nhu cầu cài đặt các dịch vụ mạng phục vụ cho công việc của công ty như sau:

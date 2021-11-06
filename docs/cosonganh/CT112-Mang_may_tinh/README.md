@@ -12,9 +12,9 @@
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-41-35-tenor.gif" width="40"> 3. Quá trình học tập
 
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-22-18-48-tenor.gif" width="40"> [Lý Thuyết](/cosonganh/CT112-Mang_may_tinh/Tailieu/Chapter1/1.md)
+### <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-22-18-48-tenor.gif" width="40"> [Lý Thuyết](/cosonganh/CT112-Mang_may_tinh/Tailieu/Chapter1/1.md)
 
-## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/12-16-35-26-blukittie-blu.gif" width="40"> Thực Hành
+### <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/12-16-35-26-blukittie-blu.gif" width="40"> Thực Hành
  
 | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-05-icons8-1_cute.png" width="30">                                  | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-09-icons8-2_cute.png" width="30">                          | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-15-icons8-3_cute.png" width="30">                        | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-19-icons8-4_cute.png" width="30">                | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-25-icons8-5_cute.png" width="30">                             | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/11/03-10-49-45-icons8-6_cute.png" width="30">                 |
 | --------------------------------------- | ------------------------------- | ----------------------------- | --------------------- | ---------------------------------- | ---------------------- |
