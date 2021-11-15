@@ -27,15 +27,34 @@
   color: #1577df;
 }
 
-//! For video iframe
+//! For PDF iframe
+.pdfZen{
+  position: relative;
+  padding-bottom: 80%;
+  height: 0;
+  margin-top: 1rem;
 
+}
+
+.pdfZen iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+
+
+//! For video iframe
 .videoZen {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   margin-top: 1rem;
 }
-
 
 .videoZen iframe {
   position: absolute;
@@ -90,6 +109,7 @@
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
+
 .imageZen:hover{
   transform: translateY(-6px);
   -webkit-transform: translateY(-6px);

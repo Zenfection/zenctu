@@ -47,6 +47,7 @@ export const vi: SidebarConfig = {
     '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/3.md',
     '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/4.md',
     '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/5.md',
+    '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/6.md',
   ],
   //* CT188 Nhập môn lập trình web
   '/nhapmon/CT188-Nhap_mon_lap_trinh_web/': [
