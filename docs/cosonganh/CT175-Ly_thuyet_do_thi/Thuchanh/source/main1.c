@@ -1,4 +1,3 @@
-//!-- Dành cho danh sách đỉnh đỉnh
 #include <stdio.h>   // thư viện cơ bản của C
 #include <stdbool.h> // hỗ trợ true/false cho C
 #define MAX 50       // có thể thay thế
@@ -112,7 +111,7 @@ bool memberStack(int x, Stack S){ //kiểm tra x có trong ngăn xếp không
     return false;
 }
 
-//! Thư viện Graph
+//! Thư viện Graph đỉnh đỉnh
 typedef struct{
     int A[MAX][MAX];
     int n; //số đỉnh
@@ -122,8 +121,8 @@ typedef struct{
 //* Hàm căn bản---------
 void makeNullGraph(Graph *G);  //khởi tạo đồ thị rỗng
 void init_Graph(Graph *G, int n); //khởi tạo đồ thị với n đỉnh
-void add_edge(Graph *G, int x, int y); //thêm 1 cung vào đồ thị vô hướng
-void add_edgeDirection(Graph *G, int x,int y); //thêm 1 cung vào đồ thị có hướng
+void add_edge(Graph *G, int x, int y,int z); //thêm 1 cung vào đồ thị vô hướng
+void add_edgeDirection(Graph *G, int x,int y,int z); //thêm 1 cung vào đồ thị có hướng
 void printGraph(Graph G); // in ma trận đồ thị
 int inDegree(Graph G, int x); //tính bậc trong của đồ thị
 int outDegree(Graph G, int x); //tính bậc ngoài của đồ thị
@@ -138,7 +137,11 @@ int countSubConnectedGraph(Graph G); //đếm số bộ phận liên thông mạ
 bool isCycle(Graph G, bool visited[], int v, int parrent); //bổ trỡ hàm cycle
 bool cycle(Graph G); //kiểm tra chu trình
 //* Xếp hạng đồ thị
-void dijkstra(Graph G, int s, List *parrent, List *cost); //đường đi ngắn nhất dijkstra
+void dijkstra(Graph G, int s,int costStart, List *parrent, List *cost); //đường đi ngắn nhất dijkstra
+
+
+//* Cây khung nhỏ nhất
+int prim(Graph G, Graph *T); //trả về chi phí cây khung nhỏ nhất và đồ thị cây khung nhỏ nhất
 
 
 //! Hàm main
@@ -146,14 +149,27 @@ int main(int argc, char const *argv[]){
     Graph G;
     makeNullGraph(&G);
     freopen("dt.txt","r",stdin);
-    scanf("%d%d",&G.n,&G.m);
-    init_Graph(&G, G.n);
-    for(int i = 1; i <= G.m; i++){ // thay đổi theo bài toán
-        int x,y;
-        scanf("%d%d",&x,&y);
-        add_edgeDirection(&G,x,y);
+    int n,m;
+    scanf("%d%d",&n,&m);
+    init_Graph(&G, n);
+    for(int i = 1; i <= m; i++){ // thay đổi theo bài toán
+        int x,y,z;
+        scanf("%d%d%d",&x,&y,&z);
+        add_edgeDirection(&G,x,y,z);
     }
 
+    Graph T;
+    makeNullGraph(&T);
+    int min_cost = prim(G, &T);
+    printf("%d\n", min_cost);
+    for(int i = 1; i <= T.n; i++){
+        for(int j = 1; j <= T.n; j++){
+            if(T.A[i][j]){
+                printf("%d %d %d\n", i, j, T.A[i][j]);
+                break;
+            }
+        }
+    }
     return 0;
 }
 
@@ -164,23 +180,35 @@ void makeNullGraph(Graph *G){
 }
 
 void init_Graph(Graph *G, int n){
+    G->n = n;
     for (int i = 1; i <= n; i++)
         for (int j = 1; j <= n; j++)
             G->A[i][j] = 0;
 }
 
-void add_edge(Graph *G, int x, int y){
+void add_edge(Graph *G, int x, int y,int z){
     if(G->A[x][y] > 0 && G->A[x][y] > 0) //trường hợp đa cung
         G->A[x][y] = G->A[y][x] += 1;
     else
-        G->A[x][y] = G->A[y][x] = 1;
+        G->A[x][y] = G->A[y][x] = z;
+
+    G->m++;
 }
 
-void add_edgeDirection(Graph *G, int x,int y){
+void add_edgeDirection(Graph *G, int x,int y,int z){
     if(G->A[x][y] > 0){ //trường hợp đa cung
         G->A[x][y] += 1;
     }
-    G->A[x][y] = 1;
+    G->A[x][y] = z;
+    G->m++;
+}
+
+void add_edgeWeight(Graph *G, int x, int y, int z){
+    G->A[x][y] = G->A[y][z] = z;
+}
+
+void add_edgeDirectionWeight(Graph *G, int x, int y, int z){
+    G->A[x][y] = z;
 }
 
 void printGraph(Graph G){
@@ -233,7 +261,7 @@ List arrayGraph(Graph G){
 }
 void DFS_Re(Graph G, int v, bool visited[]){
     visited[v] = true;
-    //printf("%d ",v);
+    printf("%d ",v);
     List temp = neighbors(G, v);
     for (int i = 0; i < temp.Size; i++){
         int u = temp.Data[i];
@@ -299,7 +327,7 @@ bool cycle(Graph G){
     }
     return false;
 }
-void dijkstra(Graph G, int s, List *parrent, List *cost){
+void dijkstra(Graph G, int s,int costStart, List *parrent, List *cost){
     bool mark[50];
     for (int i = 1; i <= G.n; i++){ //* khởi tạo mảng
         cost->Data[i] = 999;
@@ -307,7 +335,7 @@ void dijkstra(Graph G, int s, List *parrent, List *cost){
         parrent->Data[i] = 0;
     }
     parrent->Size = cost->Size = G.n;
-    cost->Data[s] = 0; // có thể thay đổi
+    cost->Data[s] = costStart;
     parrent->Data[s] = -1; // có thể thay đổi
 
     int u,v;
@@ -331,4 +359,51 @@ void dijkstra(Graph G, int s, List *parrent, List *cost){
             }
         }
     }
+}
+int prim(Graph G, Graph *T){
+    int cost[MAX], parrent[MAX];
+    bool mark[MAX];
+
+    init_Graph(T, G.n);
+    int sumW = 0;
+    for(int i = 1; i <= G.n; i++){
+        cost[i] = 999;
+        mark[i] = false;
+        if(G.A[1][i]){
+            cost[i] = G.A[1][i];
+            parrent[i] = 1;
+        }
+    }
+
+    cost[1] = 0; // có thể thay đổi
+    mark[1] = true;
+
+    for(int i = 1; i < G.n; i++){
+        int min_dist = 999;
+        int min_u;
+        for(int j = 1; j <= G.n; j++){
+            if(!mark[j]){
+                if(min_dist > cost[j]){
+                    min_dist = cost[j];
+                    min_u = j;
+                }
+            }
+        }
+        int u = min_u; //đánh dấu pi[u] nhỏ nhất
+        mark[min_u] = true;
+        add_edgeDirection(T, parrent[min_u], min_u, min_dist);
+        sumW += min_dist;
+
+        // cập nhật lại pi và p của đỉnh kề với u
+        for(int v = 1; v <= G.n; v++){
+            if(!mark[v]){
+                if(G.A[u][v])
+                    if(cost[v] > G.A[u][v]){
+                        cost[v] = G.A[u][v];
+                        parrent[v] = u;
+                    }
+            }
+        }
+    }
+    return sumW;
 }

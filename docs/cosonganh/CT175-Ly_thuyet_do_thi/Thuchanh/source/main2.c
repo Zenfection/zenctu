@@ -1,8 +1,7 @@
-//!-- Dành cho danh sách cung
-#include <stdio.h>   // thư viện cơ bản của C
-#include <stdbool.h> // hỗ trợ true/false cho C
-#define MAX 50       // có thể thay thế
+#include <stdio.h>
+#include <stdbool.h>
 
+#define MAX 50       // có thể thay thế
 //! Thư viện List
 typedef struct{ //cấu trúc danh sách
     int Data[MAX];
@@ -112,39 +111,66 @@ bool memberStack(int x, Stack S){ //kiểm tra x có trong ngăn xếp không
     return false;
 }
 
-//! Thư viện Graph
+//! Thư viện Graph danh sách cung
+
 typedef struct {
     int u, v;
-    int w; //trọng số
+    int w;
 } Edge;
 typedef struct {
     int n, m;
-    Edge edges[MAX]; //danh sách cung
+    Edge edges[MAX];
 } Graph;
 
-void makeNullGraph(Graph *G); //tạo rỗng đồ thị
-void initGraph(Graph *G,int n);  //khởi tạo đồ thị n đỉnh
-void addEdge(Graph *G, int x, int y, int z); //thêm 1 cung có trọng số
-int degree(Graph G,int x); //tính bậc của đỉnh
-List neighbor(Graph G,int x); //trả về danh sách đỉnh kề
-void bellmanFord(Graph G, int s,List *cost, List *parrent); //tìm đường đi ngắn nhất bằng bellmanFord
+//* Hàm cơ bản
+void makeNullGraph(Graph *G);   //tạo đồ thị rỗng
+void initGraph(Graph *G,int n); //khởi tạo đồ thị
+void addEdge(Graph *G, int x, int y, int z); //thêm cung vào đồ thị
+int inDegree(Graph G, int x); //tính bậc trong của đỉnh
+int outDegree(Graph G, int x); //tính bậc ngoài của đỉnh
+List neighbors(Graph G, int x); //trả về danh sách các định kề
+
+
+
+//* Tìm đường đi ngắn nhất
+void bellmanFord(Graph G, int s, List *cost, List *parrent); //giải thuật bellmanFord
+
+//* Cây khung nhỏ nhất
+void swap(Edge *a, Edge *b){
+    Edge temp = *a;
+    *a = *b;
+    *b = temp;
+}
+void bubbleSort(Graph *G){
+    int n = G->m;
+    for(int i = 0; i < n - 1; i++){
+        for(int j = n - 1; j >= i + 1; j--){
+            if(G->edges[j].w < G->edges[j-1].w)
+                swap(&G->edges[j], &G->edges[j-1]);
+        }
+    }
+}
+
+void kruskal(Graph G, Graph *T){
+    int sumW = 0;
+    int parrent[MAX];
+    initGraph(&T, G.n);
+    bubbleSort(&G);
+
+    for(int i = 1; i <= G.n; i++){
+        parrent[i] = 1;
+    }
+
+    return sumW;
+}
 
 //! Hàm main
+
 int main(int argc, char const *argv[]){
-    Graph G;
-    makeNullGraph(&G);
-    freopen("dt2.txt","r",stdin);
-    int n,m;
-    scanf("%d%d",&n,&m);
-    initGraph(&G, n);
-    for(int i = 0; i < m; i++){
-        int x,y;
-        scanf("%d%d",&x,&y);
-        addEdge(&G,x,y,1);
-    }
 
     return 0;
 }
+
 
 void makeNullGraph(Graph *G){
     G->m = 0;
@@ -152,44 +178,58 @@ void makeNullGraph(Graph *G){
 }
 void initGraph(Graph *G,int n){
     G->n = n;
-    G->m = 0; //chưa thêm cung nào
+    for(int i = 0; i < n; i++){
+        G->edges[i].u = 0;
+        G->edges[i].v = 0;
+        G->edges[i].w = 0;
+    }
 }
 void addEdge(Graph *G, int x, int y, int z){
     G->edges[G->m].u = x;
     G->edges[G->m].v = y;
     G->edges[G->m].w = z;
+
     G->m++;
 }
-int degree(Graph G,int x){
+int inDegree(Graph G, int x){
     int count = 0;
-    for(int i = 0; i <= G.m; i++){
-        if(G.edges[i].u == x || G.edges[i].v == x)
+    for(int i = 0; i < G.m; i++){
+        if(G.edges[i].v == x)
             count++;
     }
     return count;
 }
-List neighbor(Graph G,int x){
+int outDegree(Graph G, int x){
+    int count = 0;
+    for(int i = 0; i < G.m; i++){
+        if(G.edges[i].u == x)
+            count++;
+    }
+    return count;
+}
+List neighbors(Graph G, int x){
     List L;
     makeNullList(&L);
-    for(int i = 0; i < G.m; i++){
+    for(int i = 0; i <= G.m; i++){
         if(G.edges[i].u == x){
             int v = G.edges[i].v;
-            if(!memberList(v,L))
+            if(!memberList(v, L)){
                 insertList(v, &L);
+            }
         }
     }
-    return L;
 }
-void bellmanFord(Graph G, int s,List *cost, List *parrent){
+void bellmanFord(Graph G, int s, List *cost, List *parrent){
     for(int i=1; i<= G.n; i++){ // khởi tạo ban đầu
         cost->Data[i] = 999;
         parrent->Data[i] = 0;
     }
+
     cost->Size = parrent->Size = G.n;
     cost->Data[s] = 0; //có thể thay đổi
     parrent->Data[s] = -1; //có thể thay đổi
 
-    for(int i = 1; i < G.n; i++){
+    for(int it = 1; it < G.n; it++){
         for(int k = 1; k <= G.m; k++){
             int u = G.edges[k].u;
             int v = G.edges[k].v;
