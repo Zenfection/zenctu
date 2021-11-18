@@ -49,7 +49,7 @@
     "rimraf": "^3.0.2",
     "sort-package-json": "^1.53.1",
     "ts-jest": "^27.0.7",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.2"
   },
   "dependencies": {
     "@snippetors/vuepress-plugin-tabs": "^1.1.0",
