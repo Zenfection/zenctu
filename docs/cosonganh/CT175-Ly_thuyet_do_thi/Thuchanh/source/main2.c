@@ -136,38 +136,34 @@ List neighbors(Graph G, int x); //trả về danh sách các định kề
 void bellmanFord(Graph G, int s, List *cost, List *parrent); //giải thuật bellmanFord
 
 //* Cây khung nhỏ nhất
-void swap(Edge *a, Edge *b){
-    Edge temp = *a;
-    *a = *b;
-    *b = temp;
-}
-void bubbleSort(Graph *G){
-    int n = G->m;
-    for(int i = 0; i < n - 1; i++){
-        for(int j = n - 1; j >= i + 1; j--){
-            if(G->edges[j].w < G->edges[j-1].w)
-                swap(&G->edges[j], &G->edges[j-1]);
-        }
-    }
-}
+void swap(Edge *a, Edge *b);
+void bubbleSort(Graph *G);
+void kruskal(Graph G, Graph *T);
 
-void kruskal(Graph G, Graph *T){
-    int sumW = 0;
-    int parrent[MAX];
-    initGraph(&T, G.n);
-    bubbleSort(&G);
 
-    for(int i = 1; i <= G.n; i++){
-        parrent[i] = 1;
-    }
-
-    return sumW;
-}
 
 //! Hàm main
 
 int main(int argc, char const *argv[]){
+    Graph G;
+    makeNullGraph(&G);
+    freopen("dt.txt","r",stdin);
+    int n,m;
+    scanf("%d%d",&n,&m);
+    initGraph(&G, n);
+    for(int i = 0; i < m; i++){
+        int x,y,z;
+        scanf("%d%d%d",&x,&y,&z);
+        addEdge(&G,x,y,z);
+    }
+    Graph T;
+    makeNullGraph(&T);
+    int min_cost = kruskal(G, &T);
+    printf("%d\n",min_cost);
 
+    for(int i = 0; i < T.m; i++){
+        printf("%d %d %d\n",T.edges[i].u, T.edges[i].v, T.edges[i].w);
+    }
     return 0;
 }
 
@@ -207,18 +203,20 @@ int outDegree(Graph G, int x){
     }
     return count;
 }
+
 List neighbors(Graph G, int x){
     List L;
     makeNullList(&L);
     for(int i = 0; i <= G.m; i++){
         if(G.edges[i].u == x){
             int v = G.edges[i].v;
-            if(!memberList(v, L)){
+            if(!memberList(v, L))
                 insertList(v, &L);
-            }
         }
     }
+    return L;
 }
+
 void bellmanFord(Graph G, int s, List *cost, List *parrent){
     for(int i=1; i<= G.n; i++){ // khởi tạo ban đầu
         cost->Data[i] = 999;
@@ -241,4 +239,51 @@ void bellmanFord(Graph G, int s, List *cost, List *parrent){
             }
         }
     }
+}
+
+void swap(Edge *a, Edge *b){
+    Edge temp = *a;
+    *a = *b;
+    *b = temp;
+}
+void bubbleSort(Graph *G){
+    int n = G->m;
+    for(int i = 0; i < n - 1; i++){
+        for(int j = n - 1; j >= i + 1; j--){
+            if(G->edges[j].w < G->edges[j-1].w)
+                swap(&G->edges[j], &G->edges[j-1]);
+        }
+    }
+}
+int findRoot(int u, int parent[]){
+    while (parent[u] != u){
+        u = parent[u];
+    }
+    return u;
+}
+int kruskal(Graph G, Graph *T){
+    int parent[MAX];
+    int sumW = 0;
+
+    initGraph(T, G.n);
+    bubbleSort(&G);
+
+    for(int i = 1; i <= G.n; i++){
+        parent[i] = i;
+    }
+
+    for(int e = 0; e < G.m; e++){
+        int u = G.edges[e].u;
+        int v = G.edges[e].v;
+        int w = G.edges[e].w;
+
+        int rootU = findRoot(u, parent);
+        int rootV = findRoot(v, parent);
+        if(rootU != rootV){
+            addEdge(T, u,v,w);
+            parent[rootV] = rootU;
+            sumW += w;
+        }
+    }
+    return sumW;
 }
