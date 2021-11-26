@@ -424,6 +424,9 @@ export const vi: SidebarConfig = {
 
   // Begin: Java
   '/devbook/java/': [
+    { text: 'Java ZenBook', link: '/devbook/java/' }
+  ],
+  '/devbook/java/Basic/': [
     {
       text: 'Chương 1. Java Căn Bản',
       children: [
@@ -441,6 +444,12 @@ export const vi: SidebarConfig = {
         '/devbook/java/Basic/12.md',
       ],
     },
+    { text: 'Chương 2. Java Nâng Cao', link: '/devbook/java/Advanced/1.md' },
+    { text: 'Chương 3. Java OOP', link: '/devbook/java/OOP/3.md' }
+  ],
+
+  '/devbook/java/Advanced/': [
+    { text: 'Chương 1. Java Căn Bản', link: '/devbook/java/Basic/1.md' },
     {
       text: 'Chương 2. Java Nâng Cao',
       children: [
@@ -460,6 +469,12 @@ export const vi: SidebarConfig = {
         '/devbook/java/Advanced/14.md',
       ],
     },
+    { text: 'Chương 3. Java OOP', link: '/devbook/java/OOP/1.md' }
+  ],
+
+  '/devbook/java/OOP/': [
+    { text: 'Chương 1. Java Căn Bản', link: '/devbook/java/Basic/1.md' },
+    { text: 'Chương 2. Java Nâng Cao', link: '/devbook/java/Advanced/1.md' },
     {
       text: 'Chương 3. Java OOP',
       children: [
