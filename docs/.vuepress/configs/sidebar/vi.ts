@@ -180,12 +180,9 @@ export const vi: SidebarConfig = {
   ],
   //* CT175-Lý thuyết đồ thị
   '/cosonganh/CT175-Ly_thuyet_do_thi/': [
-    {
-      text: 'CT175-Lý Thuyết Đồ Thị',
-      link: '/cosonganh/CT175-Ly_thuyet_do_thi/',
-    },
+    { text: 'CT175-Lý Thuyết Đồ Thị', link: '/cosonganh/CT175-Ly_thuyet_do_thi/' },
   ],
-  '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/': [
+  '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1/': [
     {
       text: 'Chương 1.Nền tảng Graph Theory',
       children: [
@@ -198,30 +195,47 @@ export const vi: SidebarConfig = {
         '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/7.md',
       ],
     },
+    { text: 'Chương 2.Đồ thị dạng cây', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2/1.md' },
+    { text: 'Chương 3.Bài toán đường đi', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/1.md'},
+    { text: 'Chương 4.Đồ thị phẳng và tô màu đồ thị', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/4/1.md'},
+  ],
+  '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2/': [
+    { text: 'Chương 1.Nền tảng Graph Theory', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2/1.md'},
     {
       text: 'Chương 2.Đồ thị dạng cây',
       children: [
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/8.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/9.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2.md',
       ],
     },
+    { text: 'Chương 3.Bài toán đường đi', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/1.md'},
+    { text: 'Chương 4.Đồ thị phẳng và tô màu đồ thị', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/4/1.md'},
+  ],
+  '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/': [
+    { text: 'Chương 1.Nền tảng Graph Theory', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2/1.md'},
+    { text: 'Chương 2.Đồ thị dạng cây', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2/1.md' },
     {
       text: 'Chương 3.Bài toán đường đi',
       children: [
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/10.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/11.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/12.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/13.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/14.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/4.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/5.md',
       ],
     },
+    { text: 'Chương 4.Đồ thị phẳng và tô màu đồ thị', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/4/1.md'},
+  ],
+  '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/4/': [
+    { text: 'Chương 1.Nền tảng Graph Theory', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2/1.md'},
+    { text: 'Chương 2.Đồ thị dạng cây', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2/1.md' },
+    { text: 'Chương 3.Bài toán đường đi', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/1.md'},
     {
       text: 'Chương 4.Đồ thị phẳng và tô màu đồ thị',
-      children: [
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/15.md'
-      ]
+      children: [ '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/15.md' ]
     }
   ],
+
   '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh': [
     '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/0.md',
     '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/1.md',
