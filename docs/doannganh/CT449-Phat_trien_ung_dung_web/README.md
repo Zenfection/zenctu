@@ -1,4 +1,4 @@
-# <img src="/images/docs/HP/CT449.png" width="50"> Phát triển ứng dụng Web 
+# <img src="/images/docs/HP/CT449.png" width="50"> Phát triển ứng dụng Web ❌
 
 <img src="https://readme-typing-svg.herokuapp.com?font=tahoma&lines=B%E1%BA%A3ng+sau+tham+kh%E1%BA%A3o+c%E1%BB%A7a+CTU">
 

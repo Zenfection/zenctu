@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/23-20-36-08-dstt.png" title="" alt="as" width="50"> Đại số tuyến tính
+# <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/23-20-36-08-dstt.png" title="" alt="as" width="50"> Đại số tuyến tính ✅
 
 <img src="https://readme-typing-svg.herokuapp.com?font=tahoma&lines=B%E1%BA%A3ng+sau+tham+kh%E1%BA%A3o+c%E1%BB%A7a+CTU">
 

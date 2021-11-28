@@ -1,4 +1,4 @@
-# <img src="/images/docs/HP/CT101.png" width="50"> Lập trình căn bản A
+# <img src="/images/docs/HP/CT101.png" width="50"> Lập trình căn bản A ✅
 
 <img src="https://readme-typing-svg.herokuapp.com?font=tahoma&lines=B%E1%BA%A3ng+sau+tham+kh%E1%BA%A3o+c%E1%BB%A7a+CTU">
 

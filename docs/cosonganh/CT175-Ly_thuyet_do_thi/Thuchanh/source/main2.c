@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
-
 #define MAX 50       // có thể thay thế
+
 //! Thư viện List
 typedef struct{ //cấu trúc danh sách
     int Data[MAX];
@@ -129,7 +129,6 @@ void addEdge(Graph *G, int x, int y, int z); //thêm cung vào đồ thị
 int inDegree(Graph G, int x); //tính bậc trong của đỉnh
 int outDegree(Graph G, int x); //tính bậc ngoài của đỉnh
 List neighbors(Graph G, int x); //trả về danh sách các định kề
-
 
 
 //* Tìm đường đi ngắn nhất
