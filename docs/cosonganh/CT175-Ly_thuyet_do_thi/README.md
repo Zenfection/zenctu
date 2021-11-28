@@ -12,7 +12,7 @@
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-41-35-tenor.gif" width="40"> 3. Quá trình học tập
 
-### <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-22-18-48-tenor.gif" width="40"> [Lý thuyết](/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md)
+### <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/11/28-20-25-35-stay-home-read.gif" width="40"> Lý Thuyết
 
 | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-05-icons8-1_cute.png" width="25"> | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-09-icons8-2_cute.png" width="25"> | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-15-icons8-3_cute.png" width="25"> | <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/10/08-14-42-19-icons8-4_cute.png" width="25"> |
 | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
