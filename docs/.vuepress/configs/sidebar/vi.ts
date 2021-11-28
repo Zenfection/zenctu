@@ -9,7 +9,6 @@ export const vi: SidebarConfig = {
     '/guide/contribution.md',
     '/guide/source.md',
   ],
-  //! -----End: Guide
 
   //! -----Begin: Nhập Môn-----
 
@@ -20,6 +19,7 @@ export const vi: SidebarConfig = {
       link: '/nhapmon/CT101-Lap_trinh_can_ban_a/',
     },
   ],
+
   //* CT172-Toán rời rạc
   '/nhapmon/CT172-Toan_roi_rac/': [
     {
@@ -27,13 +27,7 @@ export const vi: SidebarConfig = {
       link: '/nhapmon/CT172-Toan_roi_rac/',
     },
   ],
-  //* CT173-Kiến trúc máy tính
-  // '/nhapmon/CT173-Kien_truc_may_tinh/':[
-  //   {
-  //     text: 'CT173-Kiến Trúc Máy Tính',
-  //     link: '/nhapmon/CT173-Kien_truc_may_tinh/'
-  //   }
-  // ],
+
   //* CT179-Quản trị hệ thống
   '/nhapmon/CT179-Quan_tri_he_thong/': [
     {
@@ -41,6 +35,7 @@ export const vi: SidebarConfig = {
       link: '/nhapmon/CT179-Quan_tri_he_thong/',
     },
   ],
+
   '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/': [
     '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/1.md',
     '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/2.md',
@@ -49,6 +44,7 @@ export const vi: SidebarConfig = {
     '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/5.md',
     '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/6.md',
   ],
+
   //* CT188 Nhập môn lập trình web
   '/nhapmon/CT188-Nhap_mon_lap_trinh_web/': [
     {
@@ -56,6 +52,7 @@ export const vi: SidebarConfig = {
       link: '/nhapmon/CT188-Nhap_mon_lap_trinh_web/',
     },
   ],
+
   //* CT200-Nền tảng công nghệ thông tin
   '/nhapmon/CT200-Nen_tang_cong_nghe_thong_tin/': [
     {
@@ -64,13 +61,12 @@ export const vi: SidebarConfig = {
     },
   ],
 
-  //! -----End: Nhập Môn-----
-
   //! -----Begin: Cơ Sở Ngành
   //* CT112-Mạng máy tính
   '/cosonganh/CT112-Mang_may_tinh/': [
     { text: 'CT112-Mạng Máy Tính', link: '/cosonganh/CT112-Mang_may_tinh/' },
   ],
+
   '/cosonganh/CT112-Mang_may_tinh/Tailieu/1/': [
     {
       text: 'Chương 1.Tổng Quan MMT',
@@ -90,6 +86,7 @@ export const vi: SidebarConfig = {
     { text: 'Chương 7.Tầng Vận Chuyển', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/7/' },
     { text: 'Chương 8.Các Ứng Dụng Mạng', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/8/' },
   ],
+
   '/cosonganh/CT112-Mang_may_tinh/Tailieu/2/': [
     { text: 'Chương 1.Tổng quan MTT', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/1/'},
     {
@@ -245,6 +242,7 @@ export const vi: SidebarConfig = {
       link: '/cosonganh/CT174-Phan_tich_va_thiet_ke_thuat_toan/',
     },
   ],
+
   //* CT175-Lý thuyết đồ thị
   '/cosonganh/CT175-Ly_thuyet_do_thi/': [
     { text: 'CT175-Lý Thuyết Đồ Thị', link: '/cosonganh/CT175-Ly_thuyet_do_thi/' },
@@ -253,26 +251,26 @@ export const vi: SidebarConfig = {
     {
       text: 'Chương 1.Nền tảng Graph Theory',
       children: [
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/4.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/5.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/6.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/7.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1/1.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1/2.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1/3.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1/4.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1/5.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1/6.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1/7.md',
       ],
     },
     { text: 'Chương 2.Đồ thị dạng cây', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2/1.md' },
-    { text: 'Chương 3.Bài toán đường đi', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/1.md'},
+    { text: 'Chương 3.Bài toán đường đi', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/1.md' },
     { text: 'Chương 4.Đồ thị phẳng và tô màu đồ thị', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/4/1.md'},
   ],
   '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2/': [
-    { text: 'Chương 1.Nền tảng Graph Theory', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2/1.md'},
+    { text: 'Chương 1.Nền tảng Graph Theory', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1/1.md'},
     {
       text: 'Chương 2.Đồ thị dạng cây',
       children: [
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2/1.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2/2.md',
       ],
     },
     { text: 'Chương 3.Bài toán đường đi', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/1.md'},
@@ -284,11 +282,11 @@ export const vi: SidebarConfig = {
     {
       text: 'Chương 3.Bài toán đường đi',
       children: [
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/1.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/2.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/4.md',
-        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/5.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/1.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/2.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/3.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/4.md',
+        '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/5.md',
       ],
     },
     { text: 'Chương 4.Đồ thị phẳng và tô màu đồ thị', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/4/1.md'},
@@ -299,10 +297,9 @@ export const vi: SidebarConfig = {
     { text: 'Chương 3.Bài toán đường đi', link: '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/3/1.md'},
     {
       text: 'Chương 4.Đồ thị phẳng và tô màu đồ thị',
-      children: [ '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/15.md' ]
+      children: [ '/cosonganh/CT175-Ly_thuyet_do_thi/Tailieu/4/1.md' ]
     }
   ],
-
   '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh': [
     '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/0.md',
     '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/1.md',
@@ -312,6 +309,7 @@ export const vi: SidebarConfig = {
     '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/5.md',
     '/cosonganh/CT175-Ly_thuyet_do_thi/Thuchanh/6.md',
   ],
+
   //* CT176-Lập trình hướng đối tượng
   '/cosonganh/CT176-Lap_trinh_huong_doi_tuong/': [
     {
@@ -348,6 +346,7 @@ export const vi: SidebarConfig = {
       children: ['/cosonganh/CT177-Cau_truc_du_lieu/Thuchanh/7.md'],
     },
   ],
+
   //* CT180-Cơ sở dữ liệu
   '/cosonganh/CT180-Co_so_du_lieu/': [
     {
@@ -355,6 +354,7 @@ export const vi: SidebarConfig = {
       link: '/cosonganh/CT180-Co_so_du_lieu/',
     },
   ],
+
   //* CT182-Ngôn ngữ mô hình hóa
   '/cosonganh/CT182-Ngon_ngu_mo_hinh_hoa/': [
     {
@@ -369,7 +369,7 @@ export const vi: SidebarConfig = {
       link: '/cosonganh/CT296-Phan_tich_thiet_ke_he_thong/',
     },
   ],
-  //! End: Cơ Sở Ngành
+
 
   //! Begin: Chuyên Ngành
   //* CT222-An toàn hệ thống
@@ -379,6 +379,7 @@ export const vi: SidebarConfig = {
       link: '/chuyennganh/CT222-An_toan_he_thong/',
     },
   ],
+
   //* CT233-Quản lý dự án phần mềm
   '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/': [
     {
@@ -386,6 +387,7 @@ export const vi: SidebarConfig = {
       link: '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/',
     },
   ],
+
   //* CT275-Công Nghệ Web
   '/chuyennganh/CT275-Cong_nghe_web/': [
     {
@@ -393,6 +395,7 @@ export const vi: SidebarConfig = {
       link: '/chuyennganh/CT275-Cong_nghe_web/',
     },
   ],
+
   //* CT294-Máy học ứng dụng
   '/chuyennganh/CT294-May_hoc_ung_dung/': [
     {
@@ -400,6 +403,7 @@ export const vi: SidebarConfig = {
       link: '/chuyennganh/CT294-May_hoc_ung_dung/',
     },
   ],
+
   //* CT467-Quản trị dữ liệu
   '/chuyennganh/CT467-Quan_tri_du_lieu/': [
     {
@@ -407,28 +411,29 @@ export const vi: SidebarConfig = {
       link: '/chuyennganh/CT467-Quan_tri_du_lieu/',
     },
   ],
-  //! ---End: Chuyên Ngành
 
   //! ---Begin: Đồ Án Ngành
   //* CT300-Phát triển phần mềm
   '/doannganh/CT300-Phat_trien_phan_mem/': [
     { text: 'CT300-Phát Triển Phần Mềm', link: '/doannganh/CT300-Phat_trien_phan_mem/' },
   ],
+
   //* CT449-Phát triển ứng dụng web
   '/doannganh/CT449-Phat_trien_ung_dung_web/': [
     { text: 'CT449-Phát Triển Ứng Dụng Web', link: '/doannganh/CT449-Phat_trien_ung_dung_web/' },
   ],
+
   //* CT484-Phát triển ứng dụng trên thiết bị di động
   '/doannganh/CT484-Phat_trien_ung_dung_tren_thiet_bi_di_dong/': [
     { text: 'CT484-Phát Triển Ứng Dụng Trên Thiết Bị Di Động', link: '/doannganh/CT484-Phat_trien_ung_dung_tren_thiet_bi_di_dong/' },
   ],
-  //! ---End: Đồ Án Ngành
 
   //! ---Begin: Toán Học
   //* TN001-Tích phân A1
   '/toanhoc/TN001-Vi_tich_phan_a1/': [
     { text: 'TN001-Vi Tích Phân A1', link: '/toanhoc/TN001-Vi_tich_phan_a1/' },
   ],
+
   //* TN001-Tích phân A2
   '/toanhoc/TN002-Vi_tich_phan_a2/': [
     { text: 'TN002-Vi Tích Phân A2', link: '/toanhoc/TN002-Vi_tich_phan_a2/' },
@@ -440,6 +445,7 @@ export const vi: SidebarConfig = {
     '/toanhoc/TN002-Vi_tich_phan_a2/Tailieu/4.md',
     '/toanhoc/TN002-Vi_tich_phan_a2/Tailieu/5.md',
   ],
+
   //* TN010-Xác suất thống kê
   '/toanhoc/TN010-Xac_suat_thong_ke/': [
     { text: 'TN010-Xác suất thống kê', link: '/toanhoc/TN010-Xac_suat_thong_ke/' },
@@ -454,6 +460,7 @@ export const vi: SidebarConfig = {
     '/toanhoc/TN010-Xac_suat_thong_ke/Tailieu/7.md',
     '/toanhoc/TN010-Xac_suat_thong_ke/Tailieu/8.md',
   ],
+
   //* TN012-Đại số tuyến tính
   '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/': [
     { text: 'TN012-Đại số tuyến tính và hình học', link: '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/' },
@@ -464,7 +471,6 @@ export const vi: SidebarConfig = {
     '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/Tailieu/3.md',
     '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/Tailieu/4.md',
   ],
-  //! End: Toán Học
 
   // Begin: C
 
