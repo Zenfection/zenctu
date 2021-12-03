@@ -531,6 +531,13 @@ export const vi: SidebarConfig = {
     },
   ],
 
+  //*Jquery
+  '/devbook/jquery/': [
+    '/devbook/jquery/1.md',
+    '/devbook/jquery/2.md',
+    '/devbook/jquery/3.md',
+  ],
+
   //* Web
   '/course/web/': [
     { text: 'Web Deverloper', link: '/course/web/'},
