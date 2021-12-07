@@ -37,7 +37,7 @@
     "anywhere": "^1.5.0",
     "cpx2": "^4.0.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.4.0",
+    "eslint": "^8.4.1",
     "eslint-config-vuepress": "^3.4.0",
     "eslint-config-vuepress-typescript": "^2.4.0",
     "jest": "^27.4.3",
