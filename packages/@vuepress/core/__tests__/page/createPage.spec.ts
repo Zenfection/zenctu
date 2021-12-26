@@ -1,10 +1,12 @@
 import { createBaseApp, createPage } from '@vuepress/core'
+import { createMarkdown } from '@vuepress/markdown'
 import { path } from '@vuepress/utils'
 
 const app = createBaseApp({
   source: path.resolve(__dirname, 'fake-source'),
   theme: path.resolve(__dirname, '../__fixtures__/themes/empty.js'),
 })
+app.markdown = createMarkdown()
 
 describe('core > page > createPage', () => {
   it('should throw an error', async () => {

@@ -1,11 +1,13 @@
 import { h } from 'vue'
 import type { FunctionalComponent } from 'vue'
-import './OutboundLink.css'
+
+import '../styles/vars.css'
+import '../styles/external-link-icon.css'
 
 const svg = h(
   'svg',
   {
-    'class': 'icon outbound',
+    'class': 'external-link-icon',
     'xmlns': 'http://www.w3.org/2000/svg',
     'aria-hidden': 'true',
     'focusable': 'false',
@@ -18,8 +20,7 @@ const svg = h(
   [
     h('path', {
       fill: 'currentColor',
-      d:
-        'M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z',
+      d: 'M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z',
     }),
     h('polygon', {
       fill: 'currentColor',
@@ -29,7 +30,7 @@ const svg = h(
   ]
 )
 
-export const OutboundLink: FunctionalComponent = (_, { slots }) =>
+export const ExternalLinkIcon: FunctionalComponent = (_, { slots }) =>
   h('span', [svg, slots.default?.()])
 
-OutboundLink.displayName = 'OutboundLink'
+ExternalLinkIcon.displayName = 'ExternalLinkIcon'

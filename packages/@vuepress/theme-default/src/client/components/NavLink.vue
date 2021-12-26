@@ -1,32 +1,3 @@
-<template>
-  <RouterLink
-    v-if="isRouterLink"
-    class="nav-link"
-    :class="{ 'router-link-active': isActive }"
-    :to="item.link"
-    :aria-label="linkAriaLabel"
-    v-bind="$attrs"
-  >
-    <slot name="before" />
-    {{ item.text }}
-    <slot name="after" />
-  </RouterLink>
-  <a
-    v-else
-    class="nav-link external"
-    :href="item.link"
-    :rel="linkRel"
-    :target="linkTarget"
-    :aria-label="linkAriaLabel"
-    v-bind="$attrs"
-  >
-    <slot name="before" />
-    {{ item.text }}
-    <OutboundLink v-if="isBlankTarget" />
-    <slot name="after" />
-  </a>
-</template>
-
 <script lang="ts">
 /* eslint-disable import/first, import/no-duplicates, import/order */
 import { defineComponent } from 'vue'
@@ -58,12 +29,12 @@ const { item } = toRefs(props)
 // if the link has http protocol
 const hasHttpProtocol = computed(() => isLinkHttp(item.value.link))
 // if the link has non-http protocol
-const hasNonHttpProtocal = computed(
+const hasNonHttpProtocol = computed(
   () => isLinkMailto(item.value.link) || isLinkTel(item.value.link)
 )
 // resolve the `target` attr
 const linkTarget = computed(() => {
-  if (hasNonHttpProtocal.value) return undefined
+  if (hasNonHttpProtocol.value) return undefined
   if (item.value.target) return item.value.target
   if (hasHttpProtocol.value) return '_blank'
   return undefined
@@ -73,11 +44,11 @@ const isBlankTarget = computed(() => linkTarget.value === '_blank')
 // is `<RouterLink>` or not
 const isRouterLink = computed(
   () =>
-    !hasHttpProtocol.value && !hasNonHttpProtocal.value && !isBlankTarget.value
+    !hasHttpProtocol.value && !hasNonHttpProtocol.value && !isBlankTarget.value
 )
 // resolve the `rel` attr
 const linkRel = computed(() => {
-  if (hasNonHttpProtocal.value) return undefined
+  if (hasNonHttpProtocol.value) return undefined
   if (item.value.rel) return item.value.rel
   if (isBlankTarget.value) return 'noopener noreferrer'
   return undefined
@@ -112,3 +83,32 @@ const isActive = computed(() => {
   return isActiveInSubpath.value
 })
 </script>
+
+<template>
+  <RouterLink
+    v-if="isRouterLink"
+    class="nav-link"
+    :class="{ 'router-link-active': isActive }"
+    :to="item.link"
+    :aria-label="linkAriaLabel"
+    v-bind="$attrs"
+  >
+    <slot name="before" />
+    {{ item.text }}
+    <slot name="after" />
+  </RouterLink>
+  <a
+    v-else
+    class="nav-link external"
+    :href="item.link"
+    :rel="linkRel"
+    :target="linkTarget"
+    :aria-label="linkAriaLabel"
+    v-bind="$attrs"
+  >
+    <slot name="before" />
+    {{ item.text }}
+    <ExternalLinkIcon v-if="isBlankTarget" />
+    <slot name="after" />
+  </a>
+</template>

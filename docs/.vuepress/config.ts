@@ -56,7 +56,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     // specify bundler via environment variable
     process.env.DOCS_BUNDLER ??
     // use vite in dev, use webpack in prod
-    (isProd ? '@vuepress/webpack' : '@vuepress/vite'),
+    '@vuepress/vite',
 
   themeConfig: {
     logo: '/images/hero.png',

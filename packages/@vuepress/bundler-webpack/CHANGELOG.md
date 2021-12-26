@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-beta.30](https://github.com/vuepress/vuepress-next/compare/v2.0.0-beta.29...v2.0.0-beta.30) (2021-12-23)
+
+
+### Features
+
+* **bundler-webpack:** add devServerSetupMiddlewares option ([4a042a4](https://github.com/vuepress/vuepress-next/commit/4a042a4abc96fc208b6da658782ad3e99fd7af7b))
+
+
+### BREAKING CHANGES
+
+* **bundler-webpack:** `beforeDevServer` and `afterDevServer` options are removed, use `devServerSetupMiddlewares` instead
+
+
+
+
+
+# [2.0.0-beta.29](https://github.com/vuepress/vuepress-next/compare/v2.0.0-beta.28...v2.0.0-beta.29) (2021-12-18)
+
+**Note:** Version bump only for package @vuepress/bundler-webpack
+
+
+
+
+
+# [2.0.0-beta.28](https://github.com/vuepress/vuepress-next/compare/v2.0.0-beta.27...v2.0.0-beta.28) (2021-12-17)
+
+**Note:** Version bump only for package @vuepress/bundler-webpack
+
+
+
+
+
 # [2.0.0-beta.27](https://github.com/vuepress/vuepress-next/compare/v2.0.0-beta.26...v2.0.0-beta.27) (2021-10-28)
 
 **Note:** Version bump only for package @vuepress/bundler-webpack

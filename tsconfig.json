@@ -14,6 +14,9 @@
     { "path": "./packages/@vuepress/plugin-container/tsconfig.build.json" },
     { "path": "./packages/@vuepress/plugin-debug/tsconfig.build.json" },
     { "path": "./packages/@vuepress/plugin-docsearch/tsconfig.build.json" },
+    {
+      "path": "./packages/@vuepress/plugin-external-link-icon/tsconfig.build.json"
+    },
     { "path": "./packages/@vuepress/plugin-git/tsconfig.build.json" },
     {
       "path": "./packages/@vuepress/plugin-google-analytics/tsconfig.build.json"
@@ -39,7 +42,8 @@
     { "path": "./packages/@vuepress/theme-default/tsconfig.build.json" },
     { "path": "./packages/@vuepress/utils/tsconfig.build.json" },
     { "path": "./packages/vuepress/tsconfig.build.json" },
-    { "path": "./packages/vuepress-vite/tsconfig.build.json" }
+    { "path": "./packages/vuepress-vite/tsconfig.build.json" },
+    { "path": "./packages/vuepress-webpack/tsconfig.build.json" }
   ],
   "files": []
 }

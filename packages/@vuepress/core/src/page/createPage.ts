@@ -4,7 +4,6 @@ import { renderPageContent } from './renderPageContent'
 import { renderPageExcerpt } from './renderPageExcerpt'
 import { resolvePageComponentInfo } from './resolvePageComponentInfo'
 import { resolvePageContent } from './resolvePageContent'
-import { resolvePageData } from './resolvePageData'
 import { resolvePageDataInfo } from './resolvePageDataInfo'
 import { resolvePageDate } from './resolvePageDate'
 import { resolvePageFileContent } from './resolvePageFileContent'
@@ -13,18 +12,15 @@ import { resolvePageFrontmatter } from './resolvePageFrontmatter'
 import { resolvePageHtmlInfo } from './resolvePageHtmlInfo'
 import { resolvePageKey } from './resolvePageKey'
 import { resolvePageLang } from './resolvePageLang'
-import { resolvePageOptions } from './resolvePageOptions'
 import { resolvePagePath } from './resolvePagePath'
 import { resolvePagePermalink } from './resolvePagePermalink'
+import { resolvePageRouteMeta } from './resolvePageRouteMeta'
 import { resolvePageSlug } from './resolvePageSlug'
 
 export const createPage = async (
   app: App,
-  optionsRaw: PageOptions
+  options: PageOptions
 ): Promise<Page> => {
-  // resolve page options from raw options
-  const options = await resolvePageOptions({ app, optionsRaw })
-
   // resolve page file absolute path and relative path
   const { filePath, filePathRelative } = resolvePageFilePath({
     app,
@@ -52,20 +48,17 @@ export const createPage = async (
   })
 
   // render page content and extract information
-  const {
-    contentRendered,
-    deps,
-    headers,
-    hoistedTags,
-    links,
-    title,
-  } = await renderPageContent({
-    app,
-    content,
-    filePath,
-    filePathRelative,
-    frontmatter,
-  })
+  const { contentRendered, deps, headers, hoistedTags, links, title } =
+    await renderPageContent({
+      app,
+      content,
+      filePath,
+      filePathRelative,
+      frontmatter,
+    })
+
+  // resolve route meta from frontmatter
+  const routeMeta = resolvePageRouteMeta({ frontmatter })
 
   // resolve slug from file path
   const slug = resolvePageSlug({ filePathRelative })
@@ -91,7 +84,7 @@ export const createPage = async (
   // resolve page path
   const path = resolvePagePath({ permalink, pathInferred, options })
 
-  // resolve path key
+  // resolve page key
   const key = resolvePageKey({ path })
 
   // resolve page rendered html file path
@@ -112,13 +105,21 @@ export const createPage = async (
     key,
   })
 
-  const {
-    dataFilePath,
-    dataFilePathRelative,
-    dataFileChunkName,
-  } = resolvePageDataInfo({ app, htmlFilePathRelative, key })
+  const { dataFilePath, dataFilePathRelative, dataFileChunkName } =
+    resolvePageDataInfo({ app, htmlFilePathRelative, key })
 
-  const page = {
+  const page: Page = {
+    // page data
+    data: {
+      key,
+      path,
+      title,
+      lang,
+      frontmatter,
+      excerpt,
+      headers,
+    },
+
     // base fields
     key,
     path,
@@ -138,6 +139,7 @@ export const createPage = async (
     pathInferred,
     pathLocale,
     permalink,
+    routeMeta,
     slug,
 
     // file info
@@ -151,10 +153,7 @@ export const createPage = async (
     dataFileChunkName,
     htmlFilePath,
     htmlFilePathRelative,
-  } as Page
-
-  // resolve page data
-  page.data = await resolvePageData({ app, page })
+  }
 
   return page
 }

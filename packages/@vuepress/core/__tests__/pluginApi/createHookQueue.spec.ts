@@ -1,28 +1,33 @@
 import { createBaseApp, createHookQueue, createPage } from '@vuepress/core'
-import type { HooksName } from '@vuepress/core'
+import type { Page } from '@vuepress/core'
+import { createMarkdown } from '@vuepress/markdown'
+import type { MarkdownOptions } from '@vuepress/markdown'
 import { path } from '@vuepress/utils'
+import type { PageOptions } from '../../src'
 
 const app = createBaseApp({
   source: path.resolve(__dirname, 'fake-source'),
   theme: path.resolve(__dirname, '../__fixtures__/themes/empty.js'),
 })
+app.markdown = createMarkdown()
 
 describe('core > pluginApi > createHookQueue', () => {
   describe('common', () => {
-    const hookNames: HooksName[] = [
+    const hookNames = [
       'onInitialized',
       'onPrepared',
       'onWatched',
       'onGenerated',
+      'extendsMarkdownOptions',
       'extendsMarkdown',
       'extendsPageOptions',
-      'extendsPageData',
+      'extendsPage',
       'clientAppEnhanceFiles',
       'clientAppRootComponentFiles',
       'clientAppSetupFiles',
       'alias',
       'define',
-    ]
+    ] as const
 
     hookNames.forEach((hookName) => {
       const hook = createHookQueue(hookName)
@@ -64,12 +69,12 @@ describe('core > pluginApi > createHookQueue', () => {
   })
 
   describe('lifecycle hooks', () => {
-    const hookNames: HooksName[] = [
+    const hookNames = [
       'onInitialized',
       'onPrepared',
       'onWatched',
       'onGenerated',
-    ]
+    ] as const
 
     hookNames.forEach((hookName) =>
       it(`${hookName}`, async () => {
@@ -94,13 +99,17 @@ describe('core > pluginApi > createHookQueue', () => {
     )
   })
 
-  describe('page hooks', () => {
-    it(`extendsPageOptions`, async () => {
-      const hookName = 'extendsPageOptions'
+  describe('extends hooks', () => {
+    it(`extendsMarkdownOptions`, async () => {
+      const hookName = 'extendsMarkdownOptions'
 
       const hook = createHookQueue(hookName)
-      const func1 = jest.fn(() => ({ content: 'foo' }))
-      const func2 = jest.fn(() => ({ content: 'bar' }))
+      const func1 = jest.fn((markdownOptions) => {
+        markdownOptions.emoji = false
+      })
+      const func2 = jest.fn((markdownOptions) => {
+        markdownOptions.extractHeaders = false
+      })
       hook.add({
         pluginName: 'test1',
         hook: func1,
@@ -109,41 +118,16 @@ describe('core > pluginApi > createHookQueue', () => {
         pluginName: 'test2',
         hook: func2,
       })
-      const result = await hook.process({ filePath: 'foo.md' }, app)
+      const markdownOptions: MarkdownOptions = {}
+      await hook.process(markdownOptions, app)
 
       expect(func1).toHaveBeenCalledTimes(1)
-      expect(func1).toHaveBeenCalledWith({ filePath: 'foo.md' }, app)
+      expect(func1).toHaveBeenCalledWith(markdownOptions, app)
       expect(func2).toHaveBeenCalledTimes(1)
-      expect(func2).toHaveBeenCalledWith({ filePath: 'foo.md' }, app)
-      expect(result).toEqual([{ content: 'foo' }, { content: 'bar' }])
+      expect(func2).toHaveBeenCalledWith(markdownOptions, app)
+      expect(markdownOptions).toEqual({ emoji: false, extractHeaders: false })
     })
 
-    it(`extendsPageData`, async () => {
-      const hookName = 'extendsPageData'
-
-      const hook = createHookQueue(hookName)
-      const page = await createPage(app, { path: '/' })
-      const func1 = jest.fn(() => ({ foo: 'foo' }))
-      const func2 = jest.fn(() => ({ bar: 'bar' }))
-      hook.add({
-        pluginName: 'test1',
-        hook: func1,
-      })
-      hook.add({
-        pluginName: 'test2',
-        hook: func2,
-      })
-      const result = await hook.process(page, app)
-
-      expect(func1).toHaveBeenCalledTimes(1)
-      expect(func1).toHaveBeenCalledWith(page, app)
-      expect(func2).toHaveBeenCalledTimes(1)
-      expect(func2).toHaveBeenCalledWith(page, app)
-      expect(result).toEqual([{ foo: 'foo' }, { bar: 'bar' }])
-    })
-  })
-
-  describe('markdown hooks', () => {
     it(`extendsMarkdown`, async () => {
       const hookName = 'extendsMarkdown'
 
@@ -165,14 +149,74 @@ describe('core > pluginApi > createHookQueue', () => {
       expect(func2).toHaveBeenCalledTimes(1)
       expect(func2).toHaveBeenCalledWith(app.markdown, app)
     })
+
+    it(`extendsPageOptions`, async () => {
+      const hookName = 'extendsPageOptions'
+
+      const hook = createHookQueue(hookName)
+      const func1 = jest.fn((pageOptions) => {
+        pageOptions.content = pageOptions.content ?? 'foo'
+      })
+      const func2 = jest.fn((pageOptions) => {
+        pageOptions.content = pageOptions.content ?? 'nar'
+      })
+      hook.add({
+        pluginName: 'test1',
+        hook: func1,
+      })
+      hook.add({
+        pluginName: 'test2',
+        hook: func2,
+      })
+      const pageOptions: PageOptions = { filePath: 'foo.md' }
+      await hook.process(pageOptions, app)
+
+      expect(func1).toHaveBeenCalledTimes(1)
+      expect(func1).toHaveBeenCalledWith(pageOptions, app)
+      expect(func2).toHaveBeenCalledTimes(1)
+      expect(func2).toHaveBeenCalledWith(pageOptions, app)
+      expect(pageOptions).toEqual({ filePath: 'foo.md', content: 'foo' })
+    })
+
+    it(`extendsPage`, async () => {
+      const hookName = 'extendsPage'
+
+      const hook = createHookQueue(hookName)
+      const page = (await createPage(app, { path: '/' })) as Page<
+        { bar: string },
+        { foo: string }
+      >
+      const func1 = jest.fn((page) => {
+        page.foo = 'foo'
+      })
+      const func2 = jest.fn((page) => {
+        page.data.bar = 'bar'
+      })
+      hook.add({
+        pluginName: 'test1',
+        hook: func1,
+      })
+      hook.add({
+        pluginName: 'test2',
+        hook: func2,
+      })
+      await hook.process(page, app)
+
+      expect(func1).toHaveBeenCalledTimes(1)
+      expect(func1).toHaveBeenCalledWith(page, app)
+      expect(func2).toHaveBeenCalledTimes(1)
+      expect(func2).toHaveBeenCalledWith(page, app)
+      expect(page.foo).toEqual('foo')
+      expect(page.data.bar).toEqual('bar')
+    })
   })
 
   describe('client files hooks', () => {
-    const hookNames: HooksName[] = [
+    const hookNames = [
       'clientAppEnhanceFiles',
       'clientAppRootComponentFiles',
       'clientAppSetupFiles',
-    ]
+    ] as const
     const file1 = path.resolve(
       __dirname,
       '../__fixtures__/clientFiles/clientAppEnhance.ts'
@@ -185,8 +229,8 @@ describe('core > pluginApi > createHookQueue', () => {
     hookNames.forEach((hookName) =>
       it(`${hookName}`, async () => {
         const hook = createHookQueue(hookName)
-        const func1 = jest.fn(() => [file1])
-        const func2 = jest.fn(() => [file2])
+        const func1 = jest.fn(() => Promise.resolve([file1]))
+        const func2 = jest.fn(() => Promise.resolve([file2]))
         hook.add({
           pluginName: 'test1',
           hook: func1,
@@ -207,13 +251,13 @@ describe('core > pluginApi > createHookQueue', () => {
   })
 
   describe('bundler hooks', () => {
-    const hookNames: HooksName[] = ['alias', 'define']
+    const hookNames = ['alias', 'define'] as const
 
     hookNames.forEach((hookName) =>
       it(`${hookName}`, async () => {
         const hook = createHookQueue(hookName)
-        const func1 = jest.fn(() => ({ foo: 'foo' }))
-        const func2 = jest.fn(() => ({ bar: 'bar' }))
+        const func1 = jest.fn(() => Promise.resolve({ foo: 'foo' }))
+        const func2 = jest.fn(() => Promise.resolve({ bar: 'bar' }))
         hook.add({
           pluginName: 'test1',
           hook: func1,

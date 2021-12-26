@@ -3,6 +3,7 @@
   "workspaces": [
     "packages/vuepress",
     "packages/vuepress-vite",
+    "packages/vuepress-webpack",
     "packages/@vuepress/*"
   ],
   "scripts": {
@@ -16,12 +17,11 @@
     "docs:build": "vuepress build docs --clean-cache",
     "docs:clean": "rimraf docs/.vuepress/.temp docs/.vuepress/.cache docs/.vuepress/dist",
     "docs:dev": "vuepress dev docs --clean-cache",
-    "docs:serve": "anywhere -h localhost -d docs/.vuepress/dist",
     "docs:release": "yarn copy && yarn build && yarn docs:build",
+    "docs:serve": "anywhere -h localhost -d docs/.vuepress/dist",
     "lint": "eslint --ext .js,.ts,.vue .",
     "release": "yarn lint && yarn clean && yarn copy && yarn build && yarn test && lerna publish prerelease --dist-tag next",
     "test": "jest --runInBand",
-    "test:coverage": "yarn copy && yarn build && yarn test --coverage",
     "packages:update": "ncu --timeout 600000"
   },
   "lint-staged": {
@@ -35,7 +35,7 @@
     "@commitlint/config-conventional": "^15.0.0",
     "@types/jest": "^27.0.3",
     "anywhere": "^1.5.0",
-    "cpx2": "^4.0.0",
+    "cpx2": "^4.1.2",
     "cross-env": "^7.0.3",
     "eslint": "^8.5.0",
     "eslint-config-vuepress": "^3.5.0",
@@ -43,8 +43,8 @@
     "jest": "^27.4.5",
     "jest-serializer-vue": "^2.0.2",
     "lerna": "^4.0.0",
-    "lint-staged": "^12.1.3",
-    "prettier": "2.5.1",
+    "lint-staged": "^12.1.4",
+    "prettier": "^2.5.1",
     "prettier-config-vuepress": "^1.3.0",
     "rimraf": "^3.0.2",
     "sort-package-json": "^1.53.1",
