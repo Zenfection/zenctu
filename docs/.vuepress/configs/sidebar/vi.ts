@@ -552,6 +552,14 @@ export const vi: SidebarConfig = {
     '/devbook/jquery/17.md',
     '/devbook/jquery/18.md',
   ],
+  //* BootStrap5
+  '/devbook/bootstrap5/': [
+    '/devbook/bootstrap5/1.md',
+    '/devbook/bootstrap5/2.md',
+    '/devbook/bootstrap5/3.md',
+    '/devbook/bootstrap5/4.md',
+    '/devbook/bootstrap5/5.md',
+  ],
 
   //* Web
   '/course/web/': [

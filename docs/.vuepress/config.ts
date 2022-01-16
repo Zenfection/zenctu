@@ -115,6 +115,6 @@ export default defineUserConfig<DefaultThemeOptions>({
       { componentsDir: path.resolve(__dirname, './components') },
     ],
     ['vuepress-plugin-zenlive2d-cat'],
-    ['@snippetors/vuepress-plugin-tabs']
+    ['@snippetors/vuepress-plugin-tabs'],
   ],
 })

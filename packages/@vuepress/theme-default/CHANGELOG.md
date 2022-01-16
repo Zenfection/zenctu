@@ -3,6 +3,51 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0-beta.33](https://github.com/vuepress/vuepress-next/compare/v2.0.0-beta.32...v2.0.0-beta.33) (2022-01-12)
+
+
+### Bug Fixes
+
+* **theme-default:** bump vueuse to avoid localstorage error (close [#589](https://github.com/vuepress/vuepress-next/issues/589)) ([#612](https://github.com/vuepress/vuepress-next/issues/612)) ([7558681](https://github.com/vuepress/vuepress-next/commit/755868194a05ae8d1d70fbd14c0230e8080f7db1))
+
+
+### Features
+
+* **theme-default:** imporve dark mode experience (close [#387](https://github.com/vuepress/vuepress-next/issues/387)) ([c20a1ba](https://github.com/vuepress/vuepress-next/commit/c20a1baa97f4fbbc6a907fb8ca0f76a3cc0310c1))
+* **theme-default:** make all non-global components replaceable ([f480bb2](https://github.com/vuepress/vuepress-next/commit/f480bb25943fe1a81e2ceda8f1b53afbb11b254c))
+
+
+
+
+
+# [2.0.0-beta.32](https://github.com/vuepress/vuepress-next/compare/v2.0.0-beta.31...v2.0.0-beta.32) (2021-12-28)
+
+
+### Bug Fixes
+
+* **theme-default:** avoid transition on fragment child (close [#592](https://github.com/vuepress/vuepress-next/issues/592)) ([10e5cc0](https://github.com/vuepress/vuepress-next/commit/10e5cc06b96f9dc2fc8ba2c8bdc83f7177e213bc))
+
+
+
+
+
+# [2.0.0-beta.31](https://github.com/vuepress/vuepress-next/compare/v2.0.0-beta.30...v2.0.0-beta.31) (2021-12-24)
+
+
+### Bug Fixes
+
+* **theme-default:** code line numbers unaligned in different display scale (close [#499](https://github.com/vuepress/vuepress-next/issues/499)) ([21accb5](https://github.com/vuepress/vuepress-next/commit/21accb5773224363a548915a6f3a7a23a5bcfa0d))
+* **theme-default:** remove focus-visible outline (close [#359](https://github.com/vuepress/vuepress-next/issues/359)) ([cfbaa14](https://github.com/vuepress/vuepress-next/commit/cfbaa14270df0584594f56abc5a9ac0c8a6b945a))
+
+
+### Features
+
+* **theme-default:** support collapsible sidebar (close [#397](https://github.com/vuepress/vuepress-next/issues/397)) ([c7fd815](https://github.com/vuepress/vuepress-next/commit/c7fd81580a9061b22f1a60a735fdc9a527ef1bfd))
+
+
+
+
+
 # [2.0.0-beta.30](https://github.com/vuepress/vuepress-next/compare/v2.0.0-beta.29...v2.0.0-beta.30) (2021-12-23)
 
 

@@ -3,48 +3,49 @@ import type { App, AppConfig } from '../types'
 import { appInit } from './appInit'
 import { appPrepare } from './appPrepare'
 import { appUse } from './appUse'
-import { createAppDir } from './createAppDir'
-import { createAppEnv } from './createAppEnv'
-import { createAppOptions } from './createAppOptions'
-import { createAppSiteData } from './createAppSiteData'
-import { createAppVersion } from './createAppVersion'
-import { createAppWriteTemp } from './createAppWriteTemp'
-import { resolvePluginsFromConfig } from './resolvePluginsFromConfig'
-import { resolveThemeInfo } from './resolveThemeInfo'
+import { resolveAppDir } from './resolveAppDir'
+import { resolveAppEnv } from './resolveAppEnv'
+import { resolveAppOptions } from './resolveAppOptions'
+import { resolveAppSiteData } from './resolveAppSiteData'
+import { resolveAppVersion } from './resolveAppVersion'
+import { resolveAppWriteTemp } from './resolveAppWriteTemp'
+import { setupAppPlugins } from './setupAppPlugins'
+import { setupAppTheme } from './setupAppTheme'
 
 /**
  * Create vuepress app
  */
 export const createBaseApp = (config: AppConfig, isBuild = false): App => {
-  const version = createAppVersion()
-  const options = createAppOptions(config)
-  const dir = createAppDir(options)
-  const env = createAppEnv(options, isBuild)
-  const siteData = createAppSiteData(options)
+  const options = resolveAppOptions(config)
+  const dir = resolveAppDir(options)
+  const env = resolveAppEnv(options, isBuild)
   const pluginApi = createPluginApi()
-  const writeTemp = createAppWriteTemp(dir)
+  const siteData = resolveAppSiteData(options)
+  const version = resolveAppVersion()
+  const writeTemp = resolveAppWriteTemp(dir)
 
   const app = {
-    version,
     options,
+    siteData,
+    version,
+
+    // utils
     dir,
     env,
-    siteData,
     pluginApi,
     writeTemp,
+
+    // methods
     use: (...args) => appUse(app, ...args),
     init: () => appInit(app),
     prepare: () => appPrepare(app),
   } as App
 
-  // resolve theme info and use theme plugins
-  const themeInfo = resolveThemeInfo(app, options.theme)
-  themeInfo.plugins.forEach((plugin) => app.use(plugin))
-  app.layouts = themeInfo.layouts
-
-  // resolve plugins
-  const plugins = resolvePluginsFromConfig(app, options.plugins)
-  plugins.forEach((plugin) => app.use(plugin))
+  // setup theme and plugins
+  // notice that we setup theme before plugins,
+  // so user plugins could override theme plugins
+  setupAppTheme(app, config)
+  setupAppPlugins(app)
 
   return app
 }

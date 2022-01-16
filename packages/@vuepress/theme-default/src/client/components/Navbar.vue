@@ -1,10 +1,10 @@
 <script setup lang="ts">
+import NavbarBrand from '@theme/NavbarBrand.vue'
+import NavbarItems from '@theme/NavbarItems.vue'
+import ToggleDarkModeButton from '@theme/ToggleDarkModeButton.vue'
+import ToggleSidebarButton from '@theme/ToggleSidebarButton.vue'
 import { computed, onMounted, ref } from 'vue'
 import { useThemeLocaleData } from '../composables'
-import NavbarBrand from './NavbarBrand.vue'
-import NavbarLinks from './NavbarLinks.vue'
-import ToggleDarkModeButton from './ToggleDarkModeButton.vue'
-import ToggleSidebarButton from './ToggleSidebarButton.vue'
 
 defineEmits(['toggle-sidebar'])
 
@@ -65,9 +65,9 @@ function getCssValue(el: HTMLElement | null, property: string): number {
       <NavbarBrand />
     </span>
 
-    <div class="navbar-links-wrapper" :style="linksWrapperStyle">
+    <div class="navbar-items-wrapper" :style="linksWrapperStyle">
       <slot name="before" />
-      <NavbarLinks class="can-hide" />
+      <NavbarItems class="can-hide" />
       <slot name="after" />
       <ToggleDarkModeButton v-if="enableDarkMode" />
       <NavbarSearch />
