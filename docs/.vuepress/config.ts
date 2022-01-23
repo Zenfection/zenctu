@@ -116,5 +116,9 @@ export default defineUserConfig<DefaultThemeOptions>({
     ],
     ['vuepress-plugin-zenlive2d-cat'],
     ['@snippetors/vuepress-plugin-tabs'],
+    ['@snippetors/vuepress-plugin-code-copy', {
+      selector: 'pre',
+      align: 'top',
+    }],
   ],
 })
