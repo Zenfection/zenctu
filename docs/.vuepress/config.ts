@@ -91,9 +91,8 @@ export default defineUserConfig<DefaultThemeOptions>({
 
   plugins: [
     // ['@vuepress/plugin-debug'],
-    [
-      '@vuepress/plugin-docsearch',
-      {
+    ['@snippetors/vuepress-plugin-code-copy'],
+    ['@vuepress/plugin-docsearch', {
         appId: '3CJDV2AFXL',
         apiKey: '4f7f93d347463109c3b6fd21d3ac2424',
         indexName: 'ctuvn',
@@ -110,15 +109,8 @@ export default defineUserConfig<DefaultThemeOptions>({
     //     },
     //   },
     // ],
-    [
-      '@vuepress/plugin-register-components',
-      { componentsDir: path.resolve(__dirname, './components') },
-    ],
+    [ '@vuepress/plugin-register-components', { componentsDir: path.resolve(__dirname, './components') }, ],
     ['vuepress-plugin-zenlive2d-cat'],
     ['@snippetors/vuepress-plugin-tabs'],
-    ['@snippetors/vuepress-plugin-code-copy', {
-      selector: 'pre',
-      align: 'top',
-    }],
   ],
 })
