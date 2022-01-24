@@ -39,5 +39,4 @@ Icon[^M]
 !/.gitignore
 .env
 debug/
-*.pdf
 *.zip
