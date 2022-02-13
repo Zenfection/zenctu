@@ -466,10 +466,14 @@ export const vi: SidebarConfig = {
 
   // Begin: C
 
-  // Begin: Java
-  '/devbook/java/': [
-    { text: 'Java ZenBook', link: '/devbook/java/' }
+  // Begin: Linux
+
+  '/devbook/linux/': [
+    '/devbook/linux/1.md',
+    '/devbook/linux/2.md',
+    '/devbook/linux/3.md',
   ],
+
   '/devbook/java/Basic/': [
     {
       text: 'Chương 1. Java Căn Bản',
