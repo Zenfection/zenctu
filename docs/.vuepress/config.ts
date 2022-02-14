@@ -91,7 +91,6 @@ export default defineUserConfig<DefaultThemeOptions>({
 
   plugins: [
     // ['@vuepress/plugin-debug'],
-    ['@snippetors/vuepress-plugin-code-copy'],
     ['@vuepress/plugin-docsearch', {
         appId: '3CJDV2AFXL',
         apiKey: '4f7f93d347463109c3b6fd21d3ac2424',
