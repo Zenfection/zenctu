@@ -5,7 +5,6 @@ import type { NavbarConfig } from '@vuepress/theme-default'
 // '/nhapmon/CT173-Kien_truc_may_tinh/',
 // '/cosonganh/CT178-Nguyen_ly_he_dieu_hanh/',
 // '/chuyennganh/CT273-Giao_dien_nguoi_may/',
-// '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/',
 // '/doannganh/CT271-Nien_luan_co_so_CNTT/',
 // '/doannganh/CT446-Nien_luan_CNTT/',
 
@@ -66,6 +65,7 @@ export const vi: NavbarConfig = [
         text: 'Chuyên Ngành',
         children: [
           '/chuyennganh/CT222-An_toan_he_thong/',
+          '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/',
           '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/',
           '/chuyennganh/CT275-Cong_nghe_web/',
           '/chuyennganh/CT294-May_hoc_ung_dung/',

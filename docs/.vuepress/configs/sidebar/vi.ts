@@ -379,7 +379,20 @@ export const vi: SidebarConfig = {
       link: '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/',
     },
   ],
-
+  //* CT293-Mạng và truyền thông dữ liệu
+  '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/': [
+    {
+      text: 'CT293-Mạng Và Truyền Thông Dữ Liệu',
+      link: '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/',
+    }
+  ],
+  '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Thuchanh/': [
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Thuchanh/1.md',
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Thuchanh/2.md',
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Thuchanh/3.md',
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Thuchanh/4.md',
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Thuchanh/5.md',
+  ],
   //* CT275-Công Nghệ Web
   '/chuyennganh/CT275-Cong_nghe_web/': [
     {
