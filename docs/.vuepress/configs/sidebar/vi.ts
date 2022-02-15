@@ -486,7 +486,11 @@ export const vi: SidebarConfig = {
     '/devbook/linux/2.md',
     '/devbook/linux/3.md',
     '/devbook/linux/4.md',
-    '/devbook/linux5.md',
+    '/devbook/linux/5.md',
+    '/devbook/linux/6.md',
+    '/devbook/linux/7.md',
+    '/devbook/linux/8.md',
+    '/devbook/linux/9.md',
   ],
 
   '/devbook/java/Basic/': [
