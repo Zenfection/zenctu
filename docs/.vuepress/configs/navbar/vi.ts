@@ -101,7 +101,6 @@ export const vi: NavbarConfig = [
         text: 'Khác',
         children: [
           { text: 'Tips', link: '/tips/' },
-          { text: 'DevBook', link: '/devbook/' },
         ],
       },
     ],
