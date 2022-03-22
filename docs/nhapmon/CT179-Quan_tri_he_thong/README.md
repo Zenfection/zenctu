@@ -21,3 +21,6 @@
 | [Quản trị hệ thống](/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/1.md) | [Quản lí tài khoản, ổ cứng và tập tin](/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/2.md) | [Shell Scripting, quản lí tiến trình, nhật ký hệ thống](/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/3.md) | [Cấu hình mạng và cài đặt SSH,FTP,Web Server](/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/4.md) | [SAMBA,DNS và Firewall](/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/5.md) | Tổng hợp |
 
 <comment/> 
+
+
+ 

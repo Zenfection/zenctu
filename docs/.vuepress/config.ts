@@ -90,7 +90,6 @@ export default defineUserConfig<DefaultThemeOptions>({
   },
 
   plugins: [
-    // ['@vuepress/plugin-debug'],
     ['@vuepress/plugin-docsearch', {
         appId: '3CJDV2AFXL',
         apiKey: '4f7f93d347463109c3b6fd21d3ac2424',
@@ -100,14 +99,6 @@ export default defineUserConfig<DefaultThemeOptions>({
     ],
     ['@vuepress/plugin-google-analytics', { id: 'G-1GE3D8ZGM4' }],
     ['@vuepress/plugin-pwa'],
-    // [
-    //   '@vuepress/plugin-pwa-popup',
-    //   {
-    //     locales: {
-    //       '/': { message: 'Phiên bản mới đã lên', buttonText: 'Update!!!' },
-    //     },
-    //   },
-    // ],
     [ '@vuepress/plugin-register-components', { componentsDir: path.resolve(__dirname, './components') }, ],
     ['vuepress-plugin-zenlive2d-cat'],
     ['@snippetors/vuepress-plugin-tabs'],
