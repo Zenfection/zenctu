@@ -1,4 +1,4 @@
-# <img src="/images/docs/HP/CT180.png" > Cơ sở dữ liệu 🔄
+# <img src="/images/docs/HP/CT180.png" > Cơ sở dữ liệu 
 
 <img src="https://readme-typing-svg.herokuapp.com?font=tahoma&lines=B%E1%BA%A3ng+sau+tham+kh%E1%BA%A3o+c%E1%BB%A7a+CTU">
 

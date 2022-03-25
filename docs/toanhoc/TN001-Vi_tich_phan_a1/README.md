@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/23-19-55-49-gt1.png" width="50"> Vi tích phân A1 ✅
+# <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/23-19-55-49-gt1.png" width="50"> Vi tích phân A1 
 
 <img src="https://readme-typing-svg.herokuapp.com?font=tahoma&lines=B%E1%BA%A3ng+sau+tham+kh%E1%BA%A3o+c%E1%BB%A7a+CTU">
 

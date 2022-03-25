@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/15-22-18-20-icons8-histogram.png" width="50"> Xác suất thống kê ✅
+# <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2020/12/15-22-18-20-icons8-histogram.png" width="50"> Xác suất thống kê 
 
 <img src="https://readme-typing-svg.herokuapp.com?font=tahoma&lines=B%E1%BA%A3ng+sau+tham+kh%E1%BA%A3o+c%E1%BB%A7a+CTU">
 
