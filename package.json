@@ -44,12 +44,12 @@
     "jest-serializer-vue": "^2.0.2",
     "lerna": "^4.0.0",
     "lint-staged": "^12.3.7",
-    "prettier": "^2.6.0",
+    "prettier": "^2.6.1",
     "prettier-config-vuepress": "^1.3.0",
     "rimraf": "^3.0.2",
     "sort-package-json": "^1.55.0",
-    "ts-jest": "^27.1.3",
-    "typescript": "^4.6.2"
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
   },
   "dependencies": {
     "@snippetors/vuepress-plugin-tabs": "^1.1.7",
