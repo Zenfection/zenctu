@@ -64,7 +64,10 @@ export const vi: SidebarConfig = {
   //! -----Begin: Cơ Sở Ngành
   //* CT112-Mạng máy tính
   '/cosonganh/CT112-Mang_may_tinh/': [
-    { text: 'CT112-Mạng Máy Tính', link: '/cosonganh/CT112-Mang_may_tinh/' },
+    {
+      text: 'CT112-Mạng Máy Tính',
+      link: '/cosonganh/CT112-Mang_may_tinh/'
+    },
   ],
 
   '/cosonganh/CT112-Mang_may_tinh/Tailieu/1/': [
@@ -77,13 +80,13 @@ export const vi: SidebarConfig = {
         '/cosonganh/CT112-Mang_may_tinh/Tailieu/1/4.md',
       ],
     },
-    { text: 'Chương 2.Thành Phần MTT', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/2/1.md' },
-    { text: 'Chương 3.Tầng Vật Lý', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/3/1.md' },
-    { text: 'Chương 4.Tầng Liên Kết Dữ Liệu', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/4/1.md' },
-    { text: 'Chương 5.Mạng Nội Bộ & Lớp Con Điều Khiển', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/5/1.md' },
-    { text: 'Chương 6.Tầng Mạng', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/6/1.md' },
-    { text: 'Chương 7.Tầng Vận Chuyển', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/7/1.md' },
-    { text: 'Chương 8.Các Ứng Dụng Mạng', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/8/1.md' },
+    { text: 'Chương 2.Thành Phần MTT'                  , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/2/1.md' },
+    { text: 'Chương 3.Tầng Vật Lý'                     , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/3/1.md' },
+    { text: 'Chương 4.Tầng Liên Kết Dữ Liệu'           , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/4/1.md' },
+    { text: 'Chương 5.Mạng Nội Bộ & Lớp Con Điều Khiển', link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/5/1.md' },
+    { text: 'Chương 6.Tầng Mạng'                       , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/6/1.md' },
+    { text: 'Chương 7.Tầng Vận Chuyển'                 , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/7/1.md' },
+    { text: 'Chương 8.Các Ứng Dụng Mạng'               , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/8/1.md' },
   ],
 
   '/cosonganh/CT112-Mang_may_tinh/Tailieu/2/': [
@@ -99,12 +102,12 @@ export const vi: SidebarConfig = {
         '/cosonganh/CT112-Mang_may_tinh/Tailieu/2/6.md',
       ],
     },
-    { text: 'Chương 3.Tầng Vật Lý', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/3/1.md' },
-    { text: 'Chương 4.Tầng Liên Kết Dữ Liệu', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/4/1.md' },
-    { text: 'Chương 5.Mạng Nội Bộ & Lớp Con Điều Khiển', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/5/1.md' },
-    { text: 'Chương 6.Tầng Mạng', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/6/1.md' },
-    { text: 'Chương 7.Tầng Vận Chuyển', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/7/1.md' },
-    { text: 'Chương 8.Các Ứng Dụng Mạng', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/8/1.md' },
+      { text: 'Chương 3.Tầng Vật Lý'                     , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/3/1.md' },
+      { text: 'Chương 4.Tầng Liên Kết Dữ Liệu'           , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/4/1.md' },
+      { text: 'Chương 5.Mạng Nội Bộ & Lớp Con Điều Khiển', link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/5/1.md' },
+      { text: 'Chương 6.Tầng Mạng'                       , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/6/1.md' },
+      { text: 'Chương 7.Tầng Vận Chuyển'                 , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/7/1.md' },
+      { text: 'Chương 8.Các Ứng Dụng Mạng'               , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/8/1.md' },
   ],
   '/cosonganh/CT112-Mang_may_tinh/Tailieu/3/': [
     { text: 'Chương 1.Tổng quan MTT', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/1/1.md'},
@@ -119,16 +122,16 @@ export const vi: SidebarConfig = {
         '/cosonganh/CT112-Mang_may_tinh/Tailieu/3/5.md',
       ],
     },
-    { text: 'Chương 4.Tầng Liên Kết Dữ Liệu', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/4/1.md' },
-    { text: 'Chương 5.Mạng Nội Bộ & Lớp Con Điều Khiển', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/5/1.md' },
-    { text: 'Chương 6.Tầng Mạng', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/6/1.md' },
-    { text: 'Chương 7.Tầng Vận Chuyển', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/7/1.md' },
-    { text: 'Chương 8.Các Ứng Dụng Mạng', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/8/1.md' },
+      { text: 'Chương 4.Tầng Liên Kết Dữ Liệu'           , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/4/1.md' },
+      { text: 'Chương 5.Mạng Nội Bộ & Lớp Con Điều Khiển', link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/5/1.md' },
+      { text: 'Chương 6.Tầng Mạng'                       , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/6/1.md' },
+      { text: 'Chương 7.Tầng Vận Chuyển'                 , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/7/1.md' },
+      { text: 'Chương 8.Các Ứng Dụng Mạng'               , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/8/1.md' },
   ],
   '/cosonganh/CT112-Mang_may_tinh/Tailieu/4/': [
-    { text: 'Chương 1.Tổng quan MTT', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/1/1.md'},
-    { text: 'Chương 2.Thành Phần MTT', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/2/1.md' },
-    { text: 'Chương 3.Tầng Vật Lý', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/3/1.md' },
+      { text: 'Chương 1.Tổng quan MTT' , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/1/1.md'},
+      { text: 'Chương 2.Thành Phần MTT', link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/2/1.md' },
+      { text: 'Chương 3.Tầng Vật Lý'   , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/3/1.md' },
     {
       text: 'Chương 4.Tầng Liên Kết Dữ Liệu',
       children: [
@@ -138,16 +141,16 @@ export const vi: SidebarConfig = {
         '/cosonganh/CT112-Mang_may_tinh/Tailieu/4/4.md',
       ],
     },
-    { text: 'Chương 5.Mạng Nội Bộ & Lớp Con Điều Khiển', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/5/1.md' },
-    { text: 'Chương 6.Tầng Mạng', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/6/1.md' },
-    { text: 'Chương 7.Tầng Vận Chuyển', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/7/1.md' },
-    { text: 'Chương 8.Các Ứng Dụng Mạng', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/8/1.md' },
+      { text: 'Chương 5.Mạng Nội Bộ & Lớp Con Điều Khiển', link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/5/1.md' },
+      { text: 'Chương 6.Tầng Mạng'                       , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/6/1.md' },
+      { text: 'Chương 7.Tầng Vận Chuyển'                 , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/7/1.md' },
+      { text: 'Chương 8.Các Ứng Dụng Mạng'               , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/8/1.md' },
   ],
   '/cosonganh/CT112-Mang_may_tinh/Tailieu/5/': [
-    { text: 'Chương 1.Tổng quan MTT', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/1/1.md'},
-    { text: 'Chương 2.Thành Phần MTT', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/2/1.md' },
-    { text: 'Chương 3.Tầng Vật Lý', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/3/1.md' },
-    { text: 'Chương 4.Tầng Liên Kết Dữ Liệu', link: '/cosonganh/CT112-Mang_may_tinh/Tailieu/4/1.md' },
+    { text: 'Chương 1.Tổng quan MTT'        , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/1/1.md'},
+    { text: 'Chương 2.Thành Phần MTT'       , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/2/1.md' },
+    { text: 'Chương 3.Tầng Vật Lý'          , link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/3/1.md' },
+    { text: 'Chương 4.Tầng Liên Kết Dữ Liệu', link : '/cosonganh/CT112-Mang_may_tinh/Tailieu/4/1.md' },
     {
       text: 'Chương 5.Mạng Nội Bộ & Lớp Con Điều Khiển',
       children: [
