@@ -9,6 +9,10 @@
 @import 'reponsive';
 @import 'tab';
 
+.contains-task-list{
+  list-style-type: none;
+}
+
 :root {
   scroll-behavior: smooth;
 }

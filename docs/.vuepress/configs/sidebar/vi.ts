@@ -396,6 +396,16 @@ export const vi: SidebarConfig = {
     '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Thuchanh/4.md',
     '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Thuchanh/5.md',
   ],
+  '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Ontap/': [
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Ontap/1.md',
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Ontap/2.md',
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Ontap/3.md',
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Ontap/4.md',
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Ontap/5.md',
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Ontap/6.md',
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Ontap/7.md',
+    '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/Ontap/8.md',
+  ],
   //* CT275-Công Nghệ Web
   '/chuyennganh/CT275-Cong_nghe_web/': [
     {

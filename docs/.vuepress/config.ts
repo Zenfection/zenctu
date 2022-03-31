@@ -1,3 +1,4 @@
+import { Plugin } from './../../packages/@vuepress/core/src/types/plugin';
 import { defineUserConfig } from '@vuepress/cli'
 import type { DefaultThemeOptions } from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
@@ -88,7 +89,9 @@ export default defineUserConfig<DefaultThemeOptions>({
         ),
     },
   },
-
+  extendsMarkdown: (md) => {
+    md.use(require('markdown-it-task-lists'))
+  },
   plugins: [
     ['@vuepress/plugin-docsearch', {
         appId: '3CJDV2AFXL',

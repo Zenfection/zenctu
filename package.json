@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "@snippetors/vuepress-plugin-tabs": "^1.1.7",
+    "markdown-it-task-lists": "^2.1.1",
     "vuepress-plugin-zenlive2d-cat": "^1.1.1"
   }
 }
