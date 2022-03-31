@@ -1,6 +1,6 @@
 {
   "name": "@vuepress/shared",
-  "version": "2.0.0-beta.35",
+  "version": "2.0.0-beta.37",
   "description": "Utils that shared between VuePress node and client",
   "keywords": [
     "vuepress",
@@ -28,7 +28,7 @@
     "clean": "rimraf lib *.tsbuildinfo"
   },
   "dependencies": {
-    "@vue/shared": "^3.2.28"
+    "@vue/shared": "^3.2.31"
   },
   "publishConfig": {
     "access": "public"
