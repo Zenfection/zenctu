@@ -10,19 +10,16 @@ export type ExternalLinkIconPluginOptions = {
   locales?: ExternalLinkIconLocales
 }
 
-export const externalLinkIconPlugin: Plugin<ExternalLinkIconPluginOptions> = ({
+export const externalLinkIconPlugin = ({
   locales = {},
-}) => ({
+}: ExternalLinkIconPluginOptions = {}): Plugin => ({
   name: '@vuepress/plugin-external-link-icon',
 
   define: {
     __EXTERNAL_LINK_ICON_LOCALES__: locales,
   },
 
-  clientAppEnhanceFiles: path.resolve(
-    __dirname,
-    '../client/clientAppEnhance.js'
-  ),
+  clientConfigFile: path.resolve(__dirname, '../client/config.js'),
 
   extendsMarkdown: (md) => {
     let shouldRenderExternalIcon = false

@@ -37,6 +37,8 @@ const baz = () => {
   return 2048
 }
 ${codeFence}
+
+${codeFence}{{ inlineCode }}${codeFence}
 `
 
     it('should process code fences with default options', () => {
@@ -77,9 +79,34 @@ ${codeFence}
       expect(md.render(source)).toMatchSnapshot()
     })
 
-    it('should disable `vPre`', () => {
+    it('should disable `vPre.block`', () => {
       const md = MarkdownIt().use(codePlugin, {
-        vPre: false,
+        vPre: {
+          block: false,
+          inline: true,
+        },
+      })
+
+      expect(md.render(source)).toMatchSnapshot()
+    })
+
+    it('should disable `vPre.inline`', () => {
+      const md = MarkdownIt().use(codePlugin, {
+        vPre: {
+          block: true,
+          inline: false,
+        },
+      })
+
+      expect(md.render(source)).toMatchSnapshot()
+    })
+
+    it('should disable `vPre.inline` and `vPre.block`', () => {
+      const md = MarkdownIt().use(codePlugin, {
+        vPre: {
+          block: false,
+          inline: false,
+        },
       })
 
       expect(md.render(source)).toMatchSnapshot()
@@ -267,17 +294,21 @@ function bar () {
 ${codeFence}
 `
 
-    it('should work properly if `vPre` is enabled by default', () => {
+    it('should work properly if `vPre.block` is enabled by default', () => {
       const md = MarkdownIt().use(codePlugin, {
-        vPre: true,
+        vPre: {
+          block: true,
+        },
       })
 
       expect(md.render(source)).toMatchSnapshot()
     })
 
-    it('should work properly if `vPre` is disabled by default', () => {
+    it('should work properly if `vPre.block` is disabled by default', () => {
       const md = MarkdownIt().use(codePlugin, {
-        vPre: false,
+        vPre: {
+          block: false,
+        },
       })
 
       expect(md.render(source)).toMatchSnapshot()
@@ -305,6 +336,15 @@ function bar (): number {
   return 1024
 }
 ${codeFence}
+
+${codeFence}vue-html
+<template>
+  <div>msg: {{msg}}</div>
+</template>
+<script setup lang="ts">
+const msg = 'hello world';
+</script>
+${codeFence}
 `
 
     it('should work if highlighted code is wrapped with `<pre>`', () => {
@@ -315,7 +355,7 @@ ${codeFence}
       const md = MarkdownIt({ highlight }).use(codePlugin)
 
       expect(md.render(source)).toMatchSnapshot()
-      expect(highlight).toHaveBeenCalledTimes(3)
+      expect(highlight).toHaveBeenCalledTimes(4)
     })
 
     it('should work if highlighted code is not wrapped with `<pre>`', () => {
@@ -325,7 +365,7 @@ ${codeFence}
       const md = MarkdownIt({ highlight }).use(codePlugin)
 
       expect(md.render(source)).toMatchSnapshot()
-      expect(highlight).toHaveBeenCalledTimes(3)
+      expect(highlight).toHaveBeenCalledTimes(4)
     })
   })
 })

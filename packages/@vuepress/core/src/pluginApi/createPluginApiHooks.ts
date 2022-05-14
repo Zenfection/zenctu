@@ -13,11 +13,10 @@ export const createPluginApiHooks = (): PluginApi['hooks'] => ({
   extendsMarkdown: createHookQueue('extendsMarkdown'),
   extendsPageOptions: createHookQueue('extendsPageOptions'),
   extendsPage: createHookQueue('extendsPage'),
+  extendsBundlerOptions: createHookQueue('extendsBundlerOptions'),
 
-  // client files hooks
-  clientAppEnhanceFiles: createHookQueue('clientAppEnhanceFiles'),
-  clientAppRootComponentFiles: createHookQueue('clientAppRootComponentFiles'),
-  clientAppSetupFiles: createHookQueue('clientAppSetupFiles'),
+  // client config file hooks
+  clientConfigFile: createHookQueue('clientConfigFile'),
 
   // bundler hooks
   alias: createHookQueue('alias'),

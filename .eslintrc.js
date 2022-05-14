@@ -42,7 +42,7 @@ module.exports = {
       },
     },
     {
-      files: ['clientAppEnhance.ts'],
+      files: ['**/client/config.ts'],
       rules: {
         'vue/match-component-file-name': 'off',
       },
@@ -55,13 +55,14 @@ module.exports = {
       rules: {
         '@typescript-eslint/explicit-function-return-type': 'off',
         'vue/one-component-per-file': 'off',
-        'import/no-extraneous-dependencies': 'off',
-      },
-    },
-    {
-      files: ['docs/**'],
-      rules: {
-        'import/no-extraneous-dependencies': 'off',
+        'import/no-extraneous-dependencies': [
+          'error',
+          {
+            devDependencies: true,
+            optionalDependencies: false,
+            peerDependencies: false,
+          },
+        ],
       },
     },
   ],

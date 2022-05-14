@@ -1,28 +1,23 @@
 import type { Plugin } from '@vuepress/core'
 import { hash, path } from '@vuepress/utils'
 import * as chokidar from 'chokidar'
-import { prepareClientAppEnhanceFile } from './prepareClientAppEnhanceFile'
+import { prepareClientConfigFile } from './prepareClientConfigFile'
 
 export interface RegisterComponentsPluginOptions {
-  components: Record<string, string>
-  componentsDir: string | null
-  componentsPatterns: string[]
-  getComponentName: (filename: string) => string
+  components?: Record<string, string>
+  componentsDir?: string | null
+  componentsPatterns?: string[]
+  getComponentName?: (filename: string) => string
 }
 
-export const registerComponentsPlugin: Plugin<
-  RegisterComponentsPluginOptions
-> = (
-  {
-    components = {},
-    componentsDir = null,
-    componentsPatterns = ['**/*.vue'],
-    getComponentName = (filename) =>
-      path.trimExt(filename.replace(/\/|\\/g, '-')),
-  },
-  app
-) => {
-  const options: RegisterComponentsPluginOptions = {
+export const registerComponentsPlugin = ({
+  components = {},
+  componentsDir = null,
+  componentsPatterns = ['**/*.vue'],
+  getComponentName = (filename) =>
+    path.trimExt(filename.replace(/\/|\\/g, '-')),
+}: RegisterComponentsPluginOptions = {}): Plugin => {
+  const options = {
     components,
     componentsDir,
     componentsPatterns,
@@ -38,8 +33,8 @@ export const registerComponentsPlugin: Plugin<
 
     multiple: true,
 
-    clientAppEnhanceFiles: () =>
-      prepareClientAppEnhanceFile(app, options, optionsHash),
+    clientConfigFile: (app) =>
+      prepareClientConfigFile(app, options, optionsHash),
 
     onWatched: (app, watchers) => {
       if (componentsDir) {
@@ -48,10 +43,10 @@ export const registerComponentsPlugin: Plugin<
           ignoreInitial: true,
         })
         componentsWatcher.on('add', () => {
-          prepareClientAppEnhanceFile(app, options, optionsHash)
+          prepareClientConfigFile(app, options, optionsHash)
         })
         componentsWatcher.on('unlink', () => {
-          prepareClientAppEnhanceFile(app, options, optionsHash)
+          prepareClientConfigFile(app, options, optionsHash)
         })
         watchers.push(componentsWatcher)
       }

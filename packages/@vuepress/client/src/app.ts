@@ -1,27 +1,19 @@
-import { clientAppEnhances } from '@internal/clientAppEnhances'
-import { clientAppRootComponents } from '@internal/clientAppRootComponents'
-import { clientAppSetups } from '@internal/clientAppSetups'
+import { clientConfigs } from '@internal/clientConfigs'
 import { createApp, createSSRApp, h } from 'vue'
-import type { App } from 'vue'
 import { RouterView } from 'vue-router'
-import type { Router } from 'vue-router'
 import { siteData } from './composables'
 import { createVueRouter } from './router'
 import { setupDevtools } from './setupDevtools'
 import { setupGlobalComponents } from './setupGlobalComponents'
 import { setupGlobalComputed } from './setupGlobalComputed'
 import { setupUpdateHead } from './setupUpdateHead'
+import type { CreateVueAppFunction } from './types'
 
 /**
  * - use `createApp` in dev mode
  * - use `createSSRApp` in build mode
  */
 const appCreator = __VUEPRESS_DEV__ ? createApp : createSSRApp
-
-export type CreateVueAppFunction = () => Promise<{
-  app: App
-  router: Router
-}>
 
 export const createVueApp: CreateVueAppFunction = async () => {
   // create vue app
@@ -32,14 +24,16 @@ export const createVueApp: CreateVueAppFunction = async () => {
       // auto update head
       setupUpdateHead()
 
-      // invoke all clientAppSetups
-      for (const clientAppSetup of clientAppSetups) {
-        clientAppSetup()
+      // invoke all client setup
+      for (const clientConfig of clientConfigs) {
+        clientConfig.setup?.()
       }
 
       return () => [
         h(RouterView),
-        ...clientAppRootComponents.map((comp) => h(comp)),
+        ...clientConfigs.flatMap(({ rootComponents = [] }) =>
+          rootComponents.map((component) => h(component))
+        ),
       ]
     },
   })
@@ -56,16 +50,16 @@ export const createVueApp: CreateVueAppFunction = async () => {
     setupDevtools(app, globalComputed)
   }
 
-  // invoke all clientAppEnhances
-  for (const clientAppEnhance of clientAppEnhances) {
-    await clientAppEnhance({ app, router, siteData })
+  // invoke all client enhance
+  for (const clientConfig of clientConfigs) {
+    await clientConfig.enhance?.({ app, router, siteData })
   }
 
   // vue-router will start to initialize once it is installed
   // via `app.use()`, but users might make some modifications
-  // to router in `clientAppEnhance`, so we install it after
-  // that. This can also avoid the `scrollBehavior` issue on
-  // initial navigation.
+  // to router in client enhance, so we install it after that.
+  // this can also avoid the `scrollBehavior` issue on initial
+  // navigation.
   app.use(router)
 
   return {

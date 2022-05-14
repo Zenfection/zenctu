@@ -1,4 +1,4 @@
-export { isArray, isFunction, isPromise, isString } from '@vue/shared'
+export { isArray, isFunction, isString } from '@vue/shared'
 
 export * from './dedupeHead'
 export * from './ensureLeadingSlash'
@@ -12,7 +12,6 @@ export * from './isLinkHttp'
 export * from './isLinkMailto'
 export * from './isLinkTel'
 export * from './isPlainObject'
-export * from './normalizePackageName'
 export * from './removeEndingSlash'
 export * from './removeLeadingSlash'
 export * from './resolveHeadIdentifier'

@@ -1,6 +1,6 @@
 {
   "name": "@vuepress/bundler-vite",
-  "version": "2.0.0-beta.39",
+  "version": "2.0.0-beta.44",
   "description": "Bundler vite package of VuePress",
   "keywords": [
     "vuepress-bundler",
@@ -17,7 +17,7 @@
     "url": "git+https://github.com/vuepress/vuepress-next.git"
   },
   "license": "MIT",
-  "author": "Evan You",
+  "author": "meteorlxy",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -28,21 +28,18 @@
     "clean": "rimraf lib *.tsbuildinfo"
   },
   "dependencies": {
-    "@vitejs/plugin-vue": "^2.3.1",
-    "@vue/compiler-sfc": "^3.2.31",
-    "@vue/server-renderer": "^3.2.31",
-    "@vuepress/client": "2.0.0-beta.38",
-    "@vuepress/core": "2.0.0-beta.38",
-    "@vuepress/shared": "2.0.0-beta.38",
-    "@vuepress/utils": "2.0.0-beta.38",
-    "autoprefixer": "^10.4.4",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vuepress/client": "workspace:*",
+    "@vuepress/core": "workspace:*",
+    "@vuepress/shared": "workspace:*",
+    "@vuepress/utils": "workspace:*",
+    "autoprefixer": "^10.4.7",
     "connect-history-api-fallback": "^1.6.0",
-    "postcss": "^8.4.12",
-    "postcss-csso": "^6.0.0",
-    "rollup": "^2.70.1",
-    "vite": "~2.9.1",
-    "vue": "^3.2.31",
-    "vue-router": "^4.0.14"
+    "postcss": "^8.4.13",
+    "rollup": "^2.72.1",
+    "vite": "~2.9.9",
+    "vue": "^3.2.33",
+    "vue-router": "^4.0.15"
   },
   "publishConfig": {
     "access": "public"

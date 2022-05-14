@@ -6,7 +6,9 @@ import { transformSync } from 'esbuild'
  */
 export const transformTsFileToCodeSync = (filename: string): string =>
   transformSync(fs.readFileSync(filename).toString(), {
-    loader: 'ts',
     format: 'cjs',
-    target: 'node12',
+    loader: 'ts',
+    sourcefile: filename,
+    sourcemap: 'inline',
+    target: 'node14',
   }).code

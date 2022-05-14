@@ -1,13 +1,13 @@
-import { createBaseApp, createHookQueue, createPage } from '@vuepress/core'
-import type { Page } from '@vuepress/core'
 import { createMarkdown } from '@vuepress/markdown'
 import type { MarkdownOptions } from '@vuepress/markdown'
 import { path } from '@vuepress/utils'
-import type { PageOptions } from '../../src'
+import { createBaseApp, createHookQueue, createPage } from '../../src'
+import type { Page, PageOptions } from '../../src'
 
 const app = createBaseApp({
   source: path.resolve(__dirname, 'fake-source'),
-  theme: path.resolve(__dirname, '../__fixtures__/themes/empty.js'),
+  theme: { name: 'test' },
+  bundler: {} as any,
 })
 app.markdown = createMarkdown()
 
@@ -22,9 +22,8 @@ describe('core > pluginApi > createHookQueue', () => {
       'extendsMarkdown',
       'extendsPageOptions',
       'extendsPage',
-      'clientAppEnhanceFiles',
-      'clientAppRootComponentFiles',
-      'clientAppSetupFiles',
+      'extendsBundlerOptions',
+      'clientConfigFile',
       'alias',
       'define',
     ] as const
@@ -218,28 +217,52 @@ describe('core > pluginApi > createHookQueue', () => {
       expect(page.frontmatter.extraFrontmatter).toEqual('bar')
       expect(page.extraField).toEqual('baz')
     })
+
+    it(`extendsBundlerOptions`, async () => {
+      const hookName = 'extendsBundlerOptions'
+
+      const hook = createHookQueue(hookName)
+      const func1 = jest.fn((bundlerOptions) => {
+        bundlerOptions.foo = 'foo'
+      })
+      const func2 = jest.fn((bundlerOptions) => {
+        bundlerOptions.bar = 'bar'
+      })
+      hook.add({
+        pluginName: 'test1',
+        hook: func1,
+      })
+      hook.add({
+        pluginName: 'test2',
+        hook: func2,
+      })
+      const markdownOptions: MarkdownOptions = {}
+      await hook.process(markdownOptions, app)
+
+      expect(func1).toHaveBeenCalledTimes(1)
+      expect(func1).toHaveBeenCalledWith(markdownOptions, app)
+      expect(func2).toHaveBeenCalledTimes(1)
+      expect(func2).toHaveBeenCalledWith(markdownOptions, app)
+      expect(markdownOptions).toEqual({ foo: 'foo', bar: 'bar' })
+    })
   })
 
-  describe('client files hooks', () => {
-    const hookNames = [
-      'clientAppEnhanceFiles',
-      'clientAppRootComponentFiles',
-      'clientAppSetupFiles',
-    ] as const
+  describe('client config file hook', () => {
+    const hookNames = ['clientConfigFile'] as const
     const file1 = path.resolve(
       __dirname,
-      '../__fixtures__/clientFiles/clientAppEnhance.ts'
+      '../__fixtures__/clientConfigs/clientConfig.ts'
     )
     const file2 = path.resolve(
       __dirname,
-      '../__fixtures__/clientFiles/clientAppSetup.ts'
+      '../__fixtures__/clientConfigs/clientConfig2.ts'
     )
 
     hookNames.forEach((hookName) =>
       it(`${hookName}`, async () => {
         const hook = createHookQueue(hookName)
-        const func1 = jest.fn(() => Promise.resolve([file1]))
-        const func2 = jest.fn(() => Promise.resolve([file2]))
+        const func1 = jest.fn(() => Promise.resolve(file1))
+        const func2 = jest.fn(() => Promise.resolve(file2))
         hook.add({
           pluginName: 'test1',
           hook: func1,
@@ -254,7 +277,7 @@ describe('core > pluginApi > createHookQueue', () => {
         expect(func1).toHaveBeenCalledWith(app)
         expect(func2).toHaveBeenCalledTimes(1)
         expect(func2).toHaveBeenCalledWith(app)
-        expect(result).toEqual([[file1], [file2]])
+        expect(result).toEqual([file1, file2])
       })
     )
   })

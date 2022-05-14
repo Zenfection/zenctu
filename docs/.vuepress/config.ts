@@ -1,46 +1,32 @@
-import { Plugin } from './../../packages/@vuepress/core/src/types/plugin';
+import { viteBundler } from '@vuepress/bundler-vite'
+import { webpackBundler } from '@vuepress/bundler-webpack'
 import { defineUserConfig } from '@vuepress/cli'
-import type { DefaultThemeOptions } from '@vuepress/theme-default'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { live2DCat } from 'vuepress-plugin-zenlive2d-cat'
+import { pluginTabs } from '@snippetors/vuepress-plugin-tabs'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import { shikiPlugin } from '@vuepress/plugin-shiki'
+import { defaultTheme } from '@vuepress/theme-default'
 import { path } from '@vuepress/utils'
 import { navbar, sidebar } from './configs'
 
 const isProd = process.env.NODE_ENV === 'production'
 
-export default defineUserConfig<DefaultThemeOptions>({
+export default defineUserConfig({
   base: '/',
+
   head: [
-    [
-      'link',
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '16x16',
-        href: `/images/icons/favicon-16x16.png`,
-      },
-    ],
-    [
-      'link',
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '32x32',
-        href: `/images/icons/favicon-32x32.png`,
-      },
-    ],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: `/images/icons/favicon-16x16.png`,},],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: `/images/icons/favicon-32x32.png`,},],
     ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
-    ['meta', { name: 'application-name', content: 'ZenCTU' }],
-    ['meta', { name: 'apple-mobile-web-app-title', content: 'ZenCTU' }],
-    [
-      'meta',
-      { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
-    ],
-    [
-      'link',
-      { rel: 'apple-touch-icon', href: `/images/icons/apple-touch-icon.png` },
-    ],
-    ['link', { rel: 'mask-icon', href: '/images/icons/safari-pinned-tab.svg' }],
-    ['meta', { name: 'msapplication-TileColor', content: '#06bdf8' }],
-    ['meta', { name: 'theme-color', content: '#06bdf8' }],
+    ['meta', { name: 'application-name', content: 'VuePress' }],
+    ['meta', { name: 'apple-mobile-web-app-title', content: 'VuePress' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },],
+    ['link', { rel: 'apple-touch-icon', href: `/images/icons/apple-touch-icon.png` },],
+    ['link', { rel: 'mask-icon',  href: '/images/icons/safari-pinned-tab.svg',  color: '#3eaf7c',},],
+    ['meta', { name: 'msapplication-TileColor', content: '#3eaf7c' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
   ],
 
   // site-level locales config
@@ -55,17 +41,16 @@ export default defineUserConfig<DefaultThemeOptions>({
 
   bundler:
     // specify bundler via environment variable
-    process.env.DOCS_BUNDLER ??
-    // use vite in dev, use webpack in prod
-    '@vuepress/vite',
+    process.env.DOCS_BUNDLER === 'webpack' ? webpackBundler() : viteBundler(),
 
-  themeConfig: {
+  theme: defaultTheme({
     logo: '/images/hero.png',
     lang: 'vi',
-    docsRepo: 'zenfection/zenctu',
+    repo: 'zenfection/zenctu',
     editLink: false,
     docsDir: 'docs',
     theme: 'dark',
+
     // theme-level locales config
     locales: {
       '/': {
@@ -77,8 +62,14 @@ export default defineUserConfig<DefaultThemeOptions>({
         contributorsText: 'Tác giả',
       },
     },
-    themePlugins: { git: isProd },
-  },
+
+    themePlugins: {
+      // only enable git plugin in production mode
+      git: isProd,
+      // use shiki plugin in production mode instead
+      prismjs: !isProd,
+    },
+  }),
 
   markdown: {
     importCode: {
@@ -89,21 +80,27 @@ export default defineUserConfig<DefaultThemeOptions>({
         ),
     },
   },
-  extendsMarkdown: (md) => {
-    md.use(require('markdown-it-task-lists'))
-  },
+
   plugins: [
-    ['@vuepress/plugin-docsearch', {
-        appId: '3CJDV2AFXL',
-        apiKey: '4f7f93d347463109c3b6fd21d3ac2424',
-        indexName: 'ctuvn',
-        placeholder: 'Tìm Kiếm...',
+    docsearchPlugin({
+      appId: '3CJDV2AFXL',
+      apiKey: '4f7f93d347463109c3b6fd21d3ac2424',
+      indexName: 'ctuvn',
+      placeholder: 'Tìm Kiếm...',
+    }),
+    googleAnalyticsPlugin({
+      id: 'G-1GE3D8ZGM4',
+    }),
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, './components'),
+      components: {
+        Comment: path.resolve(__dirname, './components/Comment.vue'),
       },
-    ],
-    ['@vuepress/plugin-google-analytics', { id: 'G-1GE3D8ZGM4' }],
-    ['@vuepress/plugin-pwa'],
-    [ '@vuepress/plugin-register-components', { componentsDir: path.resolve(__dirname, './components') }, ],
-    ['vuepress-plugin-zenlive2d-cat'],
-    ['@snippetors/vuepress-plugin-tabs'],
+    }),
+    // pluginTabs(),
+    // live2DCat(),
+    // pluginTabs(),
+    // only enable shiki plugin in production mode
+    //isProd ? shikiPlugin({ theme: 'dark-plus' }) : [],
   ],
 })
