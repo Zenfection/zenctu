@@ -1,0 +1,54 @@
+:root {
+  --badge-tip-color: #42b983;
+  --badge-warning-color: #f4cd00;
+  --badge-danger-color: #f55;
+  --badge-info-color: #0295ff;
+  --badge-note-color: #666;
+}
+
+.badge {
+  display: inline-block;
+  vertical-align: top;
+
+  height: 18px;
+  padding: 0 6px;
+  border-radius: 3px;
+
+  background-color: var(--c-brand, #3eaf7c);
+  color: var(--white);
+
+  font-size: 14px;
+  line-height: 18px;
+
+  transition: background-color var(--color-transition, 0.3s ease),
+    color var(--color-transition, 0.3s ease);
+
+  // compatible with toc
+  .table-of-contents & {
+    vertical-align: middle;
+  }
+
+  &.tip {
+    background-color: var(--badge-tip-color);
+  }
+
+  &.warning {
+    background-color: var(--badge-warning-color);
+  }
+
+  &.danger {
+    background-color: var(--badge-danger-color);
+  }
+
+  &.info {
+    background-color: var(--badge-info-color);
+  }
+
+  &.note {
+    background-color: var(--badge-note-color);
+  }
+
+  & + & {
+    margin-left: 5px;
+  }
+}

@@ -1,9 +1,0 @@
-<VirtualHost *:80>	
-    DocumentRoot "C:/xampp/apps/lab4/www" 
-    ServerName ct275-lab4.localhost
-    # Set access permission 
-    <Directory "C:/xampp/apps/lab4/www"> 
-        AllowOverride None
-        Require all granted
-    </Directory>
-</VirtualHost>

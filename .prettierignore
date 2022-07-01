@@ -1,0 +1,21 @@
+# Vuepress Cache
+.cache/
+# Vuepress Temp
+.temp/
+# Vuepress Output
+dist/
+
+# Node modules
+node_modules/
+
+# Test Coverage
+coverage/
+
+# Dist files
+packages/*/lib/
+
+# Rollup cache
+.rollup.cache/
+
+# pnpm lock file
+pnpm-lock.yaml

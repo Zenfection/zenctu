@@ -1,0 +1,49 @@
+{
+  "name": "vuepress-plugin-reading-time2",
+  "version": "2.0.0-beta.84",
+  "description": "Reading time plugin for VuePress",
+  "keywords": [
+    "vuepress",
+    "vuepress2",
+    "vuepress-plugin",
+    "reading time",
+    "word count"
+  ],
+  "homepage": "https://vuepress-theme-hope.github.io/v2/reading-time/",
+  "bugs": {
+    "url": "https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuepress-theme-hope/vuepress-theme-hope.git",
+    "directory": "packages/reading-time"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mr.Hope",
+    "email": "mister-hope@outlook.com",
+    "url": "https://mrhope.site"
+  },
+  "main": "lib/node/index.js",
+  "types": "lib/node/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rimraf ./lib ./*.tsbuildinfo",
+    "dev": "pnpm dev:ts",
+    "dev:ts": "tsc -b tsconfig.build.json --watch"
+  },
+  "dependencies": {
+    "vuepress-shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@vuepress/core": "2.0.0-beta.48",
+    "rimraf": "3.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

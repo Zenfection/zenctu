@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    // types
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Modules
+    "baseUrl": "./",
+    "module": "es2020",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+
+    // Emit
+    "declaration": true,
+    "downlevelIteration": false,
+    "importHelpers": true,
+    "importsNotUsedAsValues": "remove",
+    "newLine": "lf",
+    "noEmitOnError": true,
+    "removeComments": false,
+    "inlineSources": false,
+    "inlineSourceMap": false,
+    "sourceMap": true,
+
+    // JavaScript
+    "allowJs": false,
+    "checkJs": false,
+
+    // Interop Constraints
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // lib
+    "lib": ["es2021"],
+    // mininal node 14 support
+    "target": "es2020",
+    // mininal node 16 support
+    // "target": "es2021",
+
+    // Compiler Diagnostics
+    "composite": true,
+    "diagnostics": false,
+    "listEmittedFiles": false,
+
+    "skipLibCheck": true,
+    "pretty": true
+  }
+}

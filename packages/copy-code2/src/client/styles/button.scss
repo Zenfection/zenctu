@@ -1,0 +1,75 @@
+@use "vuepress-shared/styles/reset";
+
+.copy-code-button {
+  @include reset.button;
+  width: 32px;
+  height: 32px;
+  padding: 7px 8px;
+  border-radius: 50%;
+
+  background: #339af0;
+  color: #fff;
+  outline: none;
+
+  &:hover {
+    background: #228be6;
+    cursor: pointer !important;
+  }
+
+  div[class*="language-"] & {
+    position: absolute;
+    right: -14px;
+    bottom: -14px;
+    z-index: 5;
+
+    @media (max-width: hope-config.$mobile) {
+      right: 0;
+      bottom: 0;
+
+      width: 28px;
+      height: 28px;
+      border-radius: 50% 10% 0;
+
+      .icon-copy-code {
+        position: relative;
+        top: 2px;
+        left: 2px;
+      }
+    }
+  }
+
+  .icon-copy-code {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.copy-code-pure-button {
+  @include reset.button;
+  box-sizing: content-box;
+
+  width: 0.75rem;
+  height: 0.75rem;
+  padding: 0.8em;
+
+  color: var(--code-ln-color, #9e9e9e);
+  outline: none;
+
+  &:hover {
+    background-color: var(--code-hl-bg-color, rgb(0 0 0 / 66%));
+    cursor: pointer !important;
+  }
+
+  div[class*="language-"] & {
+    position: absolute;
+    top: 0;
+    right: 3em;
+    z-index: 5;
+  }
+
+  .icon-copy-code {
+    width: 100%;
+    height: 100%;
+    fill: currentcolor;
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "vuepress-plugin-copyright2",
+  "version": "2.0.0-beta.84",
+  "description": "Copyright plugin for VuePress",
+  "keywords": [
+    "vuepress",
+    "vuepress2",
+    "vuepress-plugin",
+    "copyright"
+  ],
+  "homepage": "https://github.com/vuepress-theme-hope/vuepress-theme-hope/packages/copyright#readme",
+  "bugs": {
+    "url": "https://github.com/vuepress-theme-hope/vuepress-theme-hope/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuepress-theme-hope/vuepress-theme-hope.git",
+    "directory": "packages/copyright2"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mr.Hope",
+    "email": "mister-hope@outlook.com",
+    "url": "https://mrhope.site"
+  },
+  "main": "lib/node/index.js",
+  "types": "lib/node/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rimraf ./lib ./*.tsbuildinfo",
+    "dev": "concurrently \"pnpm dev:copy\" \"pnpm dev:ts\"",
+    "dev:copy": "cpx \"src/client/**/*.{vue,scss}\" lib/client -w",
+    "dev:ts": "tsc -b tsconfig.build.json --watch"
+  },
+  "dependencies": {
+    "@vuepress/client": "2.0.0-beta.48",
+    "@vuepress/shared": "2.0.0-beta.48",
+    "@vuepress/utils": "2.0.0-beta.48",
+    "@vueuse/core": "^8.7.4",
+    "vue": "^3.2.37",
+    "vuepress-shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@vuepress/core": "2.0.0-beta.48",
+    "rimraf": "3.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

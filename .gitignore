@@ -1,26 +1,30 @@
-# VuePress files
-docs/.vuepress/.temp/
-docs/.vuepress/.cache/
-docs/.vuepress/dist/
-
-# Dist files
-dist/
-lib/
-
-# Test temp files
-**/__fixtures__/.temp/
-
-# Test coverage files
-coverage/
-
 # Node modules
 node_modules/
 
-# MacOS Desktop Services Store
-.DS_Store
+# Build files
+packages/*/lib/
 
-# Log files
-*.log
+# Vuepress Cache
+.cache/
+# Vuepress Temp
+.temp/
+# Vuepress Output
+dist/
+
+# VS Code Config file
+# .vscode/
+
+# Rollup Cache
+.rollup.cache/
 
 # Typescript build info
 *.tsbuildinfo
+
+# Coverage Files
+coverage/
+
+# macOS
+.DS_Store
+
+# VSCode settings
+.vscode

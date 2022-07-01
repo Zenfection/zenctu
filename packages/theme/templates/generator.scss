@@ -1,0 +1,49 @@
+@use "sass:color";
+@use "sass:list";
+@use "sass:map";
+@use "@sass-palette/helper";
+
+$text-color-light: (
+  light:
+    color.scale(helper.get-color($text-color, $isDark: false), $lightness: 10%),
+  dark:
+    color.scale(helper.get-color($text-color, $isDark: true), $lightness: 10%),
+) !default;
+
+$text-color-lighter: (
+  light:
+    color.scale(helper.get-color($text-color, $isDark: false), $lightness: 20%),
+  dark:
+    color.scale(helper.get-color($text-color, $isDark: true), $lightness: 20%),
+) !default;
+
+$text-color-bright: (
+  light:
+    color.scale(helper.get-color($text-color, $isDark: false), $lightness: 40%),
+  dark:
+    color.scale(helper.get-color($text-color, $isDark: true), $lightness: 40%),
+) !default;
+
+$theme-color-dark: (
+  light:
+    color.scale(
+      helper.get-color($theme-color, $isDark: false),
+      $lightness: -10%
+    ),
+  dark:
+    color.scale(helper.get-color($theme-color, $isDark: true), $lightness: -10%),
+) !default;
+
+$theme-color-light: (
+  light:
+    color.scale(helper.get-color($theme-color, $isDark: false), $lightness: 10%),
+  dark:
+    color.scale(helper.get-color($theme-color, $isDark: true), $lightness: 10%),
+) !default;
+
+$theme-color-mask: (
+  light:
+    color.change(helper.get-color($theme-color, $isDark: false), $alpha: 0.15),
+  dark:
+    color.change(helper.get-color($theme-color, $isDark: true), $alpha: 0.15),
+) !default;
