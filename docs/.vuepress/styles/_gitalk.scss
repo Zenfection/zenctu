@@ -1,0 +1,139 @@
+//* CSS for gitalk comement
+
+.gt-container .gt-comment-admin .gt-comment-content {
+  background-color: #1b1f23;
+}
+.gt-container .gt-btn{
+  cursor: pointer;
+  transition: box-shadow 0.15s ease,transform 0.15s ease;
+  -webkit-transition: box-shadow 0.15s ease,transform 0.15s ease;
+  -moz-transition: box-shadow 0.15s ease,transform 0.15s ease;
+  -ms-transition: box-shadow 0.15s ease,transform 0.15s ease;
+  -o-transition: box-shadow 0.15s ease,transform 0.15s ease;
+  will-change: box-shadow,transform;
+  box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(58 65 111 / 50%);
+}
+.gt-container .gt-btn:hover{
+  box-shadow: 0px 4px 8px rgba(45,35,66,0.4);
+  transform: translateY(-2px);
+  -webkit-transform: translateY(-2px);
+  -moz-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  -o-transform: translateY(-2px);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+}
+.gt-container .gt-btn:active{
+  box-shadow: inset 0px 3px 7px rgba($color: #525db3, $alpha: 0.5);
+  transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+}
+.gt-container .gt-btn:focus{
+  box-shadow: inset 0 0 0 1.5px #525db3, 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #525db3
+}
+.gt-btn-login,.gt-btn-public{
+  background: radial-gradient(
+    100% 100% at 100% 0%,
+    #5ADAFF 0%,
+    #5468FF 100%
+  );
+}
+//!Dark Mode
+html.dark {
+  //*--Box gõ bình luận 
+  .gt-container .gt-header-textarea {
+    color: #d1d5da;
+    border: 1px solid rgba(54, 74, 94, 0.5);
+    background-color: rgba(32, 36, 38, 0.4);
+  }
+
+  .gt-container .gt-header-textarea:focus {
+    background: rgba($color: #464848, $alpha: 0.5);
+  }
+
+  //*-- Box preview bình luận
+  .gt-container .gt-header-preview {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(70, 72, 72, 0.4);
+    color: #d1d5da;
+  }
+
+  //*--Box bình luận của admin
+  .gt-container .gt-comment-admin .gt-comment-content {
+    background-color: rgba($color: #364485, $alpha: 0.4);
+  }
+
+  //* Chữ gõ text trong đã bình luận
+  .gt-container .gt-comment-body {
+    /* color: #333 !important; */
+    color: #d1d5da !important;
+  }
+
+  //* Di chuyện vào box bình luận
+  .gt-container .gt-comment-content:hover {
+    -webkit-box-shadow: 0 0.625em 3.75em 0 rgba(223, 223, 233, 0.5);
+    box-shadow: 0 0.625em 3.75em 0 rgba(223, 223, 233, 0.6);
+  }
+
+  //* Box bình luận của user
+  .gt-container .gt-comment-content {
+    background-color: rgba($color: #464848, $alpha: 0.4);
+  }
+
+  .gt-container .gt-popup {
+    background: rgba(26, 35, 40, 0.8) !important;
+    border: 1px solid #787e85 !important;
+  }
+
+  .gt-container .gt-meta {
+    border-bottom: 1px solid rgba($color: #5e5b5b, $alpha: 0.5) !important;
+  }
+
+  //! Markdown code 
+  .markdown-body .highlight pre,
+  .markdown-body pre {
+    background: rgba($color: #161b22, $alpha: 0.8) !important;
+  }
+
+  .markdown-body .pl-k {
+    color: #b63c33;
+  }
+
+  .markdown-body .pl-v {
+    color: #d57e32;
+  }
+
+  .markdown-body .pl-smi {
+    color: #c9d1d9;
+  }
+
+  .markdown-body .pl-en {
+    color: #d2a8ff;
+  }
+
+  .markdown-body .pl-s {
+    color: #a5d6ff;
+  }
+
+  .markdown-body .pl-pds {
+    color: #956C5B;
+  }
+
+  .markdown-body h1 {
+    border-bottom: 1px solid #334b6c;
+  }
+
+  .markdown-body h2 {
+    border-bottom: 1px solid #334b6c;
+  }
+
+  .markdown-body blockquote {
+    border-left: 0.25em solid rgba($color: #2A67A6, $alpha: 0.8);
+  }
+
+  .markdown-body code {
+    background-color: rgba(140, 158, 176, 0.3);
+  }
+}

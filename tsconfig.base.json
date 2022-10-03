@@ -1,56 +1,13 @@
 {
+  "extends": "tsconfig-vuepress/base.json",
   "compilerOptions": {
-    // types
     "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "exactOptionalPropertyTypes": true,
-    "noFallthroughCasesInSwitch": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noUncheckedIndexedAccess": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-
-    // Modules
-    "baseUrl": "./",
-    "module": "es2020",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-
-    // Emit
-    "downlevelIteration": false,
-    "importHelpers": true,
-    "importsNotUsedAsValues": "remove",
-    "newLine": "lf",
+    "lib": ["DOM", "ES2020"],
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
     "noEmitOnError": true,
-    "removeComments": false,
-    "inlineSources": false,
-    "inlineSourceMap": false,
-    "sourceMap": true,
-
-    // JavaScript
-    "allowJs": false,
-    "checkJs": false,
-
-    // Interop Constraints
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-
-    // lib
-    "lib": ["dom", "esnext"],
-    // mininal node 14 support
-    "target": "es2020",
-    // mininal node 16 support
-    // "target": "es2021",
-
-    // Compiler Diagnostics
-    "diagnostics": false,
-    "listEmittedFiles": false,
-
+    "noImplicitAny": false,
     "skipLibCheck": true,
-    "pretty": true
+    "target": "ES2020"
   }
 }

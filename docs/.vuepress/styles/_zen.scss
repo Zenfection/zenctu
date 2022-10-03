@@ -1,0 +1,187 @@
+//* CSS for anything of Zen
+
+//! Snippet Color
+.token.comment{
+  color: #676B79;
+  font-style: italic;
+}
+.token.directive-hash{
+  color: #e6e904;
+}
+.token.keyword{
+  color: #EF6FAB;
+}
+.token.function{
+  color: #6AB5EE;
+}
+.token.punctuation{
+  color: #7bbab4;
+}
+.token.operator{
+  color: #c21854;
+}
+.token.number{
+  color: #AE9510;
+}
+.token.string{
+  color: #29a666;
+}
+
+//! For PDF iframe
+.pdfZen{
+  position: relative;
+  padding-bottom: 80%;
+  height: 0;
+  margin-top: 1rem;
+
+}
+
+.pdfZen iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+
+
+//! For video iframe
+.videoZen {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-top: 1rem;
+}
+
+.videoZen iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //thêm-webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: auto;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px rgba(58, 65, 111, 0.5);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.videoZen:hover{
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+}
+
+.videoZen iframe:hover {
+  box-shadow: 0 0.625em 1.75em 0 rgba(68, 71, 71, 0.7);
+}
+
+//! For image zen
+.imageZen{
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  max-width: 100%;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.imageZen:hover{
+  transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+}
+
+//! For Course
+.courseZen{
+  box-sizing: border-box;
+  padding: 10px 20px;
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill,300px);
+  grid-gap: 40px;
+  cursor: pointer !important;
+}
+.courseImg{
+  width: 300px;
+  height: 150px;
+  position: relative;
+  z-index: 0;
+}
+.courseImg img{
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  max-width: 100%;
+}
+.courseImg img:hover{
+  transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+}
+.courseImg div{
+  position: absolute;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  filter: blur(20px);
+  background-size: 100%;
+  bottom: -10%;
+  left: 5%;
+  width: 90%;
+  height: 95%;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.courseImg div:hover{
+  left: 10%;
+  bottom: -20%;
+  width: 80%;
+}
+.content-course{
+  border-color: inherit;
+  padding: 25px;
+  border: 0;
+}
+.content-course h4{
+  text-align: center;
+  color: rgb(187, 190, 203);
+}
+
+//! Dark Mode
+html.dark {
+  .videoZen iframe:hover {
+    box-shadow: 0 0.625em 3.75em 0 rgba(223, 223, 233, 0.3);
+  }
+  .videoZen iframe{
+    box-shadow: 0px 2px 4px rgba(135, 124, 157, 0.4), 0px 7px 13px -3px rgba(157, 140, 193, 0.3), inset 0px -3px 0px rgba(126, 127, 128, 0.5);
+  }
+}

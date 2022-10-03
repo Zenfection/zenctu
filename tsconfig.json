@@ -1,10 +1,29 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
+    "jsx": "preserve",
     "paths": {
-      "@theme-hope/*": ["./packages/theme/src/client/*"]
-    }
+      "@internal/searchIndex": [
+        "./ecosystem/plugin-search/src/client/searchIndex.d.ts"
+      ],
+      "@internal/themeData": [
+        "./ecosystem/plugin-theme-data/src/client/themeData.d.ts"
+      ],
+      "@internal/*": ["./packages/client/src/types/internal/*.d.ts"],
+      "@theme/*": ["./ecosystem/theme-default/src/client/components/*"],
+      "@vuepress/*": ["./packages/*/src"],
+      "vuepress": ["./ecosystem/vuepress/src"],
+      "vuepress-vite": ["./ecosystem/vuepress-vite/src"],
+      "vuepress-webpack": ["./ecosystem/vuepress-webpack/src"]
+    },
+    "types": ["webpack-env", "vite/client"]
   },
-  "include": ["**/*.ts", "**/*.vue"]
+  "include": [
+    "**/.vuepress/**/*",
+    "ecosystem/**/*",
+    "packages/**/*",
+    "vitest.config.ts"
+  ],
+  "exclude": ["node_modules", ".temp", "lib", "dist"]
 }
