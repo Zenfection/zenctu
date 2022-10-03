@@ -320,38 +320,15 @@ export const sidebarVi: SidebarConfig = {
   '/toanhoc/TN002-Vi_tich_phan_a2/': [
     { text: 'TN002', link: '/toanhoc/TN002-Vi_tich_phan_a2/' },
   ],
-  '/toanhoc/TN002-Vi_tich_phan_a2/Tailieu': [
-    '/toanhoc/TN002-Vi_tich_phan_a2/Tailieu/1.md',
-    '/toanhoc/TN002-Vi_tich_phan_a2/Tailieu/2.md',
-    '/toanhoc/TN002-Vi_tich_phan_a2/Tailieu/3.md',
-    '/toanhoc/TN002-Vi_tich_phan_a2/Tailieu/4.md',
-    '/toanhoc/TN002-Vi_tich_phan_a2/Tailieu/5.md',
-  ],
 
   //* TN010-Xác suất thống kê
   '/toanhoc/TN010-Xac_suat_thong_ke/': [
     { text: 'TN010', link: '/toanhoc/TN010-Xac_suat_thong_ke/' },
   ],
-  '/toanhoc/TN010-Xac_suat_thong_ke/Tailieu': [
-    '/toanhoc/TN010-Xac_suat_thong_ke/Tailieu/1.md',
-    '/toanhoc/TN010-Xac_suat_thong_ke/Tailieu/2.md',
-    '/toanhoc/TN010-Xac_suat_thong_ke/Tailieu/3.md',
-    '/toanhoc/TN010-Xac_suat_thong_ke/Tailieu/4.md',
-    '/toanhoc/TN010-Xac_suat_thong_ke/Tailieu/5.md',
-    '/toanhoc/TN010-Xac_suat_thong_ke/Tailieu/6.md',
-    '/toanhoc/TN010-Xac_suat_thong_ke/Tailieu/7.md',
-    '/toanhoc/TN010-Xac_suat_thong_ke/Tailieu/8.md',
-  ],
 
   //* TN012-Đại số tuyến tính
   '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/': [
     { text: 'TN012', link: '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/' },
-  ],
-  '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/Tailieu': [
-    '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/Tailieu/1.md',
-    '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/Tailieu/2.md',
-    '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/Tailieu/3.md',
-    '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/Tailieu/4.md',
   ],
 
   //* Web

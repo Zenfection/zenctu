@@ -34,6 +34,9 @@ export const navbarVi: NavbarConfig = [
           { text: 'Toán Rời Rạc'          , link : '/nhapmon/CT172-Toan_roi_rac/'},
           { text: 'Quản Trị Hệ Thống'     , link : '/nhapmon/CT179-Quan_tri_he_thong/'},
           { text: 'Nhập Môn Lập Trình Web', link : '/nhapmon/CT188-Nhap_mon_lap_trinh_web/'},
+          // { text: 'Kiến Trúc Máy Tính', link: ''},
+          // { text: 'Nhập Môn Trí Tuệ Nhân Tạo', link: ''}
+          // { text: 'Nguyên Lý Hệ Điều Hành', link: ''}
         ],
       },
       {
@@ -53,25 +56,32 @@ export const navbarVi: NavbarConfig = [
   },
 
   {
-    text: 'Nâng cao',
+    text: 'Chuyên Ngành',
     children: [
       {
-        text: 'Chuyên Ngành',
+        text: 'Lý Thuyết',
         children: [
           { text: 'An Toàn Hệ Thống'            , link : '/chuyennganh/CT222-An_toan_he_thong/'},
+          // { text: 'Giao Diện Người Máy', link: ''},
+
+        ],
+      },
+      {
+        text: 'Thực Hành',
+        children: [
           { text: 'Mạng Và Truyền Thông Dữ Liệu', link : '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/'},
           { text: 'Quản Lý Dữ Án Phần Mềm'      , link : '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/'},
           { text: 'Công Nghệ Web'               , link : '/chuyennganh/CT275-Cong_nghe_web/'},
           { text: 'Máy Học Ứng Dụng'            , link : '/chuyennganh/CT294-May_hoc_ung_dung/'},
           { text: 'Quản Trị Dữ Liệu'            , link : '/chuyennganh/CT467-Quan_tri_du_lieu/'},
+          { text: 'Phát Triển Phần Mềm'                      , link : '/doannganh/CT300-Phat_trien_phan_mem/'},
+          { text: 'Phát Triển Ứng Dụng Web'                  , link : '/doannganh/CT449-Phat_trien_ung_dung_web/'},
+          { text: 'Phát Triển Ứng Dụng Trên Thiết Bị Di Động', link : '/doannganh/CT484-Phat_trien_ung_dung_tren_thiet_bi_di_dong/'},
         ],
       },
       {
         text: 'Đồ Án Ngành',
         children: [
-            { text: 'Phát Triển Phần Mềm'                      , link : '/doannganh/CT300-Phat_trien_phan_mem/'},
-            { text: 'Phát Triển Ứng Dụng Web'                  , link : '/doannganh/CT449-Phat_trien_ung_dung_web/'},
-            { text: 'Phát Triển Ứng Dụng Trên Thiết Bị Di Động', link : '/doannganh/CT484-Phat_trien_ung_dung_tren_thiet_bi_di_dong/'},
             { text: 'Luận Văn Tốt Nghiệp'                      , link : '/doannganh/CT550-Luan_van_tot_nghiep/'},
         ],
       },

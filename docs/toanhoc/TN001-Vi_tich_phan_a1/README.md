@@ -21,8 +21,4 @@
 | [Chương 1.Giới hạn và tính liên tục](https://www.youtube.com/playlist?list=PLsEmKKF4H46kBlbciM8bhOzOcMczmyGmS) | [Chương 2.Đạo hàm & Vi phân](https://www.youtube.com/playlist?list=PLsEmKKF4H46mZgRTR2wpLcwgfacJo7r6-) | [Chương 3.Hàm nhiều biến](https://www.youtube.com/playlist?list=PLsEmKKF4H46nA_OqTRYv2AUwxYfuTsDAT) | [Chương 4.Các ứng dụng trong Kinh tế](https://www.youtube.com/playlist?list=PLsEmKKF4H46lDEzhLYQIHt1bu2eeUv2Io) | [Chương 5.Tích phân](https://www.youtube.com/playlist?list=PLsEmKKF4H46lb3B6t5ShqzhHx0PfUV9j-) | [Chương 6.Phương trình vi phân](https://www.youtube.com/playlist?list=PLsEmKKF4H46mlIkwBUFa64Wivbot4kbeu) |
 | ---------------------------------- | -------------------------- | ----------------------- | ----------------------------------- | ------------------ | ----------------------------- |
 
-
 <comment/> 
- 
-
- 
