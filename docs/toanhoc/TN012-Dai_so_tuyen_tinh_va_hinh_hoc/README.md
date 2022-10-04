@@ -15,6 +15,11 @@ Trang web hỗ trợ tính toán ma trận : <img src="https://raw.githubusercon
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-41-35-tenor.gif" width="40"> 3. Quá trình học tập
 
+::: tip Nguồn Khoá Học
+
+<a href="https://www.youtube.com/watch?v=robG5KNBw78&list=PL5g_dfwUnO84IehDgeDlXbwd0pLzhTWSZ" target="_blank">Link Youtube</a> (Tổng 31 Video)
+:::
+
 ### Chương 1. Ôn tập
 
 ::: details Bài 1.1: Số phức

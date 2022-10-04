@@ -313,7 +313,11 @@ export const sidebarVi: SidebarConfig = {
   //! ---Begin: Toán Học
   //* TN001-Tích phân A1
   '/toanhoc/TN001-Vi_tich_phan_a1/': [
-    { text: 'TN001', link: '/toanhoc/TN001-Vi_tich_phan_a1/' },
+    {
+      text: 'TN001',
+      collapsible: true,
+      link: '/toanhoc/TN001-Vi_tich_phan_a1/'
+    },
   ],
 
   //* TN001-Tích phân A2

@@ -18,6 +18,11 @@
 
 ## <img src="https://raw.githubusercontent.com/Zenfection/Image/master/2021/08/02-21-41-35-tenor.gif" width="40"> 3. Quá trình học tập
 
+::: tip Nguồn Khoá Học
+
+<a href="https://www.youtube.com/watch?v=mwIgYVPBHSc&list=PL5g_dfwUnO86OCC5xn_grgnH-lqdYWGUu" target="_blank">Link Youtube</a> (Tổng 42 Video)
+:::
+
 ### Chương 1. Hàm nhiều biến
 
 ::: details Bài 1: Hàm nhiếu biến
@@ -61,10 +66,7 @@
 <div class="videoZen">
   <iframe width="704" height="396" src="https://www.youtube.com/embed/6qvyXvw1wgo?list=PL5g_dfwUnO86OCC5xn_grgnH-lqdYWGUu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-
 :::
-
 
 ::: details Bài 4: Min,Max hàm 2 biến
 <div class="videoZen">
@@ -83,7 +85,6 @@
   <iframe width="704" height="396" src="https://www.youtube.com/embed/8m3WwSBG3gg?list=PL5g_dfwUnO86OCC5xn_grgnH-lqdYWGUu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 :::
-
 
 ### Chương 2. Tích phân bội
 
