@@ -34,15 +34,18 @@ export const sidebarVi: SidebarConfig = {
       text: 'CT179',
       link: '/nhapmon/CT179-Quan_tri_he_thong/',
     },
-  ],
-
-  '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/': [
-    '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/1.md',
-    '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/2.md',
-    '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/3.md',
-    '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/4.md',
-    '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/5.md',
-    '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/6.md',
+    {
+      text: 'Thực hành',
+      collapsible: true,
+      children: [
+        '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/1.md',
+        '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/2.md',
+        '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/3.md',
+        '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/4.md',
+        '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/5.md',
+        '/nhapmon/CT179-Quan_tri_he_thong/Thuchanh/6.md',
+      ]
+    }
   ],
 
   //* CT188 Nhập môn lập trình web
@@ -68,27 +71,33 @@ export const sidebarVi: SidebarConfig = {
       text: 'CT112',
       link: '/cosonganh/CT112-Mang_may_tinh/'
     },
-  ],
-
-  '/cosonganh/CT112-Mang_may_tinh/Tailieu/': [
-    '/cosonganh/CT112-Mang_may_tinh/Tailieu/1.md',
-    '/cosonganh/CT112-Mang_may_tinh/Tailieu/2.md',
-    '/cosonganh/CT112-Mang_may_tinh/Tailieu/3.md',
-    '/cosonganh/CT112-Mang_may_tinh/Tailieu/4.md',
-    '/cosonganh/CT112-Mang_may_tinh/Tailieu/5.md',
-    '/cosonganh/CT112-Mang_may_tinh/Tailieu/6.md',
-    '/cosonganh/CT112-Mang_may_tinh/Tailieu/7.md',
-    '/cosonganh/CT112-Mang_may_tinh/Tailieu/8.md',
-  ],
-
-  '/cosonganh/CT112-Mang_may_tinh/Thuchanh/': [
-    '/cosonganh/CT112-Mang_may_tinh/Thuchanh/1.md',
-    '/cosonganh/CT112-Mang_may_tinh/Thuchanh/2.md',
-    '/cosonganh/CT112-Mang_may_tinh/Thuchanh/3.md',
-    '/cosonganh/CT112-Mang_may_tinh/Thuchanh/4.md',
-    '/cosonganh/CT112-Mang_may_tinh/Thuchanh/5.md',
-    '/cosonganh/CT112-Mang_may_tinh/Thuchanh/6.md',
-    '/cosonganh/CT112-Mang_may_tinh/Thuchanh/7.md',
+    {
+      text: 'Lý thuyết',
+      collapsible: true,
+      children: [
+        '/cosonganh/CT112-Mang_may_tinh/LyThuyet/1.md',
+        '/cosonganh/CT112-Mang_may_tinh/LyThuyet/2.md',
+        '/cosonganh/CT112-Mang_may_tinh/LyThuyet/3.md',
+        '/cosonganh/CT112-Mang_may_tinh/LyThuyet/4.md',
+        '/cosonganh/CT112-Mang_may_tinh/LyThuyet/5.md',
+        '/cosonganh/CT112-Mang_may_tinh/LyThuyet/6.md',
+        '/cosonganh/CT112-Mang_may_tinh/LyThuyet/7.md',
+        '/cosonganh/CT112-Mang_may_tinh/LyThuyet/8.md',
+      ]
+    },
+    {
+      text: 'Thực hành',
+      collapsible: true,
+      children: [
+        '/cosonganh/CT112-Mang_may_tinh/Thuchanh/1.md',
+        '/cosonganh/CT112-Mang_may_tinh/Thuchanh/2.md',
+        '/cosonganh/CT112-Mang_may_tinh/Thuchanh/3.md',
+        '/cosonganh/CT112-Mang_may_tinh/Thuchanh/4.md',
+        '/cosonganh/CT112-Mang_may_tinh/Thuchanh/5.md',
+        '/cosonganh/CT112-Mang_may_tinh/Thuchanh/6.md',
+        '/cosonganh/CT112-Mang_may_tinh/Thuchanh/7.md',
+      ]
+    }
   ],
 
   //* CT174-Phân tích thiết kế thuật toán
@@ -240,8 +249,23 @@ export const sidebarVi: SidebarConfig = {
   '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/': [
     {
       text: 'CT223',
-      link: '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/',
+      children: [
+        '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/',
+      ]
     },
+    {
+      text: 'Lý thuyết',
+      collapsible: true,
+      children: [
+        '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/LyThuyet/1.md',
+        '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/LyThuyet/2.md',
+        '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/LyThuyet/3.md',
+        '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/LyThuyet/4.md',
+        '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/LyThuyet/5.md',
+        '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/LyThuyet/6.md',
+        '/chuyennganh/CT223-Quan_ly_du_an_phan_mem/LyThuyet/7.md',
+      ]
+    }
   ],
   //* CT293-Mạng và truyền thông dữ liệu
   '/chuyennganh/CT293-Mang_va_truyen_thong_du_lieu/': [
@@ -313,11 +337,7 @@ export const sidebarVi: SidebarConfig = {
   //! ---Begin: Toán Học
   //* TN001-Tích phân A1
   '/toanhoc/TN001-Vi_tich_phan_a1/': [
-    {
-      text: 'TN001',
-      collapsible: true,
-      link: '/toanhoc/TN001-Vi_tich_phan_a1/'
-    },
+    { text: 'TN001', link: '/toanhoc/TN001-Vi_tich_phan_a1/' },
   ],
 
   //* TN001-Tích phân A2
@@ -327,12 +347,41 @@ export const sidebarVi: SidebarConfig = {
 
   //* TN010-Xác suất thống kê
   '/toanhoc/TN010-Xac_suat_thong_ke/': [
-    { text: 'TN010', link: '/toanhoc/TN010-Xac_suat_thong_ke/' },
+    {
+      text: 'TN010',
+      link: '/toanhoc/TN010-Xac_suat_thong_ke/'
+    },
+    {
+      text: 'Video Bài Học',
+      children: [
+        '/toanhoc/TN010-Xac_suat_thong_ke/Video/1.md',
+        '/toanhoc/TN010-Xac_suat_thong_ke/Video/2.md',
+        '/toanhoc/TN010-Xac_suat_thong_ke/Video/3.md',
+        '/toanhoc/TN010-Xac_suat_thong_ke/Video/4.md',
+        '/toanhoc/TN010-Xac_suat_thong_ke/Video/5.md',
+        '/toanhoc/TN010-Xac_suat_thong_ke/Video/6.md',
+        '/toanhoc/TN010-Xac_suat_thong_ke/Video/7.md',
+        '/toanhoc/TN010-Xac_suat_thong_ke/Video/8.md',
+        '/toanhoc/TN010-Xac_suat_thong_ke/Video/9.md',
+      ]
+    },
   ],
 
   //* TN012-Đại số tuyến tính
   '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/': [
-    { text: 'TN012', link: '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/' },
+    {
+      text: 'TN012',
+      link: '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/'
+    },
+    {
+      text: 'Video Bài Học',
+      children: [
+        '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/Video/1.md',
+        '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/Video/2.md',
+        '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/Video/3.md',
+        '/toanhoc/TN012-Dai_so_tuyen_tinh_va_hinh_hoc/Video/4.md',
+      ]
+    }
   ],
 
   //* Web

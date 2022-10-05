@@ -443,7 +443,7 @@
 </div>
 :::
 
-### Chương 4. Các ứng dụng trong Kinh tế
+### Chương 4. Ứng dụng trong Kinh tế
 
 ::: tip Nguồn Chương 4
 

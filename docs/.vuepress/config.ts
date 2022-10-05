@@ -23,7 +23,7 @@ export default defineUserConfig({
 
   // extra tags in `<head>`
   head,
-
+  //sidebarDepth: 3,
   // site-level locales config
   locales: {
     '/': {

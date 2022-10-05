@@ -1,1 +1,1 @@
-export * from './vi'
+export * from './vi.js'
